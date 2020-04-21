@@ -1,0 +1,185 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{listings}
+\begin{document}
+\title{Game theory Summary}
+\author{Ismail Fadelli}
+\date{\today}
+\maketitle
+
+\section{Game Theory}
+Game Theroy is the study of rational behaviour in situations involving interdependece as it may involve:
+\begin{itemize}
+\item Common interest (coordination);
+\item Competing interests (rivalry);
+\item Rational behaviour: players can do the best they can, in their own eyes;
+\item Because of the players' interdependence, a rational decision in a game must be based on a prediction of others' responses;
+\end{itemize}
+\subsection{The parts of a Game} 
+A Game consists of three parts : 
+Players, Actions and Payoffs
+\subsubsection{Players}
+Players are the decision makers and they can be : People, Governments or Companies.
+\subsubsection{Actions}
+What can the players do ?
+Decide when to sell a stock, decide how to vote or enter a bid in an auction...
+\
+\subsubsection{Payoffs}
+Payoffs can represent the motivation of the players, for example : Do they care about profit ? or Do they care about other players ? 
+\subsection{Defining Games} Games can be represented in two methods : Normal forms and Extensive Forms.
+\subsubsection{Normal Form : matrix form or strategic form}
+A normal form represents a list of what players get on function of their actions.
+\subsubsection{Extensive Form}
+An extensive forms includes timing of moves. 
+Players move sequentially, represented as a tree.
+\begin{itemize}
+\item Chess: white player moves, then black player can see white's move and react...
+\end{itemize}
+Keeps track of what each player knows when he or she makes a decision :
+\begin{itemize}
+\item Poker: bet seqentially - what can a given player see when they bet. 
+\end{itemize}
+\subsection{Normal Form}
+Finit, n-person normal form game  ⟨$N, A, u$⟩:
+\begin{itemize}
+\item Players: $ N = {1, ... , n} $ is a finite set of $n$, indexed by $i$.
+\item Actions set for player $i A_i$
+\subitem $a = (a_1,...,a_n) \in A = A_1 * ... * A_n $ is an action profile.
+\input amssym.tex
+\item Utility function or Payoff function for player $i: u_i : A $  $\to$, ${\Bbb{R}}$
+\subitem $u = (u_1,..., u_n)$, is a profile of utility functions.
+\end{itemize}
+\subsection{Best Response and Nash Equilibrium}
+\subsubsection{Best Response}
+\title{\textbf{Definition:} }
+$a_i^* \in BR(a_{-i}) $ iff $  \forall a_i \in A_i, u_i(a_i^*,a_{-i}) \geq u_i(a_i, a_{-i})$  
+\subsubsection{Nash Equilibrium}
+\title{\textbf{Definition :} }
+$a = <a_1,...,a_n>$ is a "\textbf{pure strategy}" if $\forall i, a_i \in BR(a_{-i})$
+\subsection{Dominant strategies}
+let $s_i$ and $s_i^`$ be two strategies for player $i$, and let $S_{-i}$ be the set of all possible strategy profiles for other players.
+\bigbreak
+\title{\textbf{Definitions:} }
+\begin{itemize}
+\item $s_i$ \textbf{strictly dominates} $s_i^`$ if $\forall s_{-i} \in S_{-i}, u_i(s_i, s_{-i}) \>> u_i(s_i^`, s_{-i})$
+\item $s_i$ \textbf{very weakly dominates} $s_i^`$ if $\forall s_{-i} \in S_{-i}, u_i(s_i, s_{-i}) \geq u_i(s_i^`, s_{-i})$
+\item A strategy is called \textbf{dominant} if it dominates all others.
+\item A strategy profile consisting of dominant strategies for every player must be a Nash Equilibrium.
+\end{itemize}
+\subsection{Pareto Optimality}
+\title{\textbf{Definition:}}
+An outcome $o^*$ is \textbf{Pareto-optimal} if there is no other outcome that Pareto-dominates it.
+\section{Mixed Strategies and Nash Equilibrium}
+\title{\textbf{Definition:}}
+A strategy $s_i$ for agent $i$ as any probabiltiy distribution over the actions $A_i$.
+\begin{itemize}
+\item \textbf{pure strategy:} only one action is played with positive probability
+\item \textbf{mixed strategy:} more than one action is played with positive probability
+\bigbreak
+these actions are called the support of the mixed strategy.
+\item Let the set of all strategies for $i$ be $S_i$
+\item let the set of all strategy profiles be $S = S_1 \times... \times S_n$
+\end{itemize}
+\subsection{Utility in Mixed Strategies}
+In order to find the payoff if all the players follow mixed strategy profile $s \in S$ we can use the \textbf{expected utility} from decision theory: 
+\begin{equation} u_i(s) = \sum_{a \in A}u_i(a)P(a|s)\end{equation}
+\begin{equation} P(a|s) = \prod_{j \in N}s_j(a_j)\end{equation}
+\subsection{Best Response and Nash Equilibrium}The definitions of best response and Nash equilibrium are generalized from actions to strategies. 
+
+\title{\textbf{Definition (Best Response):} }
+$$ s_i^* \in BR(s_{-i}) \textbf{ if }   \forall s_i \in S_i, u_i(s_i^*,s_{-i}) \geq u_i(s_i, s_{-i})$$ 
+
+\title{\textbf{Definition (Nash Equilibrium):} }
+$$s = <s_1,...,s_n>\textbf{ is  a }\textbf{Nash Equilibrium if } \forall i, s_i \in BR(s_{-i})$$
+
+\title{\textbf{Theorem (Nash, 1950)}: } Every finite game has a Nash equilibrium.
+\subsection{Computing Nash Equilibrium}
+\paragraph{Two algorithms for finding NE }
+\begin{itemize}
+\item LCP(Linear Complementarity) [Lemke-Howson].
+\item Support Enumeration Method [Porter et al].
+\end{itemize}
+\subsection{Complexity Analysis}
+\title{\textbf{Theorem:}}
+Computing a Nash Equilibrium is a \textbf{PPAD-complete}, this theorem has been proven for:
+\begin{itemize}
+\item for games $\geq$ 4 players;
+\item for games with 3 players;
+\item for games with 2 players;
+\end{itemize}
+\subsection{Summary of mixed strategies}
+\begin{itemize}
+\item Some games have mixed strategy Nash Equilibria.
+\item A player must be indifferent between the actions he or she randomizes over.
+\item Randomization happen in business interactions, society, sports...
+\end{itemize}
+
+\section{Game Theory in Python}
+Here is some Python code:
+\lstset{language=Python}
+\lstset{frame=lines}
+\lstset{caption={Creating a game}}
+\lstset{label={lst:code_direct}}
+\lstset{basicstyle=\footnotesize}
+\begin{lstlisting}
+pip install nashpy
+import nashpy as nash
+import numpy as np
+A =[[2,0], [1,3]]
+B =[[3,0], [1,2]]
+g = nash.Game(A, B)
+g
+Bi matrix game with payoff matrices:
+
+Row player:
+[[2 0]
+ [1 3]]
+ 
+Column player:
+[[3 0]
+ [1 2]]
+\end{lstlisting}
+\section{Strictly Dominated Strategies and Iterated Removal}
+\begin{tabular}{|l|l|}
+
+\hline
+Apples & Green \\
+\hline
+Straws & Red \\
+\hline
+Oranges & Orange \\
+\hline
+\end{tabular}
+\bigbreak
+\title{\textbf{Strictly Dominated Strategies}
+\section{Maxmin Strategies} 
+A \textbf{maxmin strategy} for a player $i$ is a strategy that maximizes $i$'s worst case payoff, where all other players (whom we denote $-i$) happen to play the strategies which cause the greatest harm to $i$.
+\bigbreak
+The \textbf{maxmin value} of the game for player $i$ is that minimum payoff guaranteed by a maxmin strategy.
+\paragraph{Definition (Maxmin)}{
+The \textbf {maxmin strategy}  for player $i$ is $arg$ $max_{s_i}$ $min_{s_{-i}}$ $u_i(s_1, s_2)$, and \textbf{maxmin value} for player $i$ is $max_{s_i} min_{s_{-i}}u_i(s_1, s_2).$}
+\paragraph{Minmax Theorem (Von Neuman, 1928)}{In any finite, two player, zero sum game, in any Nash Equilibrium each player receives a payoff that is equal to both his maxmin value and his minmax value.}
+\subsection{Computing Minmax}
+Minmax is solvable with LP (for two players)
+
+\begin{equation}\textbf{subject to} \sum_{K \in A_2}U_1(a_1^j, a_2^k)\times s_2^k \leq U_1  \end{equation}
+\section{Extensive Forms}{The extensive form is an alternative representation that makes the temporal structure explicit.}
+\begin{itemize}
+\item{Perfect information extensive form games.}
+\item{Imperfect information extensive form games.}
+\end{itemize}
+\title {\textbf{Definition}} A finite perfect information game in extensive form is defined by the tuple ($N, A, H, Z,\chi ,\rho, \sigma, u $)
+where:
+\begin{itemize}
+\item{Players: $N$ is a set of $n$ players.}
+\item{Actions: $A$ is set of actions.}
+\item{Choice nodes and labels for these nodes: }
+\begin{itemize}
+\item{Choice nodes: $H$ is a set of non-terminal choice nodes.}
+\item{Action function: $\chi : H \to 2^A $ assigns to each choice a set of actions.}
+\item{Player function: $\rho : H \to N$ assigns to each non-terminal node $h$ a player $i \in N$ who chooses an action at $h$.}
+\end{itemize}
+\item{Terminal nodes: $Z$ is a set of terminal nodes, disjoint from $H$.}
+\item{Successor function: $\sigma : H \times A \to H \cup Z$ maps a choice node and an action to a new choice node or terminal node such that for all $h_1, h_2 \in H$ and $a_1, a_2 \in A$, if $\sigma(h_1, a_1) = \sigma(h_2, a_2)$ then $h_1  = h_2$  and $a_1 = a_2$} 
+\end{itemize} 
+\section{Transportation processes problem}
+\end{document}
