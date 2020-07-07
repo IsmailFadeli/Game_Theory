@@ -115,4 +115,27 @@ Computing a Nash Equilibrium is a \textbf{PPAD-complete}\footnote{PPAD : Polynom
 \paragraph{Definition}a strategy $a_i \in A_i $ is weakly dominated by $a'_i \in A_i$ if
 \begin{equation} u_i(a_i, a_{-i}) \leq u_i(a'_i, a_{-i}) ,  \forall   a_{-i} \in A_{-i} \end{equation}
 and \begin{equation} u_i(a_i, a_{-i}) < u_i(a'_i, a_{-i}) ,\exists   a_{-i} \in A_{-i} \end{equation} 
+\section{Extensive Forms}{The extensive form is an alternative representation that makes the temporal structure explicit.}
+\begin{itemize}
+\item{Perfect information extensive form games.}
+\item{Imperfect information extensive form games.}
+\end{itemize}
+\title {\textbf{Definition}} A finite perfect information game in extensive form is defined by the tuple ($N, A, H, Z,\chi ,\rho, \sigma, u $)
+where:
+\begin{itemize}
+\item{Players: $N$ is a set of $n$ players.}
+\item{Actions: $A$ is set of actions.}
+\item{Choice nodes and labels for these nodes: }
+\begin{itemize}
+\item{Choice nodes: $H$ is a set of non-terminal choice nodes.}
+\item{Action function: $\chi : H \to 2^A $ assigns to each choice a set of actions.}
+\item{Player function: $\rho : H \to N$ assigns to each non-terminal node $h$ a player $i \in N$ who chooses an action at $h$.}
+\end{itemize}
+\item{Terminal nodes: $Z$ is a set of terminal nodes, disjoint from $H$.}
+\item{Successor function: $\sigma : H \times A \to H \cup Z$ maps a choice node and an action to a new choice node or terminal node such that for all $h_1, h_2 \in H$ and $a_1, a_2 \in A$, if $\sigma(h_1, a_1) = \sigma(h_2, a_2)$ then $h_1  = h_2$  and $a_1 = a_2$} 
+\item{Utility function: $u = (u_1,...,u_n)$ where $u_i : Z \to R$
+}
+\end{itemize} 
+\section{Evolutionary Game Theory}
+\paragraph{}Evolution and Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
 \end{document}
