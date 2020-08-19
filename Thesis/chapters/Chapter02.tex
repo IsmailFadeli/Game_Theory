@@ -3,9 +3,54 @@
 
 \paragraph{}The current approach to mode choice behavior
 in the perspective of expected utility theory or random utility theory. However, travelers evaluate the alternative modes by individual experience and attitude which are not considered in the expected utility theory or random utility theory models. Therefore, many alternative theories have been proposed, for example, prospect theory, cumulative prospect theory and regret theory. Among them, cumulative prospect theory draws the most attention because it describes the bounded rational behaviors under various conditions.
+
+\clearpage
+
 \section{Travel Demand Management}
 One of the most important socio-economic problems in recent decades has been the optimization of an urban transport system. Furthermore, This type of problem mainly occurs in developing countries, and the reason behind it is the increasing rate of car ownership.\footnote{Khovako, 2014,.}. Which urges cities to realize transport strategies combating this effect and also to decrease the negative impacts of transportation on the environment \footnote{World Bank, 2011}.
+\section{Simple Choice Models}
+\paragraph{}Three simple-choice models are usually discussed in the context of utility theory. According to this understanding, the utility $U_i$ of alternative mode $i$ is expressed as the sum of a deterministic component $V_i$ and a random component $\epsilon_i$(\cite{Richard, David, 1982}):
+\begin{equation}
+U_i = V_i + \epsilon_i
+\end{equation}
+\paragraph{} The probability of choosing the $i$th mode from a set of $n$ alternatives is thus:
+\begin{equation}
+P_i = P_r[U_i>U_j](j=i)
+\end{equation}
+Alternatively, 
+\begin{equation}\label{eq:3}
+P_i = P_r[\epsilon_j < V_i - V_j + \epsilon_i](j=i)
+\end{equation}
+\paragraph{}If the cumulative density function of the error $\epsilon =(\epsilon_1, . . . , \epsilon_n)$ is $F(t_1, . . . , t_n)$, and the partial of the cumulative density function with respect to variable $i$ is $F_i(t_1, . . . , t_n)$, then equation \ref{eq:3} becomes:
+\begin{equation}\label{eq:4}
+P_i = 	\int_{-\infty}^{+\infty} F_i(. . . , t + V_i - V_j, . . .)df
+\end{equation}
+\paragraph{}If the error terms are independent identically distributed Gumbel variate, then Equation \ref{eq:4} is a multivariate logit model. If the error terms have a joint multivariate normal distribution, then \ref{eq:4} defines a multinomial probit model. 
+\paragraph{}The third simple-choice model, discriminant analysis, was originally developed for taxonomic purposes. However, discriminant analysus has been avoided in mode choice analysis because it lacks the probabilistic theory that is possessed by other behavioral-choice models. In recent decades, logit models have been the most used when it comes to travel mode choice analysis.
 
 \section{Choice Decision Elements}
+\paragraph{}The travel mode choice is an important step of the transportation forecasting(\cite{Litman,2011}). The main modes for travelers are private cars or public transportation.
 \paragraph {}The framework for the choice process is that the individual determines the available alternatives(modes), next, evaluates the attributes of each alternative, and then, uses a decision rule to select an alternative from among the available alternatives (Ben-Akiva and Lerman, 1985, Chapter 3).\\
-Further in this section, we see that the elements of a choice process are : the decision maker, the alternatives, the attributes of alternatives and the decision rule.
+\paragraph{}Further in this section, we see that the elements of a choice process are : the decision maker, the alternatives, the attributes of alternatives and the decision rule.
+\paragraph{}Travel mode choice is usually mathematically represented by logit functions, due to its consideration of particular qualities of travelers(\cite{Bravo et al, 2009}).
+\paragraph{}The next function computes the probability of car mode choice, which depends on the difference between the travel time $\sigma_t$ and the travel costs $\sigma_c$:
+\begin{equation}
+p^{*}(\sigma_t,\sigma_c) = \frac{1}{1+exp(a_0+ a_i c^c + a_c \sigma_c)}
+\end{equation}
+\paragraph{}The objective function based on logit function may is presented in the following equation(\cite{Hollander et al, 2006}):
+\begin{equation}
+G(p) = (p - p^{*}(\sigma_t,\sigma_c))*
+	 = (p - \frac{1}{1+exp(a_0+ a_i c^c + a_c \sigma_c)})^2 \rightarrow min_p.
+\end{equation}
+\paragraph{}The difference of the travel times between modes (private
+and public transport) for traveling between A and B :
+\begin{equation}
+\sigma t_{a,b} = T^{r}_a + T^{r}_b + T^{p}_b - T^{t}_a - T^{t}_b - t_w
+\end{equation}
+where $t_w$ is the waiting time in public transport.
+\paragraph{}The difference between travel costs could be : 
+\begin{equation}
+\sigma c_{a,b} = c^{c} ( t^{r}_b + t^{r}_b - t^{p}_b )- c^{p}_b - c^t
+\end{equation}
+\section{Evolutionary Game Theory and Engineering}
+\paragraph{}Many Engineering Infrastructures are becoming increasingly complex to manage due to large scale distributed nature and the nonlinear interdependence between their components (\cite{Quijano et al, 2017}).Including transportation systems, communication networks, data networks, and teams of anonymous vehicles. Controlling these large scale distributed systems requires the implementation of decision rules for interconnected components that grantee the accomplishment of a collective objective in an environment that is often dynamic and uncertain. In order to achieve this goal, traditional control theory is often of little use, since distributed systems generally lack a central  entity with access or control over all components(\cite{Marden and Shamma, 2015}).

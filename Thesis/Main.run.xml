@@ -54,10 +54,11 @@
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>standard.bbx</file>
-      <file>numeric.bbx</file>
-      <file>numeric.cbx</file>
+      <file>mla.bbx</file>
+      <file>mla.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
+      <file>english-mla.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="1">
@@ -77,9 +78,6 @@
     </provides>
     <requires type="dynamic">
       <file>Main.bcf</file>
-    </requires>
-    <requires type="editable">
-      <file>ref.bib</file>
     </requires>
   </external>
 </requests>

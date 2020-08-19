@@ -5,11 +5,31 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-
+\pagestyle{headings}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{fancyhdr}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\pagestyle{fancy}
+\usepackage[style=mla,babel=hyphen,backend=biber]{biblatex}
+\usepackage {fancybox}
+\newtheorem{mydef}{Definition}
+\fancyhf{}
+\rhead{\thesection}
+\lhead{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\pagenumbering{roman}
+\usepackage[nottoc]{tocbibind}
 \begin{document}
-
 \begin{titlepage}
+
    \begin{center}
+   \thisfancypage{%}
+\setlength{\fboxsep}{10pt}\doublebox}{}
        \vspace*{1cm}
  	   \Huge
        \textbf{Travel Mode Choice Modeling using Game theory}
@@ -38,7 +58,10 @@
        2020
             
    \end{center}
+   
+
 \end{titlepage}
+\thispagestyle{empty}
 \thispagestyle{plain}
 \begin{center}
     \Large
@@ -55,17 +78,46 @@
     \textbf{Abstract}
 \end{center}
 
-\tableofcontents
+\tableofcontents \thispagestyle{empty}
 \addcontentsline{toc}{chapter}{Introduction}
 \listoffigures
 \listoftables
 \clearpage
 
-\input{chapters/Introduction}
-\chapter{Concepts}
+\thispagestyle{empty}
+\section*{Introduction}
+\paragraph{}The purpose of this study is to describe how travelers adjust their mode of transportation choice behaviors under the influence of traffic information. Chapter 1 describes the basic theories applied in this work, including game theory concepts and evolutionary dynamics. In Chapter 2, key studies from the literature regarding travel choice behavior are briefly examined. The third chapter describes the database and model used in this study. Limitations of the proposed modeling method and further research directions are discussed at the end of this chapter. 
+\pagenumbering{arabic}
+\thispagestyle{empty}
+
+\chapter{Concepts}\setcounter{page}{1}\thispagestyle{empty}
 \input{chapters/Chapter01}
 \chapter{Literature Review} 
 \input{chapters/Chapter02}
 
+\begin{thebibliography}{2}
+\bibitem{Boyd and Richerson, 1985}
+Boyd, R. and Richerson, P. J. (1985). Culture and the Evolutionary Process. University of Chicago Press.
+\bibitem{Maynard} 
+Maynard Smith, J. (1982). Evolution and the Theory of Games. Cambridge University Press, Cambridge.
+
+\bibitem{smith} 
+Maynard Smith, J. and Price, G. R. (1973). The logic of animal conflict. Nature, 246:15–18. 
+
+\bibitem{Marden and Shamma, 2015} 
+Marden, J. R. and Shamma, J. S. (2015). Game theory and distributed control. In Young, H.P. and Zamir, S., editors, Handbook of Game Theory with Economic Applications, volume 4, chapter 16, pages 861–899. Elsevier, Amsterdam.
+\bibitem{Nelson and Winter, 1982}
+Nelson, R. R. and Winter, S. G. (1982). An Evolutionary Theory of Economic Change. Harvard University Press.
+\bibitem{Quijano et al, 2017}
+Quijano, N., Ocampo-Martinez, C., Barreiro-Gomez, J., Obando, G., Pantoja, A., and Mojica-Nava, E. (2017). The role of population games and evolutionary dynamics in distributed control systems: The advantages of evolutionary game theory. IEEE Control Systems Magazine, 37(1):70–97.
+\bibitem{Litman,2011}
+Litman, T. (2011). Why and how to reduce the amount of land paved for roads
+and parking facilities. Environmental Practice. 13(1), pp. 38-46.
+\bibitem{Bravo et al, 2009}
+Bravo et al, (2009) An integrated behavioral model of the land-use and transport systems with network congestion and location externalities. Transportation Research Part B. 44(4), pp. 584-596.
+https://doi.org/10.1016/j.trb.2009.08.002
+\bibitem{Richard, David, 1982}
+Richard, B. David, M. and Richard, W(1982). A Selective Review of Travel-Mode Choice Models, pp. 370-375.
+\end{thebibliography}
 
 \end{document}

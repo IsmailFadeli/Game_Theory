@@ -139,7 +139,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>singletitle</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>skipbib</bcf:key>
@@ -175,7 +175,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>false</bcf:value>
+      <bcf:value>init</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
@@ -195,7 +195,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useprefix</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useafterword</bcf:key>
@@ -412,7 +412,16 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">dashed</bcf:option>
+    <bcf:option datatype="boolean">annotation</bcf:option>
+    <bcf:option datatype="boolean">noremoteinfo</bcf:option>
+    <bcf:option datatype="boolean">showmedium</bcf:option>
+    <bcf:option datatype="boolean">guessmedium</bcf:option>
+    <bcf:option datatype="boolean">firstlonghand</bcf:option>
+    <bcf:option datatype="boolean">nofullfootnote</bcf:option>
+    <bcf:option datatype="boolean">mancitepar</bcf:option>
+    <bcf:option datatype="boolean">footnoterulestrict</bcf:option>
+    <bcf:option datatype="boolean">mladraft</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>
@@ -493,7 +502,6 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">subentry</bcf:option>
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">sortexclusion</bcf:option>
@@ -579,7 +587,10 @@
     <bcf:option datatype="boolean" backendout="1">doi</bcf:option>
     <bcf:option datatype="boolean" backendout="1">eprint</bcf:option>
     <bcf:option datatype="boolean" backendout="1">related</bcf:option>
-    <bcf:option datatype="boolean" backendout="1">subentry</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">totalnames</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">uniquetranslator</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">noremoteinfo</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">nodate</bcf:option>
     <bcf:option datatype="integer" backendin="maxcitenames,maxbibnames,maxsortnames">maxnames</bcf:option>
     <bcf:option datatype="integer" backendin="mincitenames,minbibnames,minsortnames">minnames</bcf:option>
     <bcf:option datatype="integer" backendout="1">maxbibnames</bcf:option>
@@ -2179,9 +2190,25 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">ref.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Nelson and Winter</bcf:citekey>
+    <bcf:citekey order="1">1982</bcf:citekey>
+    <bcf:citekey order="2">Boyd and Richerson</bcf:citekey>
+    <bcf:citekey order="2">1985</bcf:citekey>
+    <bcf:citekey order="3">Richard</bcf:citekey>
+    <bcf:citekey order="3">David</bcf:citekey>
+    <bcf:citekey order="3">1982</bcf:citekey>
+    <bcf:citekey order="4">Litman</bcf:citekey>
+    <bcf:citekey order="4">2011</bcf:citekey>
+    <bcf:citekey order="5">Bravo et al</bcf:citekey>
+    <bcf:citekey order="5">2009</bcf:citekey>
+    <bcf:citekey order="6">Hollander et al</bcf:citekey>
+    <bcf:citekey order="6">2006</bcf:citekey>
+    <bcf:citekey order="7">Quijano et al</bcf:citekey>
+    <bcf:citekey order="7">2017</bcf:citekey>
+    <bcf:citekey order="8">Marden and Shamma</bcf:citekey>
+    <bcf:citekey order="8">2015</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

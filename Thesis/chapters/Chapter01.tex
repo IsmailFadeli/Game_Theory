@@ -27,7 +27,7 @@ Keeps track of what each player knows when he or she makes a decision :
 \begin{itemize}
 \item Poker: bet sequentially - what can a given player see when they bet. 
 \end{itemize}
-\subsection{Normal Form: Matrix form or strategic form}
+\subsection{Normal Form}
 A normal form represents a list of what players get on function of their actions.
 Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \begin{itemize}
@@ -37,9 +37,12 @@ Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \item Utility function or Payoff function for player $i: u_i : A $  $\to$ ${\Bbb{R}}$
 \subitem $u = (u_1,..., u_n)$, is a profile of utility functions.
 \end{itemize}
-\subsection{Best Response and Nash Equilibrium}
-\paragraph{Best Response (Definition):}
-$a_i^* \in BR(a_{-i}) $ iff $  \forall a_i \in A_i, u_i(a_i^*,a_{-i}) \geq u_i(a_i, a_{-i})$  
+\subsection{Best Response and Nash Equilibrium}\label{subsection}
+\paragraph{Best Response :}
+\begin{equation}\label{eq:1}
+ a_i^* \in BR(a_{-i})  iff   \forall a_i \in A_i, u_i(a_i^*,a_{-i}) \geq u_i(a_i, a_{-i})
+\end{equation}
+ 
 \paragraph{Nash Equilibrium (Definition):}
 $a = <a_1,...,a_n>$ is a "\textbf{pure strategy}" if $\forall i, a_i \in BR(a_{-i})$
 \subsection{Dominant strategies}
@@ -52,7 +55,7 @@ let $s_i$ and $s_i^`$ be two strategies for player $i$, and let $S_{-i}$ be the 
 \item A strategy is called \textbf{dominant} if it dominates all others.
 \item A strategy profile consisting of dominant strategies for every player must be a Nash Equilibrium.
 \end{itemize}
-\subsection{Pareto Optimality}
+\subsection{Pareto Optimal}
 \title{\textbf{Definition:}}
 An outcome $o^*$ is \textbf{Pareto-optimal} if there is no other outcome that Pareto-dominates it.
 \section{Mixed Strategies and Nash Equilibrium}
@@ -73,7 +76,10 @@ In order to find the payoff if all the players follow mixed strategy profile $s 
 \subsection{Best Response and Nash Equilibrium}The definitions of best response and Nash equilibrium are generalized from actions to strategies. 
 
 \paragraph{Definition (Best Response): }
-$$ s_i^* \in BR(s_{-i}) \textbf{ if }   \forall s_i \in S_i, u_i(s_i^*,s_{-i}) \geq u_i(s_i, s_{-i})$$ 
+\begin{equation}
+s_i^* \in BR(s_{-i}) \textbf{ if }   \forall s_i \in S_i, u_i(s_i^*,s_{-i}) \geq u_i(s_i, s_{-i})
+\end{equation}
+
 
 \paragraph{Definition (Nash Equilibrium)}
 $$s = <s_1,...,s_n>\textbf{ is  a }\textbf{Nash Equilibrium if } \forall i, s_i \in BR(s_{-i})$$
@@ -106,8 +112,12 @@ Computing a Nash Equilibrium is a \textbf{PPAD-complete}\footnote{PPAD : Polynom
 \subsection{Weakly Dominated Strategies}
 \paragraph{Definition}a strategy $a_i \in A_i $ is weakly dominated by $a'_i \in A_i$ if
 \begin{equation} u_i(a_i, a_{-i}) \leq u_i(a'_i, a_{-i}) ,  \forall   a_{-i} \in A_{-i} \end{equation}
-and \begin{equation} u_i(a_i, a_{-i}) < u_i(a'_i, a_{-i}) ,\exists   a_{-i} \in A_{-i} \end{equation} 
-\section{Extensive Forms}{The extensive form is an alternative representation that makes the temporal structure explicit.}
+\begin{center}
+and 
+\end{center}
+
+\begin{equation} u_i(a_i, a_{-i}) < u_i(a'_i, a_{-i}) ,\exists   a_{-i} \in A_{-i} \end{equation} 
+\section{Perfect inf}{The extensive form is an alternative representation that makes the temporal structure explicit.}
 \begin{itemize}
 \item{Perfect information extensive form games.}
 \item{Imperfect information extensive form games.}
@@ -128,9 +138,59 @@ where:
 \item{Utility function: $u = (u_1,...,u_n)$ where $u_i : Z \to R$
 }
 \end{itemize} 
-\section{Evolutionary Game Theory}
-\paragraph{}Evolution and Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
+\paragraph{}figure \ref{fig:scaled_diss} shows a sharing game represented in the extensive form
+\begin{figure}[h]
+ 
+  \centering
+  \begin{tikzpicture}[baseline] % baseline makes the example number stay at the top of the tree
+   \Tree[.1 [.\textit{2 } [.\textit{(0,0) } ] [.\textit{(2,0) } ]][.\textit{2 } [.\textit{(0,0) } ] [.\textit{(1,1) } ]][.\textit{2 } [.\textit{(0,0) } ] [.\textit{(0,2) } ]]]
+     \end{tikzpicture}%
+  \caption{Sharing Game\label{fig:scaled_diss}}
+\end{figure}
+\subsection{Pure Strategies}
+\paragraph{} A pure strategy for a player in a perfect-information game is a complete specification of which action to take at each node belonging to that player.
+\paragraph{Definition} Let $G = (N, A, H, Z,\chi ,\rho, \sigma, u ) $ be a perfect-information extensive-form game. Then the pure strategies of player $i$ consist of the cross product\\
+\begin{center}
+$ \prod_{h \in H, \rho(h)=i}\chi(h)$
+\end{center}
 \paragraph{}
+Given our new definition of pure strategy, we can reuse our old definitions of mixed strategies and Nash equilibrium in \ref{eq:1}.
+\subsection{Sub-game Perfection}
+
+\begin{mydef}[Sub-game Perfection]\label{def:def555}
+The set of sub-games of $G$ is defined by the sub-games of $G$ rooted at each of the nodes in $G$.
+\end{mydef}
+\paragraph{}Let $s$ be a  sub-game perfect equilibrium of $G$ if for any sub-game $G'$ of $G$, the restriction of $s$ to G' is a Nash Equilibrium of $G'$. Since $G$ is its own sub-game , every sub-game perfect is a Nash Equilibrium.
+\subsection{Backward Induction}
+\paragraph{}Backward Induction has been used in solving games since John von Neumann and Oskar Morgenstern published their book, Theory of Games and Economic Behaviors in 1944.
+\paragraph{}The idea behind Backward Induction is to identify the equilibrium in the buttom trees, and adopt these as one moves up the tree as the next algorithm shows.
+
+\begin{algorithm}
+\caption{Backward Induction\label{fig:scaled_back}}
+\begin{algorithmic}
+\RETURN $u(h)$
+\IF{$h \in Z$}
+\RETURN{$u(h)$}
+\ENDIF
+\STATE $best-util \leftarrow -50$
+\FORALL{$a \in \rho(h)$} 
+\STATE $util-at-child \leftarrow BACKWARDINDUCTION(\sigma(h,a))$ 
+\IF{$util-at-child_p(h) >best-util_p(h)$}
+\STATE $best-util \leftarrow util-at-child$
+\ENDIF
+\ENDFOR
+\RETURN $best-util$
+\end{algorithmic}
+\end{algorithm}
+
+\paragraph{} Denote $util_at_child$ is a utility vector for each player.
+\section{Evolutionary Game Theory}
+
+\paragraph{}Evolution and Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
+
+\paragraph{}After the emergence of traditional game theory, biologists realized the potential of game theory to formally study adaptation and convolution of biological populations, especially in contexts where the fitness of a phenotype depends on the composition of the population (Hamilton, 1967). The main assumption of evolutionary game theory was that strategies with greater payoffs at a particular time would tend to spread more and thus have better chances of being present in the future.
+\paragraph{}The most important concept of evolutionary thinking that was introduced by Manynard Smith and Price (1973) is the notion of \textbf{Evolutionary Stable Strategy}(ESS), for 2-player symmetric games played by individuals belonging to the same population. Furthermore, a strategy $s$ is an ESS if and only if, when adopted by all members of a population, meaning that any other strategy $i$ that could enter the population in a low percentage would obtain a strictly  lower expected payoff in the population than the $s$ strategy.
+\paragraph{}The basic ideas behind Evolutionary game theory is that strategies with greater payoffs tend to spread more, and that fitness is frequency dependent soon transcended the borders of biology and started to spread through many other disciplines. In economic context, it was understood that natural selection would derive from competition among entities for small resources or market shares. In social contexts, evolution was often understood as cultural evolution, and it referred to dynamic changes in behavior or ideas over time (\cite{Nelson and Winter, 1982})(\cite{Boyd and Richerson, 1985}).
 \paragraph{}In order to extend this understanding further, let's consider this example:
 Suppose that a small group of mutants choosing a strategy different from $\delta$* to enter the population.
 \begin{itemize}
@@ -142,5 +202,4 @@ Suppose that a small group of mutants choosing a strategy different from $\delta
 	\item For any mutation to be driven out of the population we need the expected payoff of any mutant to be less than the expected payoff of normal organism :\\
 	\begin{equation}(1-\varepsilon)u(\delta*,\delta*)+\varepsilon u(\delta*,\delta) > (1-\varepsilon)u(\delta,\delta*)+\varepsilon u(\delta*,\delta)  \end{equation}
 \end{itemize}
-
 
