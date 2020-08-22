@@ -6,6 +6,8 @@ Game Theory is the study of rational behavior in situations involving interdepen
 \item Rational behavior: players can do the best they can, in their own eyes;
 \item Because of the players' interdependence, a rational decision in a game must be based on a prediction of others' responses;
 \end{itemize}
+\clearpage
+
 \subsection{The parts of a Game} 
 A Game consists of three parts : 
 Players, Actions and Payoffs
@@ -16,7 +18,9 @@ What can the players do ?
 Decide when to sell a stock, decide how to vote or enter a bid in an auction...
 \subsubsection{Payoffs}
 Payoffs can represent the motivation of the players, for example : Do they care about profit ? or Do they care about other players ? 
+
 \subsection{Defining Games} Games can be represented in two methods : Normal forms and Extensive Forms.
+
 \subsection{Extensive Form}
 An extensive form game includes timing of moves. 
 Players move sequentially, represented as a tree.
@@ -27,8 +31,9 @@ Keeps track of what each player knows when he or she makes a decision :
 \begin{itemize}
 \item Poker: bet sequentially - what can a given player see when they bet. 
 \end{itemize}
-\subsection{Normal Form}
-A normal form represents a list of what players get on function of their actions.
+
+\subsection{Normal Form Games}
+\paragraph{}A normal form game is a strategic interaction in which each of $n$ players chooses a strategy and the receives a payoff that depends on all agents choices of strategy. In other words, a normal form represents a list of what players get on function of their actions.
 Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \begin{itemize}
 \item Players: $ N = {1, ... , n} $ is a finite set of $n$, indexed by $i$.
@@ -37,6 +42,7 @@ Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \item Utility function or Payoff function for player $i: u_i : A $  $\to$ ${\Bbb{R}}$
 \subitem $u = (u_1,..., u_n)$, is a profile of utility functions.
 \end{itemize}
+
 \subsection{Best Response and Nash Equilibrium}\label{subsection}
 \paragraph{Best Response :}
 \begin{equation}\label{eq:1}
@@ -45,6 +51,7 @@ Finite, n-person normal form game  ⟨$N, A, u$⟩:
  
 \paragraph{Nash Equilibrium (Definition):}
 $a = <a_1,...,a_n>$ is a "\textbf{pure strategy}" if $\forall i, a_i \in BR(a_{-i})$
+
 \subsection{Dominant strategies}
 let $s_i$ and $s_i^`$ be two strategies for player $i$, and let $S_{-i}$ be the set of all possible strategy profiles for other players.
 \bigbreak
@@ -55,9 +62,11 @@ let $s_i$ and $s_i^`$ be two strategies for player $i$, and let $S_{-i}$ be the 
 \item A strategy is called \textbf{dominant} if it dominates all others.
 \item A strategy profile consisting of dominant strategies for every player must be a Nash Equilibrium.
 \end{itemize}
+
 \subsection{Pareto Optimal}
 \title{\textbf{Definition:}}
 An outcome $o^*$ is \textbf{Pareto-optimal} if there is no other outcome that Pareto-dominates it.
+
 \section{Mixed Strategies and Nash Equilibrium}
 \title{\textbf{Definition:}}
 A strategy $s_i$ for agent $i$ as any probability distribution over the actions $A_i$.
@@ -69,28 +78,28 @@ these actions are called the support of the mixed strategy.
 \item Let the set of all strategies for $i$ be $S_i$
 \item let the set of all strategy profiles be $S = S_1 \times... \times S_n$
 \end{itemize}
+
 \subsection{Utility in Mixed Strategies}
 In order to find the payoff if all the players follow mixed strategy profile $s \in S$ we can use the \textbf{expected utility} from decision theory: 
 \begin{equation} u_i(s) = \sum_{a \in A}u_i(a)P(a|s)\end{equation}
 \begin{equation} P(a|s) = \prod_{j \in N}s_j(a_j)\end{equation}
-\subsection{Best Response and Nash Equilibrium}The definitions of best response and Nash equilibrium are generalized from actions to strategies. 
 
+\subsection{Best Response and Nash Equilibrium}The definitions of best response and Nash equilibrium are generalized from actions to strategies. 
 \paragraph{Definition (Best Response): }
 \begin{equation}
 s_i^* \in BR(s_{-i}) \textbf{ if }   \forall s_i \in S_i, u_i(s_i^*,s_{-i}) \geq u_i(s_i, s_{-i})
 \end{equation}
-
-
 \paragraph{Definition (Nash Equilibrium)}
 $$s = <s_1,...,s_n>\textbf{ is  a }\textbf{Nash Equilibrium if } \forall i, s_i \in BR(s_{-i})$$
-
 \paragraph{Theorem (Nash, 1950)} Every finite game has a Nash equilibrium.
+
 \subsection{Computing Nash Equilibrium}
 \paragraph{Two algorithms for finding NE }
 \begin{itemize}
 \item LCP(Linear Complimentary) [Lemke-Howson].
 \item Support Enumeration Method [Porter et al].
 \end{itemize}
+
 \subsection{Complexity Analysis}
 \title{\textbf{Theorem:}}
 Computing a Nash Equilibrium is a \textbf{PPAD-complete}\footnote{PPAD : Polynomial Parity Argument on Directed Graphs} , this theorem has been proven for:
@@ -99,6 +108,7 @@ Computing a Nash Equilibrium is a \textbf{PPAD-complete}\footnote{PPAD : Polynom
 \item for games with 3 players;
 \item for games with 2 players;
 \end{itemize}
+
 \subsection{Summary of mixed strategies}
 \begin{itemize}
 \item Some games have mixed strategy Nash Equilibria.
@@ -109,15 +119,16 @@ Computing a Nash Equilibrium is a \textbf{PPAD-complete}\footnote{PPAD : Polynom
 \subsection{Strictly Dominated Strategies}
 \paragraph{Definition}a strategy $a_i \in A_i $ is strictly dominated by $a'_i \in A_i$ if
 \begin{equation} u_i(a_i, a_{-i}) < u_i(a'_i, a_{-i}) ,  \forall   a_{-i} \in A_{-i} \end{equation}
+
 \subsection{Weakly Dominated Strategies}
 \paragraph{Definition}a strategy $a_i \in A_i $ is weakly dominated by $a'_i \in A_i$ if
 \begin{equation} u_i(a_i, a_{-i}) \leq u_i(a'_i, a_{-i}) ,  \forall   a_{-i} \in A_{-i} \end{equation}
 \begin{center}
 and 
 \end{center}
-
 \begin{equation} u_i(a_i, a_{-i}) < u_i(a'_i, a_{-i}) ,\exists   a_{-i} \in A_{-i} \end{equation} 
-\section{Perfect inf}{The extensive form is an alternative representation that makes the temporal structure explicit.}
+
+\section{Perfect information games}{The extensive form is an alternative representation that makes the temporal structure explicit.}
 \begin{itemize}
 \item{Perfect information extensive form games.}
 \item{Imperfect information extensive form games.}
@@ -155,17 +166,16 @@ $ \prod_{h \in H, \rho(h)=i}\chi(h)$
 \end{center}
 \paragraph{}
 Given our new definition of pure strategy, we can reuse our old definitions of mixed strategies and Nash equilibrium in \ref{eq:1}.
-\subsection{Sub-game Perfection}
 
+\subsection{Sub-game Perfection}
 \begin{mydef}[Sub-game Perfection]\label{def:def555}
 The set of sub-games of $G$ is defined by the sub-games of $G$ rooted at each of the nodes in $G$.
 \end{mydef}
 \paragraph{}Let $s$ be a  sub-game perfect equilibrium of $G$ if for any sub-game $G'$ of $G$, the restriction of $s$ to G' is a Nash Equilibrium of $G'$. Since $G$ is its own sub-game , every sub-game perfect is a Nash Equilibrium.
-\subsection{Backward Induction}
-\paragraph{}Backward Induction has been used in solving games since John von Neumann and Oskar Morgenstern published their book, Theory of Games and Economic Behaviors in 1944.
-\paragraph{}The idea behind Backward Induction is to identify the equilibrium in the buttom trees, and adopt these as one moves up the tree as the next algorithm shows.
 
-\begin{algorithm}
+\subsection{Backward Induction}
+
+\begin{algorithm}{h}
 \caption{Backward Induction\label{fig:scaled_back}}
 \begin{algorithmic}
 \RETURN $u(h)$
@@ -182,6 +192,9 @@ The set of sub-games of $G$ is defined by the sub-games of $G$ rooted at each of
 \RETURN $best-util$
 \end{algorithmic}
 \end{algorithm}
+\paragraph{}Backward Induction has been used in solving games since John von Neumann and Oskar Morgenstern published their book, Theory of Games and Economic Behaviors in 1944.
+\paragraph{}The idea behind Backward Induction is to identify the equilibrium in the buttom trees, and adopt these as one moves up the tree as the next algorithm shows.
+
 
 \paragraph{} Denote $util_at_child$ is a utility vector for each player.
 \section{Evolutionary Game Theory}
@@ -202,4 +215,31 @@ Suppose that a small group of mutants choosing a strategy different from $\delta
 	\item For any mutation to be driven out of the population we need the expected payoff of any mutant to be less than the expected payoff of normal organism :\\
 	\begin{equation}(1-\varepsilon)u(\delta*,\delta*)+\varepsilon u(\delta*,\delta) > (1-\varepsilon)u(\delta,\delta*)+\varepsilon u(\delta*,\delta)  \end{equation}
 \end{itemize}
+\subsection{Static Notions of Evolutionary Stability}
+\paragraph{}Maynard Smith offered a stability concept for populations of animals sharing a common behavioral trait, that of player a mixed strategy in  the game. Maynard defines such a population as stable if it is resistant to invasion by a small group of mutants carrying a different strategy(Sandholm, 2017).
+\paragraph{}Suppose that a large population is randomly matched to play the symmetric normal form game $A$. We call a mixed strategy $x \in X$ an \textbf{evolutionarily stable strategy} (ESS) if 
+\begin{equation}\label{eq:5}
+x' A((1 - \epsilon)x + \epsilon y) > y' A((1 - \epsilon)x + \epsilon y) 
+\end{equation}
+\begin{center}
+$\forall \epsilon \leq \epsilon(y)$ and $y \neq x.$
+\end{center}
+\paragraph{}In order to explain condition \ref{eq:5}, let's consider a population programmed to play mixed strategy $x$ is invaded by a small group of mutants programmed to play the alternative mixed strategy $y$. Equation \ref{eq:5} requires that regardless of the choice of $y$, an incumbent's expected payoff from a random match in the post entry population exceeds that of a mutant so long as the size of the invading group is sufficiently small.
+\paragraph{}The definition of ESS above can also be expressed as a combination of two conditions: 
+\begin{equation}\label{eq:6}
+x' A x \geq y' A x  \: \forall  \: y \in X
+\end{equation}
+\begin{center}
+For all $y \neq x.$
+\end{center}
+\begin{equation}\label{eq:7}
+[x' A x = y' A x] \implies [x' A y > y' A y]
+\end{equation}
+\paragraph{}Condition \ref{eq:6} requires that the incumbent strategy $x$ be a best response to itself. Condition \ref{eq:7} requires that if a mutant strategy $y$ is an alternative best response against the incumbent strategy $x$ then the incumbent ears a higher payoff against the mutant than the mutant earns against itself.
+\paragraph{}Maynard Smith's notion of ESS attempts to capture the dynamic process of natural selection using a static definition.
 
+\section{Population Games}
+\paragraph{}Population games provide a simple and general framework for studying strategic interactions in large populations whose members play pure strategies. The simplest population games are generated by random matching in normal form games, but the population game framework allows for interactions of a more intricate nature.
+\paragraph{}We focus here on games played by a single population. All agents in this game play equivalent roles. We suppose that there is a unit mass of agents, each of whom chooses a pure strategy from the set
+ $S = {1, ... , n}$. The aggregate behavior of these agents is described by a population state $x \in X$, with $x_j$ representing the proportion of agents choosing pure strategy $j$. We identify a population game with a continuous vector valued payoff function $ F:X \rightarrow R^n$. The scalar $F(x)$ represents the payoff to strategy $i$ when the population state is $x$.
+\paragraph{}Population state $x^*$ is a Nash Equilibrium of $F$ if no agent can improve his payoff by unilaterally switching strategies.

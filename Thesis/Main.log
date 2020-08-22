@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  20 AUG 2020 00:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  21 AUG 2020 22:58
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -921,7 +921,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 22.
+less on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -945,20 +945,20 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count429
@@ -1050,42 +1050,48 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' not found.
 
 No file Main.bbl.
-Package biblatex Info: Reference section=0 on input line 27.
-Package biblatex Info: Reference segment=0 on input line 27.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
 [1
 
-{C:/Users/gg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
-(Main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+{C:/Users/gg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [0
+
+] [1
+
+
+]
+[2
+
+
+] [3
+
+] (Main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2
+) [4
+
 
 ])
 \tf@toc=\write6
 \openout6 = `Main.toc'.
 
- [3] (Main.lof)
+ [5] (Main.lof)
 \tf@lof=\write7
 \openout7 = `Main.lof'.
 
 
-[4
-
-] (Main.lot)
-\tf@lot=\write8
-\openout8 = `Main.lot'.
-
- [5
+[6
 
 ] [1
+
 
 ]
 Chapter 1.
@@ -1094,7 +1100,7 @@ Chapter 1.
 ]
 
 Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
- on input line 37.
+ on input line 42.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1102,102 +1108,117 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2] [3] [4]
-Overfull \hbox (46.25575pt too wide) in paragraph at lines 125--127
+[2
+
+] [3] [4]
+Overfull \hbox (46.25575pt too wide) in paragraph at lines 136--138
 \OT1/cmr/m/n/12 A fi-nite per-fect in-for-ma-tion game in ex-ten-sive form is d
 e-fined by the tu-ple ($\OML/cmm/m/it/12 N; A; H; Z; ; ; ; u$\OT1/cmr/m/n/12
  )
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 [6] [7]
 
-LaTeX Warning: Citation 'Nelson and Winter' on page 8 undefined on input line 1
-93.
+LaTeX Warning: Citation 'Nelson and Winter' on page 8 undefined on input line 2
+06.
 
 
-LaTeX Warning: Citation '1982' on page 8 undefined on input line 193.
+LaTeX Warning: Citation '1982' on page 8 undefined on input line 206.
 
 
 LaTeX Warning: Citation 'Boyd and Richerson' on page 8 undefined on input line 
-193.
+206.
 
 
-LaTeX Warning: Citation '1985' on page 8 undefined on input line 193.
+LaTeX Warning: Citation '1985' on page 8 undefined on input line 206.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-) [8]
+[9]) [10]
 Chapter 2.
-(chapters/Chapter02.tex [9
+(chapters/Chapter02.tex [11
 
 ]
 
-LaTeX Warning: Citation 'Richard' on page 10 undefined on input line 12.
+LaTeX Warning: Citation 'Richard' on page 12 undefined on input line 12.
 
 
-LaTeX Warning: Citation 'David' on page 10 undefined on input line 12.
+LaTeX Warning: Citation 'David' on page 12 undefined on input line 12.
 
 
-LaTeX Warning: Citation '1982' on page 10 undefined on input line 12.
+LaTeX Warning: Citation '1982' on page 12 undefined on input line 12.
 
 
-LaTeX Warning: Citation 'Litman' on page 10 undefined on input line 32.
-
-
-LaTeX Warning: Citation '2011' on page 10 undefined on input line 32.
-
-
-Overfull \hbox (13.12997pt too wide) in paragraph at lines 32--33
- [] \OT1/cmr/m/n/12 The travel mode choice is an im-por-tant step of the trans-
-porta-tion forecasting([];
+Overfull \hbox (0.20744pt too wide) in paragraph at lines 30--31
+ [] \OT1/cmr/m/n/12 It is also im-por-tant to note that pro-bit mod-els are al-
+ways as-so-ci-ated with maximum-
  []
 
-[10
+[12
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+] [13]
 
- []
-
-
-LaTeX Warning: Citation 'Bravo et al' on page 11 undefined on input line 35.
+LaTeX Warning: Citation 'Litman' on page 14 undefined on input line 51.
 
 
-LaTeX Warning: Citation '2009' on page 11 undefined on input line 35.
+LaTeX Warning: Citation '2011' on page 14 undefined on input line 51.
 
 
-LaTeX Warning: Citation 'Hollander et al' on page 11 undefined on input line 40
+LaTeX Warning: Citation 'Bravo et al' on page 14 undefined on input line 51.
+
+
+LaTeX Warning: Citation '2009' on page 14 undefined on input line 51.
+
+[14]
+
+LaTeX Warning: Citation 'Hollander et al' on page 15 undefined on input line 62
 .
 
 
-LaTeX Warning: Citation '2006' on page 11 undefined on input line 40.
+LaTeX Warning: Citation '2006' on page 15 undefined on input line 62.
+
+[15]
+
+LaTeX Warning: Citation 'Quijano et al' on page 16 undefined on input line 79.
 
 
-LaTeX Warning: Citation 'Quijano et al' on page 11 undefined on input line 56.
+LaTeX Warning: Citation '2017' on page 16 undefined on input line 79.
 
 
-LaTeX Warning: Citation '2017' on page 11 undefined on input line 56.
+LaTeX Warning: Citation 'Marden and Shamma' on page 16 undefined on input line 
+79.
 
 
-LaTeX Warning: Citation 'Marden and Shamma' on page 11 undefined on input line 
-56.
+LaTeX Warning: Citation '2015' on page 16 undefined on input line 79.
 
+) [16]
+Chapter 3.
+(chapters/Chapter03.tex [17
 
-LaTeX Warning: Citation '2015' on page 11 undefined on input line 56.
+] [18
 
-) [11] [12] [13
+]
+Overfull \hbox (268.10454pt too wide) in paragraph at lines 21--22
+[]\OT1/cmr/m/n/12 The strat-egy sets of the play-ers are $\OML/cmm/m/it/12 S[] 
+\OT1/cmr/m/n/12 = []$ and $[]$. 
+ []
+
+) [19] [20
 
 ] (Main.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1209,10 +1230,10 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23573 strings out of 480930
- 443739 string characters out of 2909556
- 1073604 words of memory out of 3000000
- 39042 multiletter control sequences out of 15000+200000
+ 23578 strings out of 480930
+ 443826 string characters out of 2909556
+ 1072695 words of memory out of 3000000
+ 39047 multiletter control sequences out of 15000+200000
  542717 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,64p,871b,2375s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1229,9 +1250,9 @@ mr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (20 pages, 198449 bytes).
+Output written on Main.pdf (29 pages, 219531 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

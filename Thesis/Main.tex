@@ -17,6 +17,18 @@
 \usepackage {fancybox}
 \newtheorem{mydef}{Definition}
 \fancyhf{}
+\newenvironment{dedication}
+  {\clearpage           % we want a new page
+   \thispagestyle{empty}% no header and footer
+   \vspace*{\stretch{1}}% some space at the top 
+   \itshape             % the text is in italics
+   \raggedleft          % flush to the right margin
+  }
+  {\par % end the paragraph
+   \vspace{\stretch{3}} % space at bottom is three times that at the top
+   \clearpage           % finish off the page
+  }
+
 \rhead{\thesection}
 \lhead{\leftmark}
 \fancyfoot[LE,RO]{\thepage}
@@ -24,6 +36,12 @@
 \renewcommand{\footrulewidth}{1pt}
 \pagenumbering{roman}
 \usepackage[nottoc]{tocbibind}
+\def\blankpage{%
+      \clearpage%
+      \thispagestyle{empty}%
+      \addtocounter{page}{-1}%
+      \null%
+      \clearpage}
 \begin{document}
 \begin{titlepage}
 
@@ -61,6 +79,11 @@
    
 
 \end{titlepage}
+\blankpage
+\begin{dedication}\thispagestyle{empty}
+Dedicated to google and wikipedia.
+\end{dedication}
+\clearpage
 \thispagestyle{empty}
 \thispagestyle{plain}
 \begin{center}
@@ -78,23 +101,28 @@
     \textbf{Abstract}
 \end{center}
 
+\clearpage
+\section*{Acknowledgment}\thispagestyle{empty}
+\clearpage
 \tableofcontents \thispagestyle{empty}
-\addcontentsline{toc}{chapter}{Introduction}
 \listoffigures
-\listoftables
+\addcontentsline{toc}{chapter}{Introduction}
 \clearpage
 
 \thispagestyle{empty}
-\section*{Introduction}
-\paragraph{}The purpose of this study is to describe how travelers adjust their mode of transportation choice behaviors under the influence of traffic information. Chapter 1 describes the basic theories applied in this work, including game theory concepts and evolutionary dynamics. In Chapter 2, key studies from the literature regarding travel choice behavior are briefly examined. The third chapter describes the database and model used in this study. Limitations of the proposed modeling method and further research directions are discussed at the end of this chapter. 
 \pagenumbering{arabic}
 \thispagestyle{empty}
+\chapter*{Introduction}
+\paragraph{}The purpose of this study is to describe how travelers adjust their mode of transportation choice behaviors under the influence of traffic information. Chapter 1 describes the basic theories applied in this work, including game theory concepts and evolutionary dynamics. In Chapter 2, key studies from the literature regarding travel choice behavior are briefly examined. The third chapter describes the database and model used in this study. Limitations of the proposed modeling method and further research directions are discussed at the end of this chapter. 
 
 \chapter{Concepts}\setcounter{page}{1}\thispagestyle{empty}
 \input{chapters/Chapter01}
+
 \chapter{Literature Review} 
 \input{chapters/Chapter02}
 
+\chapter{Contribution}
+\input{chapters/Chapter03}
 \begin{thebibliography}{2}
 \bibitem{Boyd and Richerson, 1985}
 Boyd, R. and Richerson, P. J. (1985). Culture and the Evolutionary Process. University of Chicago Press.
