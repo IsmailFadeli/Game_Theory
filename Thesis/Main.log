@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  21 AUG 2020 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  23 AUG 2020 19:13
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -942,7 +942,14 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count428
 \l__pdf_internal_box=\box88
 )
-(Main.aux)
+(Main.aux
+
+LaTeX Warning: Label `def:def1500' multiply defined.
+
+
+LaTeX Warning: Label `def:def100' multiply defined.
+
+)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -1066,12 +1073,12 @@ Package biblatex Info: Reference segment=0 on input line 45.
 ] [3
 
 ] (Main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
@@ -1111,50 +1118,68 @@ This may cause the page layout to be inconsistent, however.
 [2
 
 ] [3] [4]
-Overfull \hbox (46.25575pt too wide) in paragraph at lines 136--138
+Overfull \hbox (46.25575pt too wide) in paragraph at lines 135--137
 \OT1/cmr/m/n/12 A fi-nite per-fect in-for-ma-tion game in ex-ten-sive form is d
 e-fined by the tu-ple ($\OML/cmm/m/it/12 N; A; H; Z; ; ; ; u$\OT1/cmr/m/n/12
  )
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
+
+
+LaTeX Warning: Reference `eq:1' on page 6 undefined on input line 168.
 
 [6] [7]
-
-LaTeX Warning: Citation 'Nelson and Winter' on page 8 undefined on input line 2
-06.
-
-
-LaTeX Warning: Citation '1982' on page 8 undefined on input line 206.
+Overfull \hbox (9.30922pt too wide) in paragraph at lines 209--210
+[]\OT1/cmr/m/it/12 Given an in-fi-nite se-quence of pay-offs $\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 r[]; r[]; :::\OT1/cmr/m/n/12 )$
+ []
 
 
-LaTeX Warning: Citation 'Boyd and Richerson' on page 8 undefined on input line 
-206.
-
-
-LaTeX Warning: Citation '1985' on page 8 undefined on input line 206.
+Overfull \hbox (17.65862pt too wide) in paragraph at lines 216--217
+[]\OT1/cmr/m/it/12 Consider any $\OML/cmm/m/it/12 n$\OT1/cmr/m/it/12 -player
+ []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+LaTeX Warning: Citation 'Nelson and Winter' on page 9 undefined on input line 2
+40.
+
+
+LaTeX Warning: Citation '1982' on page 9 undefined on input line 240.
+
+
+LaTeX Warning: Citation 'Boyd and Richerson' on page 9 undefined on input line 
+240.
+
+
+LaTeX Warning: Citation '1985' on page 9 undefined on input line 240.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
-[9]) [10]
+[9]
+
+LaTeX Warning: Reference `eq:5' on page 10 undefined on input line 261.
+
+[10]) [11]
 Chapter 2.
-(chapters/Chapter02.tex [11
+(chapters/Chapter02.tex [12
 
 ]
 
-LaTeX Warning: Citation 'Richard' on page 12 undefined on input line 12.
+LaTeX Warning: Citation 'Richard' on page 13 undefined on input line 12.
 
 
-LaTeX Warning: Citation 'David' on page 12 undefined on input line 12.
+LaTeX Warning: Citation 'David' on page 13 undefined on input line 12.
 
 
-LaTeX Warning: Citation '1982' on page 12 undefined on input line 12.
+LaTeX Warning: Citation '1982' on page 13 undefined on input line 12.
 
 
 Overfull \hbox (0.20744pt too wide) in paragraph at lines 30--31
@@ -1162,63 +1187,65 @@ Overfull \hbox (0.20744pt too wide) in paragraph at lines 30--31
 ways as-so-ci-ated with maximum-
  []
 
-[12
+[13
 
-] [13]
+] [14]
 
-LaTeX Warning: Citation 'Litman' on page 14 undefined on input line 51.
-
-
-LaTeX Warning: Citation '2011' on page 14 undefined on input line 51.
+LaTeX Warning: Citation 'Litman' on page 15 undefined on input line 50.
 
 
-LaTeX Warning: Citation 'Bravo et al' on page 14 undefined on input line 51.
+LaTeX Warning: Citation '2011' on page 15 undefined on input line 50.
 
 
-LaTeX Warning: Citation '2009' on page 14 undefined on input line 51.
-
-[14]
-
-LaTeX Warning: Citation 'Hollander et al' on page 15 undefined on input line 62
-.
+LaTeX Warning: Citation 'Bravo et al' on page 15 undefined on input line 50.
 
 
-LaTeX Warning: Citation '2006' on page 15 undefined on input line 62.
+LaTeX Warning: Citation '2009' on page 15 undefined on input line 50.
 
 [15]
 
-LaTeX Warning: Citation 'Quijano et al' on page 16 undefined on input line 79.
+LaTeX Warning: Citation 'Hollander et al' on page 16 undefined on input line 61
+.
 
 
-LaTeX Warning: Citation '2017' on page 16 undefined on input line 79.
+LaTeX Warning: Citation '2006' on page 16 undefined on input line 61.
+
+[16]
+
+LaTeX Warning: Citation 'Quijano et al' on page 17 undefined on input line 78.
 
 
-LaTeX Warning: Citation 'Marden and Shamma' on page 16 undefined on input line 
-79.
+LaTeX Warning: Citation '2017' on page 17 undefined on input line 78.
 
 
-LaTeX Warning: Citation '2015' on page 16 undefined on input line 79.
+LaTeX Warning: Citation 'Marden and Shamma' on page 17 undefined on input line 
+78.
 
-) [16]
+
+LaTeX Warning: Citation '2015' on page 17 undefined on input line 78.
+
+) [17]
 Chapter 3.
-(chapters/Chapter03.tex [17
+(chapters/Chapter03.tex [18
 
-] [18
+] [19
 
 ]
-Overfull \hbox (268.10454pt too wide) in paragraph at lines 21--22
+Overfull \hbox (268.10454pt too wide) in paragraph at lines 20--21
 []\OT1/cmr/m/n/12 The strat-egy sets of the play-ers are $\OML/cmm/m/it/12 S[] 
 \OT1/cmr/m/n/12 = []$ and $[]$. 
  []
 
-) [19] [20
+[20] [21] [22]) [23] [24] (chapters/Conclusion.tex) [25
+
+] [26
 
 ] (Main.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1230,29 +1257,33 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23578 strings out of 480930
- 443826 string characters out of 2909556
- 1072695 words of memory out of 3000000
- 39047 multiletter control sequences out of 15000+200000
- 542717 words of font info for 63 fonts, out of 3000000 for 9000
+ 24149 strings out of 480930
+ 453924 string characters out of 2909556
+ 1083950 words of memory out of 3000000
+ 39614 multiletter control sequences out of 15000+200000
+ 543116 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,64p,871b,2375s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\gg\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Main.pdf (29 pages, 219531 bytes).
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb>
+Output written on Main.pdf (35 pages, 272898 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

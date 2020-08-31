@@ -17,7 +17,7 @@ Players are the decision makers and they can be : People, Governments or Compani
 What can the players do ?
 Decide when to sell a stock, decide how to vote or enter a bid in an auction...
 \subsubsection{Payoffs}
-Payoffs can represent the motivation of the players, for example : Do they care about profit ? or Do they care about other players ? 
+Payoffs can represent the motivation of the players.
 
 \subsection{Defining Games} Games can be represented in two methods : Normal forms and Extensive Forms.
 
@@ -44,13 +44,16 @@ Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \end{itemize}
 
 \subsection{Best Response and Nash Equilibrium}\label{subsection}
-\paragraph{Best Response :}
-\begin{equation}\label{eq:1}
+For $a_i$ to be a best response:
+\begin{mydef}[Best Response ]\label{def:def1500}
+\begin{equation}\label{eq:1666}
  a_i^* \in BR(a_{-i})  iff   \forall a_i \in A_i, u_i(a_i^*,a_{-i}) \geq u_i(a_i, a_{-i})
 \end{equation}
- 
-\paragraph{Nash Equilibrium (Definition):}
+\end{mydef}
+\begin{mydef}[Nash Equilibrium ]\label{def:def1500}
+
 $a = <a_1,...,a_n>$ is a "\textbf{pure strategy}" if $\forall i, a_i \in BR(a_{-i})$
+\end{mydef}
 
 \subsection{Dominant strategies}
 let $s_i$ and $s_i^`$ be two strategies for player $i$, and let $S_{-i}$ be the set of all possible strategy profiles for other players.
@@ -62,10 +65,6 @@ let $s_i$ and $s_i^`$ be two strategies for player $i$, and let $S_{-i}$ be the 
 \item A strategy is called \textbf{dominant} if it dominates all others.
 \item A strategy profile consisting of dominant strategies for every player must be a Nash Equilibrium.
 \end{itemize}
-
-\subsection{Pareto Optimal}
-\title{\textbf{Definition:}}
-An outcome $o^*$ is \textbf{Pareto-optimal} if there is no other outcome that Pareto-dominates it.
 
 \section{Mixed Strategies and Nash Equilibrium}
 \title{\textbf{Definition:}}
@@ -96,8 +95,8 @@ $$s = <s_1,...,s_n>\textbf{ is  a }\textbf{Nash Equilibrium if } \forall i, s_i 
 \subsection{Computing Nash Equilibrium}
 \paragraph{Two algorithms for finding NE }
 \begin{itemize}
-\item LCP(Linear Complimentary) [Lemke-Howson].
-\item Support Enumeration Method [Porter et al].
+\item LCP(Linear Complimentary) (Lemke-Howson).
+\item Support Enumeration Method (Porter et al).
 \end{itemize}
 
 \subsection{Complexity Analysis}
@@ -113,7 +112,7 @@ Computing a Nash Equilibrium is a \textbf{PPAD-complete}\footnote{PPAD : Polynom
 \begin{itemize}
 \item Some games have mixed strategy Nash Equilibria.
 \item A player must be indifferent between the actions he or she randomizes over.
-\item Randomization happen in business interactions, society, sports...
+\item Randomization happen in business interactions, transport, society, sports...
 \end{itemize}
 
 \subsection{Strictly Dominated Strategies}
@@ -161,9 +160,10 @@ where:
 \subsection{Pure Strategies}
 \paragraph{} A pure strategy for a player in a perfect-information game is a complete specification of which action to take at each node belonging to that player.
 \paragraph{Definition} Let $G = (N, A, H, Z,\chi ,\rho, \sigma, u ) $ be a perfect-information extensive-form game. Then the pure strategies of player $i$ consist of the cross product\\
-\begin{center}
-$ \prod_{h \in H, \rho(h)=i}\chi(h)$
-\end{center}
+\begin{equation}
+\prod_{h \in H, \rho(h)=i}\chi(h)
+\end{equation}
+
 \paragraph{}
 Given our new definition of pure strategy, we can reuse our old definitions of mixed strategies and Nash equilibrium in \ref{eq:1}.
 
@@ -175,10 +175,10 @@ The set of sub-games of $G$ is defined by the sub-games of $G$ rooted at each of
 
 \subsection{Backward Induction}
 
-\begin{algorithm}{h}
+\begin{algorithm}
 \caption{Backward Induction\label{fig:scaled_back}}
 \begin{algorithmic}
-\RETURN $u(h)$
+ \STATE $u(h)$
 \IF{$h \in Z$}
 \RETURN{$u(h)$}
 \ENDIF
@@ -197,9 +197,43 @@ The set of sub-games of $G$ is defined by the sub-games of $G$ rooted at each of
 
 
 \paragraph{} Denote $util_at_child$ is a utility vector for each player.
+\section{Repeated Games}
+So far we've payed attention to one stage games, that  is, games in which players concerns do not extend than beyond the first stage interaction. However, games are often played with a futuristic mindset, and this can significantly change their outcomes and equilibrium strategies. The topic of this section is repeated games, that is, games in which players face similar situations on multiple occasions.
+\begin{mydef}[Average Utilities]\label{def:def666}
+Given an infinite sequence of payoffs $(r_1, r_2, ...) $ for player $i$, the average reward of $i$ is
+ \begin{equation}
+  \lim_{x \to +\infty} \sum_{j=1}^k \frac{r_j}{k}
+ \end{equation}	
+\end{mydef}
+\begin{mydef}[Discounted Utilities]\label{def:def777}
+Given an infinite sequence of payoffs  $(r_1, r_2, ...) $ for player $i$ and a discount factor $\beta$\ with $ 0 < \beta < 1 $, the corresponding future discount reward is: 
+ \begin{equation}\label{eq:777}
+ \sum_{j=1}^{+\infty} \beta^j r_j
+\end{equation}
+\end{mydef}
+\paragraph{}In \ref{eq:777}, the players care about the future $j$ just as much as the present, but with a probability of $1 - \beta$ the game will end in any round.
+\begin{mydef}[Equilibrium of Infinitely Repeated Games]\label{def:def888}
+Consider any $n$-player game $G = (N,A,u)$ and a payoff vector $r = (r_1, r2, ..., r_n)$
+ \begin{equation}\label{eq:999}
+	v_i = \min_{S_{-i} \in S_{-i}} \max_{S_i \in S} u_i (S_{-i}, S_i)
+\end{equation}
+\end{mydef}
+\paragraph{} The minmax value of the player $i$ in equation \ref{eq:999} is the amount of utility $i$ can get when the other player $-i$ plays a minmax strategy against him.
+\begin{mydef}[Enforceability]\label{def:def100}
+A payoff profile $r$ is enforceable if $i_i \geq v_i$.
+\end{mydef}
+\begin{mydef}[Feasibility]\label{def:def100}
+A payoff profile $r$ is feasible if there exists a rational non negative value $\alpha_a$ for all $i$, we can express $r_i$ as $\sum{a \in A}(\alpha_a u_i(a)$ with $\sum{a \in A}(\alpha_a) = 1$.
+\end{mydef}
+\subsubsection{Folk Theorem}
+Consider any $n$-player game $G$ and any payoff vector $(r_1, r_2, ...,r_n) $ :
+\begin{itemize}
+\item if $r$ is the payoff in any Nash equilibrium of the infinitely repeated game $G$ with average rewards, then for each player $i$,  $r_i$ is enforceable.
+\item if $r$ is both feasible and enforceable, then $r$ is the payoff in some Nash equilibrium of the infinitely repeated game with average rewards.
+\end{itemize}
 \section{Evolutionary Game Theory}
 
-\paragraph{}Evolution and Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
+Evolutionary Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
 
 \paragraph{}After the emergence of traditional game theory, biologists realized the potential of game theory to formally study adaptation and convolution of biological populations, especially in contexts where the fitness of a phenotype depends on the composition of the population (Hamilton, 1967). The main assumption of evolutionary game theory was that strategies with greater payoffs at a particular time would tend to spread more and thus have better chances of being present in the future.
 \paragraph{}The most important concept of evolutionary thinking that was introduced by Manynard Smith and Price (1973) is the notion of \textbf{Evolutionary Stable Strategy}(ESS), for 2-player symmetric games played by individuals belonging to the same population. Furthermore, a strategy $s$ is an ESS if and only if, when adopted by all members of a population, meaning that any other strategy $i$ that could enter the population in a low percentage would obtain a strictly  lower expected payoff in the population than the $s$ strategy.
@@ -218,13 +252,13 @@ Suppose that a small group of mutants choosing a strategy different from $\delta
 \subsection{Static Notions of Evolutionary Stability}
 \paragraph{}Maynard Smith offered a stability concept for populations of animals sharing a common behavioral trait, that of player a mixed strategy in  the game. Maynard defines such a population as stable if it is resistant to invasion by a small group of mutants carrying a different strategy(Sandholm, 2017).
 \paragraph{}Suppose that a large population is randomly matched to play the symmetric normal form game $A$. We call a mixed strategy $x \in X$ an \textbf{evolutionarily stable strategy} (ESS) if 
-\begin{equation}\label{eq:5}
+\begin{equation}\label{eq:55}
 x' A((1 - \epsilon)x + \epsilon y) > y' A((1 - \epsilon)x + \epsilon y) 
 \end{equation}
 \begin{center}
 $\forall \epsilon \leq \epsilon(y)$ and $y \neq x.$
 \end{center}
-\paragraph{}In order to explain condition \ref{eq:5}, let's consider a population programmed to play mixed strategy $x$ is invaded by a small group of mutants programmed to play the alternative mixed strategy $y$. Equation \ref{eq:5} requires that regardless of the choice of $y$, an incumbent's expected payoff from a random match in the post entry population exceeds that of a mutant so long as the size of the invading group is sufficiently small.
+\paragraph{}In order to explain condition \ref{eq:55}, let's consider a population programmed to play mixed strategy $x$ is invaded by a small group of mutants programmed to play the alternative mixed strategy $y$. Equation \ref{eq:5} requires that regardless of the choice of $y$, an incumbent's expected payoff from a random match in the post entry population exceeds that of a mutant so long as the size of the invading group is sufficiently small.
 \paragraph{}The definition of ESS above can also be expressed as a combination of two conditions: 
 \begin{equation}\label{eq:6}
 x' A x \geq y' A x  \: \forall  \: y \in X
@@ -238,8 +272,8 @@ For all $y \neq x.$
 \paragraph{}Condition \ref{eq:6} requires that the incumbent strategy $x$ be a best response to itself. Condition \ref{eq:7} requires that if a mutant strategy $y$ is an alternative best response against the incumbent strategy $x$ then the incumbent ears a higher payoff against the mutant than the mutant earns against itself.
 \paragraph{}Maynard Smith's notion of ESS attempts to capture the dynamic process of natural selection using a static definition.
 
-\section{Population Games}
+\subsection{Population Games}
 \paragraph{}Population games provide a simple and general framework for studying strategic interactions in large populations whose members play pure strategies. The simplest population games are generated by random matching in normal form games, but the population game framework allows for interactions of a more intricate nature.
-\paragraph{}We focus here on games played by a single population. All agents in this game play equivalent roles. We suppose that there is a unit mass of agents, each of whom chooses a pure strategy from the set
- $S = {1, ... , n}$. The aggregate behavior of these agents is described by a population state $x \in X$, with $x_j$ representing the proportion of agents choosing pure strategy $j$. We identify a population game with a continuous vector valued payoff function $ F:X \rightarrow R^n$. The scalar $F(x)$ represents the payoff to strategy $i$ when the population state is $x$.
-\paragraph{}Population state $x^*$ is a Nash Equilibrium of $F$ if no agent can improve his payoff by unilaterally switching strategies.
+\paragraph{}We focus here on games played by a single population. All players in this game play equivalent roles. Suppose that there is a unit mass of players, each of whom chooses a pure strategy from the set
+ $S = {1, ... , n}$. The aggregate behavior of these players is described by a population state $x \in X$, with $x_j$ representing the proportion of agents choosing pure strategy $j$. We identify a population game with a continuous vector valued payoff function $ F:X \rightarrow R^n$. The scalar $F(x)$ represents the payoff to strategy $i$ when the population state is $x$.
+\paragraph{}Population state $x^*$ is a Nash Equilibrium of $F$ if no player can improve his payoff by unilaterally switching strategies.
