@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  23 AUG 2020 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  31 AUG 2020 18:09
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -921,7 +921,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 34.
+less on input line 36.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -952,20 +952,20 @@ LaTeX Warning: Label `def:def100' multiply defined.
 )
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
  ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count429
@@ -1057,8 +1057,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' not found.
 
 No file Main.bbl.
-Package biblatex Info: Reference section=0 on input line 45.
-Package biblatex Info: Reference segment=0 on input line 45.
+Package biblatex Info: Reference section=0 on input line 47.
+Package biblatex Info: Reference segment=0 on input line 47.
 [1
 
 {C:/Users/gg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [0
@@ -1107,7 +1107,7 @@ Chapter 1.
 ]
 
 Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
- on input line 42.
+ on input line 40.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1118,54 +1118,47 @@ This may cause the page layout to be inconsistent, however.
 [2
 
 ] [3] [4]
-Overfull \hbox (46.25575pt too wide) in paragraph at lines 135--137
-\OT1/cmr/m/n/12 A fi-nite per-fect in-for-ma-tion game in ex-ten-sive form is d
-e-fined by the tu-ple ($\OML/cmm/m/it/12 N; A; H; Z; ; ; ; u$\OT1/cmr/m/n/12
- )
- []
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-
-LaTeX Warning: Reference `eq:1' on page 6 undefined on input line 168.
-
-[6] [7]
-Overfull \hbox (9.30922pt too wide) in paragraph at lines 209--210
+[6]
+Overfull \hbox (9.30922pt too wide) in paragraph at lines 198--199
 []\OT1/cmr/m/it/12 Given an in-fi-nite se-quence of pay-offs $\OT1/cmr/m/n/12 (
 \OML/cmm/m/it/12 r[]; r[]; :::\OT1/cmr/m/n/12 )$
  []
 
-
-Overfull \hbox (17.65862pt too wide) in paragraph at lines 216--217
+[7]
+Overfull \hbox (17.65862pt too wide) in paragraph at lines 205--206
 []\OT1/cmr/m/it/12 Consider any $\OML/cmm/m/it/12 n$\OT1/cmr/m/it/12 -player
  []
 
 [8]
 
 LaTeX Warning: Citation 'Nelson and Winter' on page 9 undefined on input line 2
-40.
+34.
 
 
-LaTeX Warning: Citation '1982' on page 9 undefined on input line 240.
+LaTeX Warning: Citation '1982' on page 9 undefined on input line 234.
 
 
 LaTeX Warning: Citation 'Boyd and Richerson' on page 9 undefined on input line 
-240.
+234.
 
 
-LaTeX Warning: Citation '1985' on page 9 undefined on input line 240.
+LaTeX Warning: Citation '1985' on page 9 undefined on input line 234.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
-[9]
 
-LaTeX Warning: Reference `eq:5' on page 10 undefined on input line 261.
+LaTeX Warning: Reference `eq:5' on page 10 undefined on input line 255.
 
 [10]) [11]
 Chapter 2.
@@ -1257,11 +1250,11 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24149 strings out of 480930
- 453924 string characters out of 2909556
- 1083950 words of memory out of 3000000
- 39614 multiletter control sequences out of 15000+200000
- 543116 words of font info for 64 fonts, out of 3000000 for 9000
+ 24154 strings out of 480930
+ 453986 string characters out of 2909556
+ 1083987 words of memory out of 3000000
+ 39619 multiletter control sequences out of 15000+200000
+ 543914 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,64p,871b,2375s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\gg\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
@@ -1281,7 +1274,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 /type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on Main.pdf (35 pages, 272898 bytes).
+Output written on Main.pdf (35 pages, 275622 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

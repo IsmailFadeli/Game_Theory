@@ -10,63 +10,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Concepts}{1}%
+\contentsline {chapter}{\numberline {1}Game Theory and Evolutionary Dynamics}{1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Game Theory}{1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}The parts of a Game}{2}%
+\contentsline {subsection}{\numberline {1.1.1}Defining Games}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Players}{2}%
+\contentsline {subsubsection}{\numberline {1.1.1.1}Extensive Form}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Actions}{2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Payoffs}{2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Defining Games}{2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Extensive Form}{2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.4}Normal Form Games}{2}%
+\contentsline {subsubsection}{\numberline {1.1.1.2}Normal Form Games}{2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.5}Best Response and Nash Equilibrium}{3}%
+\contentsline {subsubsection}{\numberline {1.1.1.3}Best Response and Nash Equilibrium}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.6}Dominant strategies}{3}%
+\contentsline {subsubsection}{\numberline {1.1.1.4}Dominant strategies}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Mixed Strategies and Nash Equilibrium}{3}%
+\contentsline {paragraph}{}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}Utility in Mixed Strategies}{4}%
+\contentsline {subsection}{\numberline {1.1.2}Mixed Strategies and Nash Equilibrium}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Best Response and Nash Equilibrium}{4}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Utility in Mixed Strategies}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definition (Best Response): }{4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definition (Nash Equilibrium)}{4}%
+\contentsline {subsubsection}{\numberline {1.1.2.2}Best Response and Nash Equilibrium}{4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Theorem (Nash, 1950)}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}Computing Nash Equilibrium}{4}%
+\contentsline {subsubsection}{\numberline {1.1.2.3}Computing Nash Equilibrium}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Two algorithms for finding NE }{4}%
+\contentsline {subsubsection}{\numberline {1.1.2.4}Complexity Analysis}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}Complexity Analysis}{4}%
+\contentsline {subsubsection}{\numberline {1.1.2.5}Strictly Dominated Strategies}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.5}Summary of mixed strategies}{5}%
+\contentsline {subsubsection}{\numberline {1.1.2.6}Weakly Dominated Strategies}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.6}Strictly Dominated Strategies}{5}%
+\contentsline {subsubsection}{\numberline {1.1.2.7}Perfect information games}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definition}{5}%
+\contentsline {paragraph}{}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.7}Weakly Dominated Strategies}{5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Definition}{5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Perfect information games}{5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Pure Strategies}{6}%
+\contentsline {subsubsection}{\numberline {1.1.2.8}Pure Strategies}{6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{6}%
 \defcounter {refsection}{0}\relax 
@@ -74,27 +56,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Sub-game Perfection}{6}%
+\contentsline {subsubsection}{\numberline {1.1.2.9}Sub-game Perfection}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.1.2.10}Backward Induction}{6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Backward Induction}{7}%
-\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Repeated Games}{7}%
+\contentsline {subsection}{\numberline {1.1.3}Repeated Games}{7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Folk Theorem}{8}%
+\contentsline {subsubsection}{\numberline {1.1.3.1}Folk Theorem}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Evolutionary Game Theory}{9}%
+\contentsline {subsection}{\numberline {1.1.4}Population Games}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Evolutionary Game Theory}{9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{9}%
 \defcounter {refsection}{0}\relax 
@@ -102,23 +90,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{9}%
+\contentsline {paragraph}{}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.1}Static Notions of Evolutionary Stability}{10}%
+\contentsline {subsection}{\numberline {1.2.1}Static Notions of Evolutionary Stability}{10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.5.2}Population Games}{11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{11}%
 \defcounter {refsection}{0}\relax 
@@ -224,11 +204,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Nash Equilibrium of Travel Mode Choice Game}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nash Equilibrium of Car Owner Subgame}{21}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Nash Equilibrium of Car Owner Subgame}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nash Equilibrium for Noncar Owners Subgame}{22}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Nash Equilibrium for Noncar Owners Subgame}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Nash Equilibrium of Travel Mode Choice Game}{23}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}Nash Equilibrium of Travel Mode Choice Game}{23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{23}%
 \defcounter {refsection}{0}\relax 
