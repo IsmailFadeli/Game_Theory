@@ -1,14 +1,14 @@
 
-The contribution of this study on travel mode choice is the research on modeling choices in travel mode selection using game theory concepts, and using an evolutionary analysis to determine the behavior of the travelers.
+The contribution of this study on travel mode choice is the research on modeling choice behaviors in travel mode selection using game theory concepts, and using an evolutionary analysis to determine the behavior of the travelers.
 \clearpage
 
 \section{Evolutionary Game Theory and Travel Mode Choice}
 Evolutionary game theory is used in this paper as a vehicle for discussing travel mode choice based on the following apparent similarities: 
 \paragraph{}A group can be a substitute for an individual as a participant in evolutionary game theory, and the proportions of the individuals choosing different pure strategies in the group can substitute for mixed strategy. The results of travel mode choice are group behavior within the travel mode subsystems, and the only proportions of individuals choosing each travel mode are meaningful for management and study.
-\paragraph{}Group Nash equilibrium means that the frequency of the adopted strategies makes the strategy payoffs exactly equal with no one desiring a change in strategy, then the percentage of individuals choosing each different strategy remains stable and reaches equilibrium. In the stable travel context, a travel mode choice will tend to be stable, the Nash equilibrium of the evolutionary game will be changed by the means of traffic control, the construction, and the structure of the transportation system.
-\paragraph{}The nature of group strategies acts is that only a bounded rationality human gets closer to Nash equilibrium by summarizing their experience and adjusting their strategies rather than by using a perfectly rational method and Nash equilibrium analysis as reasoning. The players can obtain information such as travel time, travel cost, and traffic information, and they can observe the historical results and the strategies adopted by others. The inhabitants observe and experience the service provided by trip modes during their frequent travels and finally determine their strategies. Although they are bounded by rationality, constantly repeated travel leads the structure of travel mode choice by modes to reach excellent stability.
+\paragraph{}Nash equilibrium means that the frequency of the adopted strategies makes the strategy payoffs exactly equal with no one desiring a change in strategy, then the percentage of individuals choosing each different strategy remains stable and reaches equilibrium. In the stable travel context, a travel mode choice will tend to be stable, the Nash equilibrium of the evolutionary game will be changed by the means of traffic control, the construction, and the structure of the transportation system.
+
 \subsection{Evolutionary Game Model}
-The extensive form of the sequential, the game displayed in Figure 1, describes the process of travel mode choice. Two conditions have been implemented in this model.
+The extensive form of the agent based game displayed in Figure 3.2, describes the process of travel mode choice. Two conditions have been implemented in this model.
 \begin{itemize}
 \item Travelers can be divided into two main categories: car owners and noncar owners. As mentioned before, travel is a two stage process, first, every player chooses whether they own a car or not; then, the car owners will select from one of four modes: car, taxi, bus, or rail, and the noncar owners will only select from taxi, bus, or rail.
 \item The payoff function that inhabitants must contribute is independent of the proportion of inhabitants traveling in a particular mode.
@@ -17,12 +17,12 @@ The extensive form of the sequential, the game displayed in Figure 1, describes 
 \paragraph{} As mentioned in Chapter 1, the extensive form is defined by three  main objects.
 \begin{itemize}
 \item the set of players $N = {1,...,n}$, all travelers are players.
-\item The strategy sets of the players are $S_1 = {Car owneer, Noncar owner}$ and ${S_2 = {Travel by car, Travel by taxi, Travel by bus, Travel by rail}}$.
+\item The strategy sets of the players are $S_1 = {Car owneer, Noncar owner}$ and $ S_2 = $(Travel by car, Travel by taxi, Travel by bus, Travel by rail).
 \item The payoff functions of the players are $f_{car} = u_1$, $f_{taxi} = u_2$, $f_{bus} = u_3$, and $f_{rail} = u_4$
 \end{itemize}
 \paragraph{}Players use mixed strategy, because it is impossible for them to travel using the same pure strategy mode multiple times with certainty.
 \paragraph{}As explained in Chapter 1, the mixed strategy happens when an individual plays one of the pure strategies of a game with a continuous probability $p$ between 0 and 1. As a result, the payoff the of the individual using mixed strategy depends on the probabilities of the mixed strategy.
-\paragraph{}Figure 3.1 shows the game model of travel mode choice, we note that in stage 1 of the game $p_c$ and $p_n$ are the probabilities of car owners and non car owners respectively. In stage 2, $p^c_{c}$, $p^{c}_{t}$, $p^c_{b}$, and $p^c_{r}$ are the respective probabilities of car owner traveling by car, taxi, bus or rail. The probabilities of the noncar owner traveling by taxi, bus or rail are $p^n_{t}$, $p^n_{b}$, and $p^n_{r}$.
+\paragraph{}Figure 3.1 shows the game model of travel mode choice, we note that in stage 1 of the game $p_c$ and $p_n$ are the probabilities of car owners and non car owners respectively. In stage 2, $r^c_{c}$, $r^{c}_{t}$, $r^c_{b}$, and $r^c_{r}$ are the respective probabilities of car owner traveling by car, taxi, bus or rail. The probabilities of the noncar owner traveling by taxi, bus or rail are $r^n_{t}$, $r^n_{b}$, and $r^n_{r}$.
 \paragraph{}The payoff function of the players are the following: 
 \begin{equation}
 f_{car} = T_{car} C_{car}
@@ -136,6 +136,44 @@ p_{c} = \frac{\frac{3}{(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu_1)+(1/\mu
 \begin{equation}
 p_n{} = \frac{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}+\frac{3}{(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}
 \end{equation}
-\paragraph{}The equations above represent the Nash Equilibrium of the travel mode choice game. Looking through equations \ref{eq:14} to \ref{eq:15} we can see that there is a relationship between the individual's payoff and his proportion. That is, as its payoff is increasing, the proportion is decreasing. However in the last four equations there is a relationship between the proportion and the payoffs of all the travel modes.
+\paragraph{}The equations above represent the Nash Equilibrium of the travel mode choice game. Looking through equations \ref{eq:14} to \ref{eq:15} we can see that there is a relationship between the individual's payoff and his proportion. That is, as its payoff is increasing, the proportion is decreasing. However, in the last four equations there is a relationship between the proportion and the payoffs of all the travel modes.
+The essence of evolutionary analysis is to discuss how the probability changes when one side of the game changes. The learning ability of travelers, which is usually reflected by the tendency dynamic characteristics, in order to determine the change rate.
 \section{Model Analysis}
-The essence of evolutionary analysis is to discuss how the probability changes when one side of the game changes. The learning ability of players(travelers), which is usually reflected by the tendency dynamic characteristics, in order to determine the change rate.
+\subsubsection{Travel Cost}
+The cost of traveling is an important factor in TMC, although, travel time can be an affecting factor. Measures like public transport fares, car utility, fuel and parking costs have been implemented to estimate travel cost.
+\subsubsection{Travel Time}
+Travel time is the time consumed when a traveler moves between two places in a network and is applicable in all transport modes. Two main differences exist in travel time. 
+For bus, taxi, and rail travel time is divided into walking time, waiting time, in vehicle time, and transfer time. For car owners, travel time is transfer time. 
+\subsubsection{Payoff}
+Travelers optimize between the time and cost of travel. The payoff of travel can be analyzed through the product of average travel cost and travel time in each mode, as shown in equations 3.1 to 3.4.
+\section{Experiments and results}
+For this experiment we are using Netlog\footnote{Netlog is a multi-agent programmable modeling environment}, the artificial environment is adequate for modeling complex systems which evolve over time. we are going to run the simulation during 200 tick.
+
+In this experiment, we want to test all components available for modifying the passenger's behavior. As we want to remain the characteristics of each mode.
+Using Behavior Space tool in Netlogo that allows to make multiple simulations. It runs the model several times, with the ability to change the parameters of the model and record the results after each run.
+
+To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in figure (3.1).
+
+When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
+\clearpage
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lllll}
+\hline
+\multicolumn{1}{l}{Travel mode} & \multicolumn{1}{l}{Average travel time} & \multicolumn{1}{l}{Average travel cost} & \multicolumn{1}{l}{Payoff} & Nash~ Equilibrium  \\ 
+\hline
+Car                             & 29.3                                    & 10                                      & 293                        & 0.23               \\
+Taxi                            & 50                                      & 25                                      & 1250                       & 0.10               \\
+Bus                             & 46                                      & 3                                       & 138                        & 0.31               \\
+Rail                            & 59.8                                    & 4.5                           & 269.1                      
+& 0.36                   
+\end{tabular}
+\caption{Nash Equilibrium of TCM}
+\label{table:2}
+\end{table}
+It is important to note that traffic and weather conditions affect the payoff of travel by increasing the time of travel. Travelers tend to choose rail mode because of its relatively stable travel time in weather conditions.
+%\subsection{Model Validation}
+%An important step in developing agent based models is to evaluate and validate the model carefully. Most models have several types of behaviors going at the same time, and it is important to understand what drives what and what affects what. Although our model is simple, it still needs to be validated and evaluated.
+
+

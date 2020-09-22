@@ -21,7 +21,7 @@ Players, Actions, strategies and Payoffs.
 Games can be represented using two methods : Normal forms and Extensive Forms:
 \subsubsection{Extensive Form}
 An extensive form game includes timing of moves. 
-Players move sequentially, represented as a tree.
+Players move sequentially, represented as a tree. These are examples of games that can be represented in the extensive form: 
 \begin{itemize}
 \item Chess: white player moves, then black player can see white's move and react...
 \end{itemize}
@@ -31,7 +31,7 @@ Keeps track of what each player knows when he or she makes a decision :
 \end{itemize}
 
 \subsubsection{Normal Form Games}
-\paragraph{}A normal form game is a strategic interaction in which each of $n$ players chooses a strategy and the receives a payoff that depends on all agents choices of strategy. In other words, a normal form represents a list of what players get on function of their actions.
+A normal form game is a strategic interaction in which each of $n$ players chooses a strategy and the receives a payoff that depends on all agents choices of strategy. In other words, a normal form represents a list of what players get on function of their actions.
 Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \begin{itemize}
 \item Players: $ N = {1, ... , n} $ is a finite set of $n$, indexed by $i$.
@@ -41,25 +41,16 @@ Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \subitem $u = (u_1,..., u_n)$, is a profile of utility functions.
 \end{itemize}
 
-\subsubsection{Best Response and Nash Equilibrium}\label{subsection}
-A Nash Equilibrium specifies that the optimal outcome of a game is one from which no player can benefit by changing his strategy if none of his opponents do so as well,
-for $a_i$ to be a best response:
-\begin{mydef}[Best Response]\label{def:def1500}
-\begin{equation}\label{eq:1666}
- a_i^* \in BR(a_{-i})  iff   \forall a_i \in A_i, u_i(a_i^*,a_{-i}) \geq u_i(a_i, a_{-i})
-\end{equation}
-\end{mydef}
+\subsubsection{Nash Equilibrium}\label{subsection}
+A Nash Equilibrium specifies that the optimal outcome of a game is one from which no player can benefit by changing his strategy if none of his opponents do so as well. Nash Equilibrium is reached  over time, in most cases. However, this these different choices over time before reaching an equilibrium is often played out in the business world when two firms are determining prices for products.
+
 \begin{mydef}[Nash Equilibrium]\label{def:def1500}
 
 $a = <a_1,...,a_n>$ is a "\textbf{pure strategy Nash equilibrium}" if $\forall i, a_i \in BR(a_{-i})$
 \end{mydef}
 
 \subsubsection{Dominant strategies}
-A strategy is dominant if regardless of what any other players do, the strategy earns the player a larger payoff than the others
-\paragraph{}
-let $s_i$ and $s_i^`$ be two strategies for player $i$, and let $S_{-i}$ be the set of all possible strategy profiles for other players.
-\bigbreak
-\title{\textbf{Definitions:} }
+A strategy is called dominant if regardless of what any other players do, the strategy earns the player a larger payoff than the others. Consider $s_i$ and $s_i^`$ to be two strategies for player $i$, and $S_{-i}$ be the set of all possible strategy profiles for other players.
 \begin{itemize}
 \item $s_i$ \textbf{strictly dominates} $s_i^`$ if $\forall s_{-i} \in S_{-i}, u_i(s_i, s_{-i}) \>> u_i(s_i^`, s_{-i})$
 \item $s_i$ \textbf{very weakly dominates} $s_i^`$ if $\forall s_{-i} \in S_{-i}, u_i(s_i, s_{-i}) \geq u_i(s_i^`, s_{-i})$
@@ -74,8 +65,6 @@ A strategy $s_i$ for agent $i$ as any probability distribution over the actions 
 \begin{itemize}
 \item \textbf{pure strategy:} only one action is played with positive probability;
 \item \textbf{mixed strategy:} more than one action is played with positive probability, these actions are called the support of the mixed strategy;
-\item Let the set of all strategies for $i$ be $S_i$;
-\item let the set of all strategy profiles be $S = S_1 \times... \times S_n$;
 \end{itemize}
 
 \subsubsection{Utility in Mixed Strategies}
@@ -153,7 +142,7 @@ where:
 \end{equation}
 
 \paragraph{}
-Given our new definition of pure strategy, we can reuse our old definitions of mixed strategies and Nash equilibrium in \ref{eq:112}.
+Given our new definition of pure strategy, we can reuse our old definitions of mixed strategies and Nash equilibrium.
 
 \subsubsection{Sub-game Perfection}
 A subgame Nash equilibrium is an equilibrium such that the strategies of players constitute a Nash equilibrium in each subgame of the game. It may be found by backwards induction.
@@ -225,11 +214,15 @@ Consider any $n$-player game $G$ and any payoff vector $(r_1, r_2, ...,r_n) $ :
 \paragraph{}We focus here on games played by a single population. All players in this game play equivalent roles. Suppose that there is a unit mass of players, each of whom chooses a pure strategy from the set
  $S = {1, ... , n}$. The aggregate behavior of these players is described by a population state $x \in X$, with $x_j$ representing the proportion of agents choosing pure strategy $j$. We identify a population game with a continuous vector valued payoff function $ F:X \rightarrow R^n$. The scalar $F(x)$ represents the payoff to strategy $i$ when the population state is $x$.
 \paragraph{}Population state $x^*$ is a Nash Equilibrium of $F$ if no player can improve his payoff by unilaterally switching strategies.
+\subsection{The lack of dynamics in traditional game theory}
+Von Neuman and Morgenstern mentioned that the theory of games is static, and a dynamic theory would be more fitted and preferable (The theory of games, V.Neuman and Morgenstern; 1953). At the time of the publication, evolutionary game theory was unkown.
+\paragraph{}
+In order to capture the dynamics of a decision making process, it is preferable to represent the game in the extensive form rather than normal form for games of a normal complexity. However, extensive form games tend to get complex and difficult to manage. Traditional game theory represents a set of strategies for a player at each stage of the game. This representation lacks the element of learning in players when encountering similar choices which leads to better decision making. This shows the incompetence of traditional game theory in the dynamics model of decision making. Therefore, evolutionary game theory incorporates dynamic factors.
 \section{Evolutionary Game Theory}
 
-Evolutionary Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
+Evolutionary Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games in 1982. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
 
-\paragraph{}After the emergence of traditional game theory, biologists realized the potential of game theory to formally study adaptation and convolution of biological populations, especially in contexts where the fitness of a phenotype depends on the composition of the population (Hamilton, 1967). The main assumption of evolutionary game theory was that strategies with greater payoffs at a particular time would tend to spread more and thus have better chances of being present in the future.
+\paragraph{}After the emergence of traditional game theory, biologists realized the potential of game theory to formally study adaptation of biological populations, especially in contexts where the fitness of a phenotype depends on the composition of the population (Hamilton, 1967). The main assumption of evolutionary game theory was that strategies with greater payoffs at a particular time would tend to spread more and thus have better chances of being present in the future.
 \paragraph{}The most important concept of evolutionary thinking that was introduced by Manynard Smith and Price (1973) is the notion of \textbf{Evolutionary Stable Strategy}(ESS), for 2-player symmetric games played by individuals belonging to the same population. Furthermore, a strategy $s$ is an ESS if and only if, when adopted by all members of a population, meaning that any other strategy $i$ that could enter the population in a low percentage would obtain a strictly  lower expected payoff in the population than the $s$ strategy.
 \paragraph{}The basic ideas behind Evolutionary game theory is that strategies with greater payoffs tend to spread more, and that fitness is frequency dependent soon transcended the borders of biology and started to spread through many other disciplines. In economic context, it was understood that natural selection would derive from competition among entities for small resources or market shares. In social contexts, evolution was often understood as cultural evolution, and it referred to dynamic changes in behavior or ideas over time (\cite{Nelson and Winter, 1982})(\cite{Boyd and Richerson, 1985}).
 \paragraph{}In order to extend this understanding further, let's consider this example:
@@ -244,7 +237,7 @@ Suppose that a small group of mutants choosing a strategy different from $\delta
 	\begin{equation}(1-\varepsilon)u(\delta*,\delta*)+\varepsilon u(\delta*,\delta) > (1-\varepsilon)u(\delta,\delta*)+\varepsilon u(\delta*,\delta)  \end{equation}
 \end{itemize}
 \subsection{Static Notions of Evolutionary Stability}
-\paragraph{}Maynard Smith offered a stability concept for populations of animals sharing a common behavioral trait, that of player a mixed strategy in  the game. Maynard defines such a population as stable if it is resistant to invasion by a small group of mutants carrying a different strategy(Sandholm, 2017).
+Maynard Smith offered a stability concept for populations of animals sharing a common behavioral trait, that of player a mixed strategy in  the game. Maynard defines such a population as stable if it is resistant to invasion by a small group of mutants carrying a different strategy(Sandholm, 2017).
 \paragraph{}Suppose that a large population is randomly matched to play the symmetric normal form game $A$. We call a mixed strategy $x \in X$ an \textbf{evolutionarily stable strategy} (ESS) if 
 \begin{equation}\label{eq:55}
 x' A((1 - \epsilon)x + \epsilon y) > y' A((1 - \epsilon)x + \epsilon y) 
