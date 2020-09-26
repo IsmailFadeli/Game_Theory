@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  19 SEP 2020 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  26 SEP 2020 20:50
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1145,44 +1145,63 @@ This may cause the page layout to be inconsistent, however.
 
 [2
 
-] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+[5]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--169
 
  []
 
 [6]
-Overfull \hbox (9.30922pt too wide) in paragraph at lines 187--188
+Overfull \hbox (9.30922pt too wide) in paragraph at lines 179--180
 []\OT1/cmr/m/it/12 Given an in-fi-nite se-quence of pay-offs $\OT1/cmr/m/n/12 (
 \OML/cmm/m/it/12 r[]; r[]; :::\OT1/cmr/m/n/12 )$
  []
 
 
-Overfull \hbox (17.65862pt too wide) in paragraph at lines 194--195
+Overfull \hbox (17.65862pt too wide) in paragraph at lines 186--187
 []\OT1/cmr/m/it/12 Consider any $\OML/cmm/m/it/12 n$\OT1/cmr/m/it/12 -player
  []
 
 [7] [8]
 
 LaTeX Warning: Citation 'Nelson and Winter' on page 9 undefined on input line 2
-27.
+19.
 
 
-LaTeX Warning: Citation '1982' on page 9 undefined on input line 227.
+LaTeX Warning: Citation '1982' on page 9 undefined on input line 219.
 
 
 LaTeX Warning: Citation 'Boyd and Richerson' on page 9 undefined on input line 
-227.
+219.
 
 
-LaTeX Warning: Citation '1985' on page 9 undefined on input line 227.
+LaTeX Warning: Citation '1985' on page 9 undefined on input line 219.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-LaTeX Warning: Reference `eq:5' on page 10 undefined on input line 248.
+LaTeX Warning: Reference `eq:5' on page 10 undefined on input line 240.
 
 [10]) [11]
 Chapter 2.
@@ -1245,15 +1264,15 @@ LaTeX Warning: Citation '2015' on page 17 undefined on input line 77.
 Chapter 3.
 (chapters/Chapter03.tex [18
 
-] [19
-
 ]
 Overfull \hbox (21.0646pt too wide) in paragraph at lines 20--21
 []\OT1/cmr/m/n/12 The strat-egy sets of the play-ers are $\OML/cmm/m/it/12 S[] 
 \OT1/cmr/m/n/12 = []$ and $\OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 =$(Travel
  []
 
-[20] [21] [22] [23] [24]
+[19
+
+] [20] [21] [22] [23] [24]
 Overfull \hbox (16.52466pt too wide) in paragraph at lines 162--172
  [][] 
  []
@@ -1262,9 +1281,14 @@ Overfull \hbox (16.52466pt too wide) in paragraph at lines 162--172
 
 ] (chapters/Conclusion.tex) [26
 
-] [27
+]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+[]\OT1/cmr/m/n/12 Jackson, Leyton-Brown and Shoham, 2013 . Game The-ory,
+ []
 
-] (Main.aux)
+[27
+
+] [28] (Main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1281,10 +1305,10 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24245 strings out of 480930
- 455061 string characters out of 2909556
- 1085707 words of memory out of 3000000
- 39706 multiletter control sequences out of 15000+200000
+ 24247 strings out of 480930
+ 455137 string characters out of 2909556
+ 1084715 words of memory out of 3000000
+ 39708 multiletter control sequences out of 15000+200000
  543914 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,64p,871b,2375s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1305,9 +1329,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 /type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on Main.pdf (36 pages, 281405 bytes).
+Output written on Main.pdf (37 pages, 281771 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

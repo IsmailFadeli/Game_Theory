@@ -20,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.2}Mixed Strategies and Nash Equilibrium}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.1}Utility in Mixed Strategies}{3}%
+\contentsline {subsubsection}{\numberline {1.1.2.1}Utility in Mixed Strategies}{4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.1.2.2}Best Response and Nash Equilibrium}{4}%
 \defcounter {refsection}{0}\relax 
@@ -30,29 +30,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.1.2.4}Complexity Analysis}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.5}Strictly Dominated Strategies}{4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.6}Weakly Dominated Strategies}{5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.7}Perfect information games}{5}%
+\contentsline {subsubsection}{\numberline {1.1.2.5}Perfect information games}{5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.8}Pure Strategies}{6}%
+\contentsline {subsubsection}{\numberline {1.1.2.6}Pure Strategies}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{6}%
+\contentsline {paragraph}{}{5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Definition}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.9}Sub-game Perfection}{6}%
+\contentsline {subsubsection}{\numberline {1.1.2.7}Sub-game Perfection}{6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2.10}Backward Induction}{6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{6}%
+\contentsline {subsubsection}{\numberline {1.1.2.8}Backward Induction}{6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{6}%
 \defcounter {refsection}{0}\relax 
@@ -174,11 +166,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{19}%
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Evolutionary Game Model}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{20}%
+\contentsline {paragraph}{}{19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{20}%
 \defcounter {refsection}{0}\relax 
@@ -196,19 +186,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.2.2}Nash Equilibrium for Noncar Owners Subgame}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.3}Nash Equilibrium of Travel Mode Choice Game}{23}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}Nash Equilibrium of Travel Mode Choice Game}{22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Model Analysis}{24}%
+\contentsline {section}{\numberline {3.2}Model Analysis}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.0.1}Travel Cost}{24}%
+\contentsline {subsection}{\numberline {3.2.1}Travel Cost}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.0.2}Travel Time}{24}%
+\contentsline {subsection}{\numberline {3.2.2}Travel Time}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.0.3}Payoff}{24}%
+\contentsline {subsection}{\numberline {3.2.3}Payoff}{24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Experiments and results}{24}%
 \defcounter {refsection}{0}\relax 

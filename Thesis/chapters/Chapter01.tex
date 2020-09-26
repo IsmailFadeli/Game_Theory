@@ -10,7 +10,7 @@ Game theory is a branch of applied mathematics that derives mathematical models 
  
 
 \subsection{Defining Games} 
-A game is the interaction between rational players, where the decisions of some players changes the payoff of others. A Game consists of four parts : 
+A game is the interaction between rational players, where the decisions of some players changes the payoff of others. A game consists of four parts : 
 Players, Actions, strategies and Payoffs.
 \begin{itemize}
 \item Players are the decision makers and they can be : People, Governments or Companies;
@@ -18,7 +18,7 @@ Players, Actions, strategies and Payoffs.
 \item Strategies are composed of actions;
 \item Payoffs are the outcomes which players receive as a result of their decisions and those of their opponents;
 \end{itemize}
-Games can be represented using two methods : Normal forms and Extensive Forms:
+Games can be represented using two methods : Normal forms and Extensive Form.
 \subsubsection{Extensive Form}
 An extensive form game includes timing of moves. 
 Players move sequentially, represented as a tree. These are examples of games that can be represented in the extensive form: 
@@ -31,7 +31,7 @@ Keeps track of what each player knows when he or she makes a decision :
 \end{itemize}
 
 \subsubsection{Normal Form Games}
-A normal form game is a strategic interaction in which each of $n$ players chooses a strategy and the receives a payoff that depends on all agents choices of strategy. In other words, a normal form represents a list of what players get on function of their actions.
+A normal form game is a strategic interaction in which each of $n$ players chooses a strategy and the receives a payoff that depends on all agents choices of strategy. In other words, a normal form represents a list of what players get on function of their actions (Jackson, Leyton-Brown and Shoham; 2013)
 Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \begin{itemize}
 \item Players: $ N = {1, ... , n} $ is a finite set of $n$, indexed by $i$.
@@ -42,20 +42,19 @@ Finite, n-person normal form game  ⟨$N, A, u$⟩:
 \end{itemize}
 
 \subsubsection{Nash Equilibrium}\label{subsection}
-A Nash Equilibrium specifies that the optimal outcome of a game is one from which no player can benefit by changing his strategy if none of his opponents do so as well. Nash Equilibrium is reached  over time, in most cases. However, this these different choices over time before reaching an equilibrium is often played out in the business world when two firms are determining prices for products.
+A Nash Equilibrium specifies that the optimal outcome of a game is one from which no player can benefit by changing his strategy if none of his opponents do so as well. Nash Equilibrium is reached  over time, in most cases. However, these different choices over time before reaching an equilibrium is often played out in the business world when two firms are determining prices for products.
 
 \begin{mydef}[Nash Equilibrium]\label{def:def1500}
-
-$a = <a_1,...,a_n>$ is a "\textbf{pure strategy Nash equilibrium}" if $\forall i, a_i \in BR(a_{-i})$
+Nash equilibrium is the profile of actions such that each action is a best response to the other actions,
+$a = <a_1,...,a_n>$ is a pure strategy Nash equilibrium if $\forall i, a_i \in BR(a_{-i})$.
 \end{mydef}
 
 \subsubsection{Dominant strategies}
-A strategy is called dominant if regardless of what any other players do, the strategy earns the player a larger payoff than the others. Consider $s_i$ and $s_i^`$ to be two strategies for player $i$, and $S_{-i}$ be the set of all possible strategy profiles for other players.
+A strategy is called dominant if regardless of what any other players do, the strategy earns the player a larger payoff than the others. Consider $s_i$ and $s_i^`$ to be two strategies for player $i$, and $S_{-i}$ be the set of all possible strategy profiles for other players (Jackson, Leyton-Brown and Shoham; 2013).
 \begin{itemize}
-\item $s_i$ \textbf{strictly dominates} $s_i^`$ if $\forall s_{-i} \in S_{-i}, u_i(s_i, s_{-i}) \>> u_i(s_i^`, s_{-i})$
-\item $s_i$ \textbf{very weakly dominates} $s_i^`$ if $\forall s_{-i} \in S_{-i}, u_i(s_i, s_{-i}) \geq u_i(s_i^`, s_{-i})$
-\item A strategy is called \textbf{dominant} if it dominates all others.
-\item A strategy profile consisting of dominant strategies for every player must be a Nash Equilibrium.
+\item A strategy is strictly dominant if regardless of what any other players do, the strategy earns the player a strictly higher payoff than any other. If one strategy is strictly dominant, than all others are dominated. $s_i$ strictly dominates $s^\prime_{i}$ if $\forall s_{-i} \in S_{-i}, u_i(s_i, s_{-i}) \>> u_i(s^\prime_{i}, s_{-i})$;
+\item A strategy is weakly dominant if regardless of what other players do, the strategy earns a player a payoff at least as high as any other strategy, and the strategy earns a strictly higher payoff than other players;
+\item A strategy profile consisting of dominant strategies for every player must be a Nash Equilibrium;
 \end{itemize}
 
 \subsection{Mixed Strategies and Nash Equilibrium}
@@ -68,7 +67,7 @@ A strategy $s_i$ for agent $i$ as any probability distribution over the actions 
 \end{itemize}
 
 \subsubsection{Utility in Mixed Strategies}
-In order to find the payoff if all the players follow mixed strategy profile $s \in S$ we can use the \textbf{expected utility} from decision theory: 
+In order to find the payoff if all the players follow mixed strategy profile $s \in S$ we can use the expected utility from decision theory: 
 \begin{equation} \label{eq:112}
 u_i(s) = \sum_{a \in A}u_i(a)P(a|s)
 \end{equation}
@@ -76,7 +75,7 @@ u_i(s) = \sum_{a \in A}u_i(a)P(a|s)
 P(a|s) = \prod_{j \in N}s_j(a_j)
 \end{equation}
 \subsubsection{Best Response and Nash Equilibrium}The definitions of best response and Nash equilibrium using mixed strategy are generalized from actions to strategies. 
-\begin{mydef}[Best response]\label{def:def77}
+\begin{mydef}[Best response]\label{def:def77} The best response for a player is the strategy of that generate the greatest payoff.
 \begin{equation}\label{eq:111}
 s_i^* \in BR(s_{-i}) \textbf{ if }   \forall s_i \in S_i, u_i(s_i^*,s_{-i}) \geq u_i(s_i, s_{-i})
 \end{equation}
@@ -102,27 +101,22 @@ Computing a Nash Equilibrium is classified as a \textbf{PPAD-complete}\footnote{
 \item for games with 3 players;
 \item for games with 2 players;
 \end{itemize}
-
-\subsubsection{Strictly Dominated Strategies}
-A strategy is strictly dominant if regardless of what any other players do, the strategy earns the player a strictly higher payoff than any other. If one strategy is strictly dominant, than all others are dominated.
-\subsubsection{Weakly Dominated Strategies}
-A strategy is weakly dominant if regardless of what other players do, the strategy earns a player a payoff at least as high as any other strategy, and the strategy earns a strictly higher payoff than other players.
 \subsubsection{Perfect information games}
 A game is called a perfect information game if only one player moves at a time and if each player knows every action of the players that moved before him at every point in the game.
 The extensive form is an alternative representation that makes the temporal structure explicit. A finite perfect information game in extensive form is defined by the tuple ($N, A, H, Z,\chi ,\rho, \sigma, u $)
 where:
 \begin{itemize}
 \item{Players: $N$ is a set of $n$ players.}
-\item{Actions: $A$ is set of actions.}
+\item{Actions: $A$ is a set of actions.}
 \item{Choice nodes and labels for these nodes: }
 \begin{itemize}
 \item{Choice nodes: $H$ is a set of non-terminal choice nodes.}
 \item{Action function: $\chi : H \to 2^A $ assigns to each choice a set of actions.}
 \item{Player function: $\rho : H \to N$ assigns to each non-terminal node $h$ a player $i \in N$ who chooses an action at $h$.}
 \end{itemize}
-\item{Terminal nodes: $Z$ is a set of terminal nodes, disjoint from $H$.}
+\item{$Z$ is a set of terminal nodes\footnote{Terminal node: a node of a tree data structure that has no child nodes.}, disjoint from $H$.}
 \item{Successor function: $\sigma : H \times A \to H \cup Z$ maps a choice node and an action to a new choice node or terminal node such that for all $h_1, h_2 \in H$ and $a_1, a_2 \in A$, if $\sigma(h_1, a_1) = \sigma(h_2, a_2)$ then $h_1  = h_2$  and $a_1 = a_2$} 
-\item{Utility function: $u = (u_1,...,u_n)$ where $u_i : Z \to R$
+\item{Utility function: $u = (u_1,...,u_n)$ where $u_i : Z \to R$.
 }
 \end{itemize} 
 \paragraph{}figure \ref{fig:scaled_diss} shows a sharing game represented in the extensive form
@@ -140,10 +134,7 @@ where:
 \begin{equation}
 \prod_{h \in H, \rho(h)=i}\chi(h)
 \end{equation}
-
-\paragraph{}
-Given our new definition of pure strategy, we can reuse our old definitions of mixed strategies and Nash equilibrium.
-
+Given our new definition of pure strategy, we can reuse our old definitions of mixed strategies and Nash equilibrium defined in 1.1 through 1.3.
 \subsubsection{Sub-game Perfection}
 A subgame Nash equilibrium is an equilibrium such that the strategies of players constitute a Nash equilibrium in each subgame of the game. It may be found by backwards induction.
 \begin{mydef}[Sub-game Perfection]\label{def:def555}
@@ -153,7 +144,8 @@ The set of sub-games of $G$ is defined by the sub-games of $G$ rooted at each of
 
 \subsubsection{Backward Induction}
 Backward induction is an iterative process for solving finite extensive form games. First, one determines the optimal strategy of the player who makes the last move of the game. Then, the optimal action of the next to last moving player is determined taking the last player's action as given. The process continues in this way backwards in time until the actions have been determined. Effectively, one determines the Nash Equilibrium of each subgame of the game, as shown in the next algorithm:
-\begin{algorithm}
+
+\begin{algorithm}[h!]
 \caption{Backward Induction\label{fig:scaled_back}}
 \begin{algorithmic}
  \STATE $u(h)$
@@ -170,11 +162,11 @@ Backward induction is an iterative process for solving finite extensive form gam
 \RETURN $best-util$
 \end{algorithmic}
 \end{algorithm}
-\paragraph{}Backward Induction has been used in solving games since John von Neumann and Oskar Morgenstern published their book, Theory of Games and Economic Behaviors in 1944.
+\paragraph{}Backward Induction has been used in solving games since John von Neumann and Oskar Morgenstern published their book, Theory of Games and Economic Behavior in 1944 (Von Neumann and Morgenstern; 1944). Denote $utc$ is a utility vector for each player.
+\\
+\\
+\\
 
-
-
-\paragraph{} Denote $utc$ is a utility vector for each player.
 \subsection{Repeated Games}
 So far we've payed attention to one stage games, that  is, games in which players concerns do not extend than beyond the first stage interaction. However, games are often played with a futuristic mindset, and this can significantly change their outcomes and equilibrium strategies. The topic of this section is repeated games, that is, games in which players face similar situations on multiple occasions.
 \begin{mydef}[Average Utilities]\label{def:def666}
@@ -220,7 +212,7 @@ Von Neuman and Morgenstern mentioned that the theory of games is static, and a d
 In order to capture the dynamics of a decision making process, it is preferable to represent the game in the extensive form rather than normal form for games of a normal complexity. However, extensive form games tend to get complex and difficult to manage. Traditional game theory represents a set of strategies for a player at each stage of the game. This representation lacks the element of learning in players when encountering similar choices which leads to better decision making. This shows the incompetence of traditional game theory in the dynamics model of decision making. Therefore, evolutionary game theory incorporates dynamic factors.
 \section{Evolutionary Game Theory}
 
-Evolutionary Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games in 1982. The Theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
+Evolutionary Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games in 1982. The theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
 
 \paragraph{}After the emergence of traditional game theory, biologists realized the potential of game theory to formally study adaptation of biological populations, especially in contexts where the fitness of a phenotype depends on the composition of the population (Hamilton, 1967). The main assumption of evolutionary game theory was that strategies with greater payoffs at a particular time would tend to spread more and thus have better chances of being present in the future.
 \paragraph{}The most important concept of evolutionary thinking that was introduced by Manynard Smith and Price (1973) is the notion of \textbf{Evolutionary Stable Strategy}(ESS), for 2-player symmetric games played by individuals belonging to the same population. Furthermore, a strategy $s$ is an ESS if and only if, when adopted by all members of a population, meaning that any other strategy $i$ that could enter the population in a low percentage would obtain a strictly  lower expected payoff in the population than the $s$ strategy.
