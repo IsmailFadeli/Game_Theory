@@ -2199,16 +2199,8 @@
     <bcf:citekey order="3">Richard</bcf:citekey>
     <bcf:citekey order="3">David</bcf:citekey>
     <bcf:citekey order="3">1982</bcf:citekey>
-    <bcf:citekey order="4">Litman</bcf:citekey>
-    <bcf:citekey order="4">2011</bcf:citekey>
-    <bcf:citekey order="5">Bravo et al</bcf:citekey>
-    <bcf:citekey order="5">2009</bcf:citekey>
-    <bcf:citekey order="6">Hollander et al</bcf:citekey>
-    <bcf:citekey order="6">2006</bcf:citekey>
-    <bcf:citekey order="7">Quijano et al</bcf:citekey>
-    <bcf:citekey order="7">2017</bcf:citekey>
-    <bcf:citekey order="8">Marden and Shamma</bcf:citekey>
-    <bcf:citekey order="8">2015</bcf:citekey>
+    <bcf:citekey order="4">Hollander et al</bcf:citekey>
+    <bcf:citekey order="4">2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

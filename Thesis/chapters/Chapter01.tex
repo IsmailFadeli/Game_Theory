@@ -87,20 +87,7 @@ $$s = <s_1,...,s_n>\textbf{ is  a }\textbf{Nash Equilibrium if } \forall i, s_i 
 \paragraph{Theorem (Nash, 1950)} Every finite game has a Nash equilibrium.
 
 \subsubsection{Computing Nash Equilibrium}
-For finding Nash Equilibrium, there exists two main algorithms:
-\begin{itemize}
-\item LCP(Linear Complimentary) (Lemke-Howson).
-\item Support Enumeration Method (Porter et al).
-\end{itemize}
-
-\subsubsection{Complexity Analysis}
-\title{\textbf{Theorem:}}
-Computing a Nash Equilibrium is classified as a \textbf{PPAD-complete}\footnote{PPAD : Polynomial Parity Argument on Directed Graphs} , this has been proven for:
-\begin{itemize}
-\item for games $\geq$ 4 players;
-\item for games with 3 players;
-\item for games with 2 players;
-\end{itemize}
+Computing a Nash equilibrium is classified to be a PPAD-complete \footnote{PPAD : Polynomial Parity Argument on Directed Graphs}. The first algorithm is known to be the complementary pivot algorithm as a solution to the linear complementary problem\footnote{Linear complementary algorithm is a general problem that unifies linear programming, quadratic programming and bi-matrix games}, which was developed by Lemke and Howson. The algorithm was later generalized for noncooperative n-person games by  Rosenmuller. The idea of the Lemke-Howson algorithm is to perform pivoting steps between the vertices of a polytope related to the game until a Nash equilibrium is found. The issue with these algorithms is that their worst case running time is exponential to the number of players and the size of the strategy sets.
 \subsubsection{Perfect information games}
 A game is called a perfect information game if only one player moves at a time and if each player knows every action of the players that moved before him at every point in the game.
 The extensive form is an alternative representation that makes the temporal structure explicit. A finite perfect information game in extensive form is defined by the tuple ($N, A, H, Z,\chi ,\rho, \sigma, u $)
@@ -119,7 +106,7 @@ where:
 \item{Utility function: $u = (u_1,...,u_n)$ where $u_i : Z \to R$.
 }
 \end{itemize} 
-\paragraph{}figure \ref{fig:scaled_diss} shows a sharing game represented in the extensive form
+\paragraph{}An example of a game that can be represented in extensive form is the sharing game, where two players try to decide how they can split $2\$$ in between them as shown in figure \ref{fig:scaled_diss}.
 \begin{figure}[h]
  
   \centering
@@ -140,31 +127,30 @@ A subgame Nash equilibrium is an equilibrium such that the strategies of players
 \begin{mydef}[Sub-game Perfection]\label{def:def555}
 The set of sub-games of $G$ is defined by the sub-games of $G$ rooted at each of the nodes in $G$.
 \end{mydef}
-\paragraph{}Let $s$ be a  sub-game perfect equilibrium of $G$ if for any sub-game $G'$ of $G$, the restriction of $s$ to G' is a Nash Equilibrium of $G'$. Since $G$ is its own sub-game , every sub-game perfect is a Nash Equilibrium.
+\paragraph{}Let $s$ be a  sub-game perfect equilibrium of $G$ if for any sub-game $G'$ of $G$, the restriction of $s$ to G' is a Nash equilibrium of $G'$. Since $G$ is its own sub-game , every sub-game perfect is a Nash equilibrium.
 
 \subsubsection{Backward Induction}
-Backward induction is an iterative process for solving finite extensive form games. First, one determines the optimal strategy of the player who makes the last move of the game. Then, the optimal action of the next to last moving player is determined taking the last player's action as given. The process continues in this way backwards in time until the actions have been determined. Effectively, one determines the Nash Equilibrium of each subgame of the game, as shown in the next algorithm:
+Backward induction is an iterative process for solving finite extensive form games. First, one determines the optimal strategy of the player who makes the last move of the game. Then, the optimal action of the next to last moving player is determined taking the last player's action as given. The process continues in this way backwards in time until the actions have been determined.
 
 \begin{algorithm}[h!]
 \caption{Backward Induction\label{fig:scaled_back}}
 \begin{algorithmic}
- \STATE $u(h)$
-\IF{$h \in Z$}
-\RETURN{$u(h)$}
+ \STATE Input : node h
+ \STATE Output : $u(h)$
+\IF{$h \in Z$}  
+\RETURN{$u(h)$}   \COMMENT{return the payoff vector if the node h is a leaf node}
 \ENDIF
-\STATE $best-util \leftarrow -50$
+\STATE best-util $\leftarrow -\infty$ \COMMENT {best-util is a payoff vector associated with each agent}
 \FORALL{$a \in \rho(h)$} 
-\STATE $utc \leftarrow BACKWARDINDUCTION(\sigma(h,a))$ 
-\IF{$utc_p(h) >best-util_p(h)$}
-\STATE $best-util \leftarrow utc$
+\STATE $utc \leftarrow BACKWARDINDUCTION(\sigma(h,a))$  \COMMENT{look at all actions available from node h, where $\sigma(h,a)$ is the child node arrived at by taking action $a$ }
+\IF{$utc_{\rho_{(h)}} > best-util_{\rho_{(h)}}$}
+\STATE best-util $\leftarrow utc$ \COMMENT {update the best utility vector if the utility at the child node is better}
 \ENDIF
 \ENDFOR
-\RETURN $best-util$
+\RETURN best-util
 \end{algorithmic}
 \end{algorithm}
-\paragraph{}Backward Induction has been used in solving games since John von Neumann and Oskar Morgenstern published their book, Theory of Games and Economic Behavior in 1944 (Von Neumann and Morgenstern; 1944). Denote $utc$ is a utility vector for each player.
-\\
-\\
+\paragraph{}Backward Induction has been used in solving games since John von Neumann and Oskar Morgenstern published their book, Theory of Games and Economic Behavior in 1944 (Von Neumann and Morgenstern; 1944). note that $utc$ or "utility at child" is a utility vector for each player (Jackson, Leyton-Brown and Shoham, 2013). Effectively, one determines the Nash Equilibrium of each subgame of the game, as shown in algorithm \ref{fig:scaled_back}.
 \\
 
 \subsection{Repeated Games}
@@ -183,31 +169,37 @@ Given an infinite sequence of payoffs  $(r_1, r_2, ...) $ for player $i$ and a d
 \end{mydef}
 \paragraph{}In \ref{eq:777}, the players care about the future $j$ just as much as the present, but with a probability of $1 - \beta$ the game will end in any round.
 \begin{mydef}[Equilibrium of Infinitely Repeated Games]\label{def:def888}
-Consider any $n$-player game $G = (N,A,u)$ and a payoff vector $r = (r_1, r2, ..., r_n)$
+Consider any $n$-player game $G = (N,A,u)$ and a payoff vector $r = (r_1, r_2, ..., r_n)$
  \begin{equation}\label{eq:999}
 	v_i = \min_{S_{-i} \in S_{-i}} \max_{S_i \in S} u_i (S_{-i}, S_i)
 \end{equation}
 \end{mydef}
-\paragraph{} The minmax value of the player $i$ in equation \ref{eq:999} is the amount of utility $i$ can get when the other player $-i$ plays a minmax strategy against him.
-\begin{mydef}[Enforceability]\label{def:def100}
-A payoff profile $r$ is enforceable if $i_i \geq v_i$.
+\paragraph{} The minmax value of the player $i$ in equation \ref{eq:999} is the amount of utility $i$ can get when the other player $-i$ plays a minmax strategy against him. For example, the minmax payoff in a Prisoner's Dilemma  is (1,1) as shown in table \ref{table:7}.
+\begin{table}[h!]
+\centering
+\begin{tabular}{lllll}
+
+\multicolumn{1}{l}{1/2} \vline  & \multicolumn{1}{l}{w} & \multicolumn{1}{l}{s}  \\ 
+\hline
+w                          & 2,2                                  & 0,3				
+\\
+s                          &3,0                                    & 1,1                                     
+                                      
+\end{tabular}
+\caption{Prisoner's Dilemma}
+\label{table:7}
+\end{table}
+
+\begin{mydef}[Folk Theorem]
+Consider a finite normal form game $G = (N, A, u)$, and $a = (a_1, ...,a_n )$ to be a Nash equilibrium of the stage game $G$. If $a^\prime = (a^\prime_1, ..., a^\prime_n)$ is such that $u_i(a^\prime)> u_i(a)$ for all $i$, then there exists a discount factor $\beta <1$, such that if $\beta_i \geq \beta$ for all $i$, then there exists a subgame perfect Nash equilibrium of the infinite repetition of $G$ that has $a^\prime$ played in every period on the equilibrium path.
 \end{mydef}
-\begin{mydef}[Feasibility]\label{def:def100}
-A payoff profile $r$ is feasible if there exists a rational non negative value $\alpha_a$ for all $i$, we can express $r_i$ as $\sum{a \in A}(\alpha_a u_i(a)$ with $\sum{a \in A}(\alpha_a) = 1$.
-\end{mydef}
-\subsubsection{Folk Theorem}
-Consider any $n$-player game $G$ and any payoff vector $(r_1, r_2, ...,r_n) $ :
-\begin{itemize}
-\item if $r$ is the payoff in any Nash equilibrium of the infinitely repeated game $G$ with average rewards, then for each player $i$,  $r_i$ is enforceable.
-\item if $r$ is both feasible and enforceable, then $r$ is the payoff in some Nash equilibrium of the infinitely repeated game with average rewards.
-\end{itemize}
 \subsection{Population Games}
 \paragraph{}Population games provide a simple and general framework for studying strategic interactions in large populations whose members play pure strategies. The simplest population games are generated by random matching in normal form games, but the population game framework allows for interactions of a more intricate nature.
 \paragraph{}We focus here on games played by a single population. All players in this game play equivalent roles. Suppose that there is a unit mass of players, each of whom chooses a pure strategy from the set
  $S = {1, ... , n}$. The aggregate behavior of these players is described by a population state $x \in X$, with $x_j$ representing the proportion of agents choosing pure strategy $j$. We identify a population game with a continuous vector valued payoff function $ F:X \rightarrow R^n$. The scalar $F(x)$ represents the payoff to strategy $i$ when the population state is $x$.
-\paragraph{}Population state $x^*$ is a Nash Equilibrium of $F$ if no player can improve his payoff by unilaterally switching strategies.
+\paragraph{}Population state $x^*$ is a Nash equilibrium of $F$ if no player can improve his payoff by unilaterally switching strategies.
 \subsection{The lack of dynamics in traditional game theory}
-Von Neuman and Morgenstern mentioned that the theory of games is static, and a dynamic theory would be more fitted and preferable (The theory of games, V.Neuman and Morgenstern; 1953). At the time of the publication, evolutionary game theory was unkown.
+Von Neuman and Morgenstern mentioned that the theory of games is static, and a dynamic theory would be more fitted and preferable (The theory of games, V.Neuman and Morgenstern; 1953). At the time of the publication, evolutionary game theory was unknown.
 \paragraph{}
 In order to capture the dynamics of a decision making process, it is preferable to represent the game in the extensive form rather than normal form for games of a normal complexity. However, extensive form games tend to get complex and difficult to manage. Traditional game theory represents a set of strategies for a player at each stage of the game. This representation lacks the element of learning in players when encountering similar choices which leads to better decision making. This shows the incompetence of traditional game theory in the dynamics model of decision making. Therefore, evolutionary game theory incorporates dynamic factors.
 \section{Evolutionary Game Theory}
@@ -215,7 +207,7 @@ In order to capture the dynamics of a decision making process, it is preferable 
 Evolutionary Game Theory was introduced by John Maynard Smith in Evolution and The Theory of Games in 1982. The theory was formulated to understand the behavior of animals in game theoretic situations. But it can be applied to modeling human behavior.
 
 \paragraph{}After the emergence of traditional game theory, biologists realized the potential of game theory to formally study adaptation of biological populations, especially in contexts where the fitness of a phenotype depends on the composition of the population (Hamilton, 1967). The main assumption of evolutionary game theory was that strategies with greater payoffs at a particular time would tend to spread more and thus have better chances of being present in the future.
-\paragraph{}The most important concept of evolutionary thinking that was introduced by Manynard Smith and Price (1973) is the notion of \textbf{Evolutionary Stable Strategy}(ESS), for 2-player symmetric games played by individuals belonging to the same population. Furthermore, a strategy $s$ is an ESS if and only if, when adopted by all members of a population, meaning that any other strategy $i$ that could enter the population in a low percentage would obtain a strictly  lower expected payoff in the population than the $s$ strategy.
+\paragraph{}The most important concept of evolutionary thinking that was introduced by Manynard Smith and Price (1973) is the notion of Evolutionary Stable Strategy (ESS), for 2-player symmetric games played by individuals belonging to the same population. Furthermore, a strategy $s$ is an ESS if and only if, when adopted by all members of a population, meaning that any other strategy $i$ that could enter the population in a low percentage would obtain a strictly  lower expected payoff in the population than the $s$ strategy.
 \paragraph{}The basic ideas behind Evolutionary game theory is that strategies with greater payoffs tend to spread more, and that fitness is frequency dependent soon transcended the borders of biology and started to spread through many other disciplines. In economic context, it was understood that natural selection would derive from competition among entities for small resources or market shares. In social contexts, evolution was often understood as cultural evolution, and it referred to dynamic changes in behavior or ideas over time (\cite{Nelson and Winter, 1982})(\cite{Boyd and Richerson, 1985}).
 \paragraph{}In order to extend this understanding further, let's consider this example:
 Suppose that a small group of mutants choosing a strategy different from $\delta$* to enter the population.
