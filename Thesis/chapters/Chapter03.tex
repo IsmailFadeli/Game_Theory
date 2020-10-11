@@ -3,18 +3,16 @@ The contribution of this study on travel mode choice is the research on modeling
 \clearpage
 
 \section{Evolutionary Game Theory and Travel Mode Choice}
-Evolutionary game theory is used in this paper as a vehicle for discussing travel mode choice based on the following apparent similarities: 
+Evolutionary game theory is used as a vehicle for discussing travel mode choice based on the following apparent similarities: 
 \paragraph{}A group can be a substitute for an individual as a participant in evolutionary game theory, and the proportions of the individuals choosing different pure strategies in the group can substitute for mixed strategy. The results of travel mode choice are group behavior within the travel mode subsystems, and the only proportions of individuals choosing each travel mode are meaningful for management and study.
 \paragraph{}Nash equilibrium means that the frequency of the adopted strategies makes the strategy payoffs exactly equal with no one desiring a change in strategy, then the percentage of individuals choosing each different strategy remains stable and reaches equilibrium. In the stable travel context, a travel mode choice will tend to be stable, the Nash equilibrium of the evolutionary game will be changed by the means of traffic control, the construction, and the structure of the transportation system.
 
 \subsection{Evolutionary Game Model}
-The extensive form of the agent based game displayed in Figure 3.2, describes the process of travel mode choice. Two conditions have been implemented in this model.
-\begin{itemize}
-\item Travelers can be divided into two main categories: car owners and noncar owners. As mentioned before, travel is a two stage process, first, every player chooses whether they own a car or not; then, the car owners will select from one of four modes: car, taxi, bus, or rail, and the noncar owners will only select from taxi, bus, or rail.
-\item The payoff function that inhabitants must contribute is independent of the proportion of inhabitants traveling in a particular mode.
 
-\end{itemize}
-\paragraph{} As mentioned in Chapter 1, the extensive form is defined by three  main objects.
+Inspired by the nested binary logit model used to define mode choice and Zhu et al (2018) study, the multi-agent based mode choice game is represented in extensive form in Figure \ref{fig:555}.
+Players in the travel mode choice game are be divided into two main categories: car owners and noncar owners. First, every player chooses whether they own a car or not; then, the car owners will select from one of four modes: car, taxi, bus, or rail, and the noncar owners will only select from taxi, bus, or rail. Furthermore, two sub-games are apparent, a car owners sub-game and non car owners sub-game.
+
+\paragraph{} As mentioned in Chapter 1, the extensive form is defined by the set of players, the strategy sets , and the payoff function.
 \begin{itemize}
 \item the set of players $N = {1,...,n}$, all travelers are players.
 \item The strategy sets of the players are $S_1 = {Car owneer, Noncar owner}$ and $ S_2 = $(Travel by car, Travel by taxi, Travel by bus, Travel by rail).
@@ -43,19 +41,21 @@ f_{rail} = T_{rail} C_{rail}
   \begin{tikzpicture}[baseline] % baseline makes the example number stay at the top of the tree
    \Tree[.N [.\textit{Car Owner} [.Car \textit{$U_1$} ][.Taxi \textit{$U_2$} ][.Bus \textit{$U_3$} ][.Rail \textit{$U_4$} ]][.\textit{Non Car Owner} [.Taxi \textit{$U_2$} ][.Bus \textit{$U_3$} ][.Rail \textit{$U_4$} ]]]
      \end{tikzpicture}%
-  \caption{Travel mode choice game\label{fig:2}}
+  \caption{Travel mode choice game\label{fig:555}}
 \end{figure}
 \subsection{Nash Equilibrium of Travel Mode Choice Game}
-According to the Folk Theorem mentioned in Chapter 1, any payoff vector satisfying individual rationality can be obtained through a set of specific subgame perfect equilibriums in an infinitely repeated game. Tn travel mode choice, there are two subgame: Car owner subgame and noncar owner subgame, as shown in figure \ref{fig:2}. If Nash equilibrium is reached in each of the subgames, the Nash equilibrium of the game is subgame perfect Nash equilibrium. As mentioned in the previous section, backward induction is the solution method for obtaining the Nash equilibrium of this game.
-\begin{figure}
+According to the Folk Theorem mentioned in Chapter 1, any payoff vector satisfying individual rationality can be obtained through a set of specific subgame perfect equilibriums in an infinitely repeated game. In Figure \ref{fig:555} there are two subgame: Car owner subgame and noncar owner subgame, as shown in figures \ref{fig:3} and \ref{fig:4}.The Nash equilibrium of the game is a subgame perfect Nash equilibrium of each sub-game. As mentioned in Chapter 1, backward induction is the method for solving extensive form games and obtaining the Nash equilibrium.
+
+\subsubsection{Nash Equilibrium of Car Owner Subgame}The key feature of mixed strategy Nash equilibrium is that the expectations of the pure strategies are equal, that is, in car owner subgame of figure \ref{fig:3}. \\
+
+\begin{figure}[!h]
   \centering
   \begin{tikzpicture}[baseline] % baseline makes the example number stay at the top of the tree
    \Tree[.\textit{Car Owner} [.Car \textit{$U_1$} ][.Taxi \textit{$U_2$} ][.Bus \textit{$U_3$} ][.Rail \textit{$U_4$} ]]
      \end{tikzpicture}%
   \caption{Car owner subgame\label{fig:3}}
 \end{figure}
-\subsubsection{Nash Equilibrium of Car Owner Subgame}The key feature of mixed strategy Nash equilibrium is that the expectations of the pure strategies are equal, that is, in car owner subgame of figure \ref{fig:3}, the products of the travel mode's payoffs and its probabilities are equal and the sum of their probabilities is 1, so that 
-
+The products of the travel mode's payoffs and its probabilities are equal and the sum of their probabilities is 1:
 \begin{equation}\label{eq:8}
 \mu_1 r^c_{c} = \mu_2 r^{c}_{t} = \mu_3 r^c_{b} = \mu_4 r^c_{r}
 \end{equation}
@@ -76,15 +76,18 @@ r^c_{b} = \frac{1}{1+ (\mu_3 / \mu_1)+(\mu_3 / \mu_2)+(\mu_3 / \mu_4)}
 \begin{equation}
 r^c_{r} = \frac{1}{1+ (\mu_4 / \mu_1)+(\mu_4 / \mu_2)+(\mu_4 / \mu_3)}
 \end{equation}
-\begin{figure}
+
+\subsubsection{Nash Equilibrium for Noncar Owners Subgame}
+Using backward induction properties as explained in Chapter 1 to solve the subgame shown in Figure \ref{fig:4}. \\
+
+\begin{figure}[!h]
   \centering
   \begin{tikzpicture}[baseline] % baseline makes the example number stay at the top of the tree
    \Tree[.\textit{Non Car Owner} [.Taxi \textit{$U_2$} ][.Bus \textit{$U_3$} ][.Rail \textit{$U_4$} ]]
      \end{tikzpicture}%
-  \caption{Non car owner subgame\label{fig:66}}
+  \caption{Non car owner subgame\label{fig:4}}
 \end{figure}
-\subsubsection{Nash Equilibrium for Noncar Owners Subgame}
-Using backward induction properties as explained in Chapter 1 to solve the subgame shown in Figure \ref{fig:66}, the products of the travel mode's payoffs and its probabilities are equal, and the sum of their probabilities is 1, resulting in: 
+The products of the travel mode's payoffs and its probabilities are equal, and the sum of their probabilities is 1, resulting in: 
 \begin{equation}\label{eq:10}
 \mu_2 r^n_{t} = \mu_3 r^n_{b} = \mu_4 r^n_{rail}
 \end{equation}
@@ -152,10 +155,9 @@ For this experiment we are using Netlog\footnote{Netlog is a multi-agent program
 In this experiment, we want to test all components available for modifying the passenger's behavior. As we want to remain the characteristics of each mode.
 Using Behavior Space tool in Netlogo that allows to make multiple simulations. It runs the model several times, with the ability to change the parameters of the model and record the results after each run.
 
-To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in figure (3.1).
+To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in figure \ref{table:2}.
 
 When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
-\clearpage
 
 \begin{table}[h!]
 \centering

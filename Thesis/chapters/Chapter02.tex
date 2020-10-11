@@ -1,18 +1,16 @@
 
+\paragraph{}Choice models are constantly evolving, and it is necessary to understand where the literature is. In this Chapter, we will discuss various travel choice models as well as the decision maker's different attributes, then give an overview of the applications of game theory in engineering and transportation problems.
 
-
-\paragraph{}The current approach to mode choice behavior
-in the perspective of expected utility theory or random utility theory. However, travelers evaluate the alternative modes by individual experience and attitude which are not considered in the expected utility theory or random utility theory models. Therefore, many alternative models have been proposed.
 \clearpage
 \section{Travel Choice Models}
 \paragraph{}Many models are available for analyzing data of travel mode choice. However, three main models have been dominant: logit models, probit models, and discriminant models. These simple choice models are described first. Mode-use models are different from other mode choice models in their dependent variables and model structure. In the third part of this section, we discuss some studies that have used psychological scaling models to probe more deeply into the nature of mode choice process. This is followed by a discussion of reliability and validity analysis in mode choice models.
 
 \subsection{Simple Choice Models}
-\paragraph{}Three simple-choice models are usually discussed in the context of utility theory. According to this understanding, the utility $U_i$ of alternative mode $i$ is expressed as the sum of a deterministic component $V_i$ and a random component $\epsilon_i$(\cite{Richard, David, 1982}):
+\paragraph{}Three simple-choice models are usually discussed in the context of utility theory. According to this understanding, the utility $U_i$ of alternative mode $i$ is expressed as the sum of a deterministic component $V_i$ and a random component $\epsilon_i$ capturing the uncertainty:
 \begin{equation}
 U_i = V_i + \epsilon_i
 \end{equation}
-\paragraph{} The probability of choosing the $i$th mode from a set of $n$ alternatives is thus:
+\paragraph{} The probability of choosing the $i$th mode from a set of $n$ alternatives is: 
 \begin{equation}
 P_i = P_r[U_i>U_j](j=i)
 \end{equation}
@@ -37,50 +35,12 @@ P_i = 	\int_{-\infty}^{+\infty} F_i(. . . , t + V_i - V_j, . . .)df
 \paragraph{}Mode use and scaling models have expanded our knowledge of the mode choice process. The simple-choice, mode-use, and scaling models utilize different types of data to explain mode choice at different levels of analysis. Models developed for psychological stimuli cannot just be taken off the shelf and applied to complex situations like mode choice without modification.
 
 \subsection{Reliability and Validity}
-\paragraph{}Reliability and validity testing is very important in mode choice models. Early applications of logit analysis were largely descriptive in nature. Later applications became more sophisticated in their use of statistical procedures.
-
-\section{Choice Decision Elements}
-The framework for the choice process is that the individual determines the available alternatives(modes), next, evaluates the attributes of each alternative, and then, uses a decision rule to select an alternative from among the available alternatives (Ben-Akiva and Lerman, 1985). Further in this section, we see that the elements of a choice process are : the individuals, travel modes, the attributes of modes and the decision rule.
-
-\subsection{Mode Characteristics}
-The travel mode choice is an important step of the transportation forecasting (Litman,2011). The main modes for travelers are private cars or public transportation. TMC is usually mathematically represented by logit functions, due to its consideration of particular qualities of travelers(Bravo et al, 2009). However, comfort, safety ,and reliability have been included in mode choice models.
-\subsubsection{Time and Cost}
-Travel time and expenses are the two most commonly investigated determinants of travel-mode choice. Studies done by Lisco (1967) and Quarmby (1967) used travel time and travel cost differences as two independent variables in their models. Travel time and cost differences are discussed in the next section. Another method was used by Warner (1962), who used travel time and cost as ratios.
-\paragraph{}Watson (1974) believed that the difference formulation is most appropriate for between city trips, but when intercity trips are being analyzed other factors may be in order. On longer intercity trips, it is difficult to say whether a traveler would base their mode choice on time, whereas the preference for faster modes is a reasonable assumption on a short commuting trip. 
-\paragraph{}Many studies have made the specification of the time and cost variables between overall travel time and excess travel time. This distinction arose on the assumption that time spent in different ways while traveling may be valued differently. A study by Quarmby (1967) divided travel time into "travel time" and "excess travel time", mentioning that the excess out of vehicle time on a journey may be greater for bus than car users. An important assumption made by Ben-Akiva and Richards (1976), that in vehicle time is generally viewed the same for all modes, whereas out of vehicle time tends to be mode  specific. 
-\paragraph{}Travel cost has been discussed in detail by Gillen (1977), who notes that many mode choice studies gave added the cost of parking to automobile running costs (Williams, 1978). Gillen found that parking cost is a  crucial variable if the study aims to obtain unbiased estimates of operating costs on mode choice. 
-\paragraph{}It is still unknown of which costs are relevant to mode choice decision. The microeconomic theory that underlies the specification of these models suggests that "marginal operating costs" are the relevant costs. However, from the consumer's perspective, the total cost of ownership including purchase price and maintenance costs may be the more important consideration.  
-\paragraph{}The next function computes the probability of car mode choice, which depends on the difference between the travel time $\sigma_t$ and the travel costs $\sigma_c$:
-\begin{equation}
-p^{*}(\sigma_t,\sigma_c) = \frac{1}{1+exp(a_0+ a_i c^c + a_c \sigma_c)}
-\end{equation}
-\paragraph{}The objective function based on logit function may is presented in the following equation(\cite{Hollander et al, 2006}):
-\begin{equation}
-G(p) = (p - p^{*}(\sigma_t,\sigma_c))*
-	 = (p - \frac{1}{1+exp(a_0+ a_i c^c + a_c \sigma_c)})^2 \rightarrow min_p.
-\end{equation}
-\paragraph{}The difference of the travel times between modes (private
-and public transport) for traveling between A and B :
-\begin{equation}
-\sigma t_{a,b} = T^{r}_a + T^{r}_b + T^{p}_b - T^{t}_a - T^{t}_b - t_w
-\end{equation}
-where $t_w$ is the waiting time in public transport.
-\paragraph{}The difference between travel costs could be : 
-\begin{equation}
-\sigma c_{a,b} = c^{c} ( t^{r}_b + t^{r}_b - t^{p}_b )- c^{p}_b - c^t
-\end{equation}
-\subsection{Consumer Characteristics}
-Mode choice models have implemented the characteristics related to the traveler, either as independent variables or as bases for segmentation (Richard Barff and David Mackay, 1982).
-\paragraph{}
-Car ownership was used as an independent variable in models such as Beesly's (1965) and Williams (1978). These studies found that car ownership was not only an important variable, but a significant determinant of mode choice.
-\paragraph{}
-Geographic location and income are also found to be determinants of mode choice. The availability of some modes of transportation is directly related to the location of the consumer.
-\\
-
+\paragraph{}Reliability and validity testing has been critical in constructing mode choice models. Early applications of logit analysis were largely descriptive in nature. Later applications became more sophisticated in their use of statistical procedures. Studies have been classified in table \ref{table:775} shows the use of reliability and validity in past studies on mode choice.
+ 
 \begin{table}[h!]
 \centering
 \begin{threeparttable}
-\caption{Summary of charateristics of selected studies on travel mode choice}\label{table:7}
+\caption{Summary of charateristics of selected studies on travel mode choice}\label{table:775}
 \begin{tabular}{lcccc}
 \multicolumn{1}{l}{} \vline  & \multicolumn{1}{c}{Type of mode} & \multicolumn{1}{c}{Estimation method} & \multicolumn{1}{c}{R/V} & \multicolumn{1}{c}{No of modes}  \\ 
 \hline
@@ -104,10 +64,32 @@ Tischer \& Philips (1979)   & O & L & Y & 3
 \end{table}
 
 
+\section{Choice Decision Elements}
+The framework for the choice process is that the individual determines the available alternatives(modes), next, evaluates the attributes of each alternative, and then, uses a decision rule to select an alternative from among the available alternatives (Ben-Akiva and Lerman, 1985). Further in this section, we see that the elements of a choice process are : the individuals, travel modes, the attributes of modes and the decision rule.
+
+\subsection{Mode Characteristics}
+The travel mode choice is an important step of the transportation forecasting (Litman,2011). The main modes for travelers are private cars or public transportation. TMC is usually mathematically represented by logit functions, due to its consideration of particular qualities of travelers(Bravo et al, 2009). However, comfort, safety ,and reliability have been included in mode choice models.
+\subsubsection{Time and Cost}
+Travel time is probably the most important among all other attributes. Mode choice models often assume that travelers are experienced with network conditions, therefore, are able to estimate travel times. Since the implementation of Intelligent Transportation Systems, new models have been developed.
+Travel time and expenses are the two most commonly investigated determinants of travel-mode choice. Studies done by Lisco (1967) and Quarmby (1967) used travel time and travel cost differences as two independent variables in their models. Another method was used by Warner (1962), who used travel time and cost as ratios.
+\paragraph{}Watson (1974) believed that the difference formulation is most appropriate for between city trips, but when intercity trips are being analyzed other factors may be in order. On longer intercity trips, it is difficult to say whether a traveler would base their mode choice on time, whereas the preference for faster modes is a reasonable assumption on a short commuting trip. 
+\paragraph{}Many studies have made the specification of the time and cost variables between overall travel time and excess travel time. This distinction is based on the assumption that time spent in different ways while traveling may be valued differently. A study by Quarmby (1967) divided travel time into "travel time" and "excess travel time", mentioning that the excess out of vehicle time on a journey may be greater for bus than car users. An important assumption made by Ben-Akiva and Richards (1976), that in vehicle time is generally viewed the same for all modes, whereas out of vehicle time tends to be mode  specific. 
+\paragraph{}Travel cost has been discussed in detail by Gillen (1977), who notes that many mode choice studies gave added the cost of parking to automobile running costs (Williams, 1978). Gillen found that parking cost is a  crucial variable if the study aims to obtain unbiased estimates of operating costs on mode choice. 
+\paragraph{}It is still unknown of which costs are relevant to mode choice decision. The microeconomic theory that underlies the specification of these models suggests that "marginal operating costs" are the relevant costs. However, from the consumer's perspective, the total cost of ownership including purchase price and maintenance costs may be the more important consideration.  
+
+\subsection{Consumer Characteristics}
+Mode choice models have implemented the characteristics related to the traveler, either as independent variables or as bases for segmentation (Richard Barff and David Mackay, 1982).
+\paragraph{}
+Car ownership was used as an independent variable in models such as Beesly's (1965) and Williams (1978). These studies found that car ownership was not only an important variable, but a significant determinant of mode choice.
+\paragraph{}
+Geographic location and income are also found to be determinants of mode choice. The availability of some modes of transportation is directly related to the location of the consumer.
+
 \section{Evolutionary Game Theory and Engineering}
-\paragraph{}Many Engineering Infrastructures are becoming increasingly complex to manage due to large scale distributed nature and the nonlinear interdependence between their components (Quijano et al, 2017).Including transportation systems, communication networks, data networks, and teams of anonymous vehicles. Controlling these large scale distributed systems requires the implementation of decision rules for interconnected components that grantee the accomplishment of a collective objective in an environment that is often dynamic and uncertain. In order to achieve this goal, traditional control theory is often of little use, since distributed systems generally lack a central  entity with access or control over all components (Marden and Shamma, 2015).
+\paragraph{}Many Engineering Infrastructures are becoming increasingly complex to manage due to large scale distributed nature and the nonlinear interdependence between their components (Quijano et al, 2017).Including transportation systems, communication networks, data networks, and teams of anonymous vehicles.
+\paragraph{}
+Controlling large scale distributed systems requires the implementation of decision rules for interconnected components that grantee the accomplishment of a collective objective in an environment that is often dynamic and uncertain. In order to achieve this goal, traditional control theory is often of little use, since distributed systems generally lack a central  entity with access or control over all components (Marden and Shamma, 2015).
 \section{Game Theory applications in Transportation}
-\paragraph{} One of the first studies was done by Fisk(1984), where he discussed the applications of Stackelberg and Nash games in transportation systems planning and operations. Fisk found out that Wardrop's user equilibrium principle in road traffic research is essentially the condition for a Nash equilibrium, mentioning that no driver can reduce his or her travel time by switching to a different route choice. Another study by Reyniers (1992) on a game between the railway operators who sets the capacities for different fare classes and the passengers who chooses which class to use.
+\paragraph{} One of the first studies was done by Fisk(1984), where he discussed the applications of Stackelberg and Nash games in transportation systems planning and operations. Fisk found out that Wardrop's user equilibrium principle in road traffic research is essentially the condition for a Nash equilibrium, mentioning that no driver can reduce his or her travel time by switching to a different route choice. Another study by Reyniers (1992) on a game between the railway operators who sets the capacities for different fare classes and the passengers who chooses which class to use. A recent research by Padma and Bakshi (2016) on the optimization of parking lot area in smart cities using game theory. Another study utilized evolutionary game theory on taxi service mode choice by Zhu et al (2018).  
 \
 \paragraph{}
 Mode choice models are becoming more behavioral, despite having economic characteristics such as time, costs, and income.  These models tend to explain the presents attitudes in mode choice and lack the changing side of behavior. Game theory has the potential of developing a model that uses the dynamic information of the mode choice process. These studies provides us with a basis for the construction of a model capable of making predictions.

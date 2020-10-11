@@ -106,14 +106,14 @@ where:
 \item{Utility function: $u = (u_1,...,u_n)$ where $u_i : Z \to R$.
 }
 \end{itemize} 
-\paragraph{}An example of a game that can be represented in extensive form is the sharing game, where two players try to decide how they can split $2\$$ in between them as shown in figure \ref{fig:scaled_diss}.
-\begin{figure}[h]
+\paragraph{}An example of a game that can be represented in extensive form is the sharing game, where two players try to decide how they can split $2\$$ in between them as shown in figure \ref{fig:sf}.
+\begin{figure}[h!]
  
   \centering
   \begin{tikzpicture}[baseline] % baseline makes the example number stay at the top of the tree
    \Tree[.1 [.\textit{2 } [.\textit{(0,0) } ] [.\textit{(2,0) } ]][.\textit{2 } [.\textit{(0,0) } ] [.\textit{(1,1) } ]][.\textit{2 } [.\textit{(0,0) } ] [.\textit{(0,2) } ]]]
      \end{tikzpicture}%
-  \caption{Sharing Game\label{fig:scaled_diss}}
+  \caption{Sharing Game\label{fig:sf}}
 \end{figure}
 \subsubsection{Pure Strategies}
 \paragraph{} A pure strategy for a player in a perfect-information game is a complete specification of which action to take at each node belonging to that player.
@@ -208,7 +208,7 @@ Evolutionary Game Theory was introduced by John Maynard Smith in Evolution and T
 
 \paragraph{}After the emergence of traditional game theory, biologists realized the potential of game theory to formally study adaptation of biological populations, especially in contexts where the fitness of a phenotype depends on the composition of the population (Hamilton, 1967). The main assumption of evolutionary game theory was that strategies with greater payoffs at a particular time would tend to spread more and thus have better chances of being present in the future.
 \paragraph{}The most important concept of evolutionary thinking that was introduced by Manynard Smith and Price (1973) is the notion of Evolutionary Stable Strategy (ESS), for 2-player symmetric games played by individuals belonging to the same population. Furthermore, a strategy $s$ is an ESS if and only if, when adopted by all members of a population, meaning that any other strategy $i$ that could enter the population in a low percentage would obtain a strictly  lower expected payoff in the population than the $s$ strategy.
-\paragraph{}The basic ideas behind Evolutionary game theory is that strategies with greater payoffs tend to spread more, and that fitness is frequency dependent soon transcended the borders of biology and started to spread through many other disciplines. In economic context, it was understood that natural selection would derive from competition among entities for small resources or market shares. In social contexts, evolution was often understood as cultural evolution, and it referred to dynamic changes in behavior or ideas over time (\cite{Nelson and Winter, 1982})(\cite{Boyd and Richerson, 1985}).
+\paragraph{}The basic ideas behind Evolutionary game theory is that strategies with greater payoffs tend to spread more, and that fitness is frequency dependent soon transcended the borders of biology and started to spread through many other disciplines. In economic context, it was understood that natural selection would derive from competition among entities for small resources or market shares. In social contexts, evolution was often understood as cultural evolution, and it referred to dynamic changes in behavior or ideas over time (Nelson and Winter, 1982)(Boyd and Richerson, 1985).
 \paragraph{}In order to extend this understanding further, let's consider this example:
 Suppose that a small group of mutants choosing a strategy different from $\delta$* to enter the population.
 \begin{itemize}
@@ -229,7 +229,7 @@ x' A((1 - \epsilon)x + \epsilon y) > y' A((1 - \epsilon)x + \epsilon y)
 \begin{center}
 $\forall \epsilon \leq \epsilon(y)$ and $y \neq x.$
 \end{center}
-\paragraph{}In order to explain condition \ref{eq:55}, let's consider a population programmed to play mixed strategy $x$ is invaded by a small group of mutants programmed to play the alternative mixed strategy $y$. Equation \ref{eq:5} requires that regardless of the choice of $y$, an incumbent's expected payoff from a random match in the post entry population exceeds that of a mutant so long as the size of the invading group is sufficiently small.
+\paragraph{}In order to explain condition \ref{eq:55}, let's consider a population programmed to play mixed strategy $x$ is invaded by a small group of mutants programmed to play the alternative mixed strategy $y$. Equation \ref{eq:55} requires that regardless of the choice of $y$, an incumbent's expected payoff from a random match in the post entry population exceeds that of a mutant so long as the size of the invading group is sufficiently small.
 \paragraph{}The definition of ESS above can also be expressed as a combination of two conditions: 
 \begin{equation}\label{eq:6}
 x' A x \geq y' A x  \: \forall  \: y \in X

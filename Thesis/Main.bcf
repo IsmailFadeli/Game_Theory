@@ -2192,15 +2192,6 @@
   <bcf:bibdata section="0">
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Nelson and Winter</bcf:citekey>
-    <bcf:citekey order="1">1982</bcf:citekey>
-    <bcf:citekey order="2">Boyd and Richerson</bcf:citekey>
-    <bcf:citekey order="2">1985</bcf:citekey>
-    <bcf:citekey order="3">Richard</bcf:citekey>
-    <bcf:citekey order="3">David</bcf:citekey>
-    <bcf:citekey order="3">1982</bcf:citekey>
-    <bcf:citekey order="4">Hollander et al</bcf:citekey>
-    <bcf:citekey order="4">2006</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

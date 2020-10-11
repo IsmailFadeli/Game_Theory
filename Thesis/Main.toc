@@ -132,14 +132,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.1.1}Time and Cost}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{16}%
-\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{16}%
@@ -150,7 +142,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Consumer Characteristics}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{17}%
+\contentsline {paragraph}{}{16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{17}%
 \defcounter {refsection}{0}\relax 
@@ -158,62 +150,64 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{17}%
 \defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{17}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Game Theory applications in Transportation}{17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{18}%
+\contentsline {paragraph}{}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Model and Analysis}{19}%
+\contentsline {chapter}{\numberline {3}Model and Analysis}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Evolutionary Game Theory and Travel Mode Choice}{20}%
+\contentsline {section}{\numberline {3.1}Evolutionary Game Theory and Travel Mode Choice}{19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Evolutionary Game Model}{19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Evolutionary Game Model}{20}%
+\contentsline {paragraph}{}{20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}%
+\contentsline {paragraph}{}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}%
+\contentsline {subsection}{\numberline {3.1.2}Nash Equilibrium of Travel Mode Choice Game}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Nash Equilibrium of Car Owner Subgame}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Nash Equilibrium for Noncar Owners Subgame}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}Nash Equilibrium of Travel Mode Choice Game}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Nash Equilibrium of Travel Mode Choice Game}{22}%
+\contentsline {paragraph}{}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.1}Nash Equilibrium of Car Owner Subgame}{22}%
+\contentsline {paragraph}{}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.2}Nash Equilibrium for Noncar Owners Subgame}{23}%
+\contentsline {section}{\numberline {3.2}Model Analysis}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2.3}Nash Equilibrium of Travel Mode Choice Game}{23}%
+\contentsline {subsection}{\numberline {3.2.1}Travel Cost}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{24}%
+\contentsline {subsection}{\numberline {3.2.2}Travel Time}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{24}%
+\contentsline {subsection}{\numberline {3.2.3}Payoff}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Model Analysis}{24}%
+\contentsline {section}{\numberline {3.3}Experiments and results}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Travel Cost}{24}%
+\contentsline {paragraph}{}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Travel Time}{24}%
+\contentsline {paragraph}{}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Payoff}{25}%
+\contentsline {paragraph}{}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Experiments and results}{25}%
+\contentsline {paragraph}{}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Works Cited}{28}%
+\contentsline {chapter}{Works Cited}{26}%

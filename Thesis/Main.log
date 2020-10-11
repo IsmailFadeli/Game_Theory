@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  29 SEP 2020 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  30 SEP 2020 21:24
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -984,11 +984,7 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count437
 \l__pdf_internal_box=\box93
 )
-(Main.aux
-
-LaTeX Warning: Label `table:7' multiply defined.
-
-)
+(Main.aux)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -1209,118 +1205,74 @@ Overfull \hbox (17.65862pt too wide) in paragraph at lines 172--173
 []\OT1/cmr/m/it/12 Consider any $\OML/cmm/m/it/12 n$\OT1/cmr/m/it/12 -player
  []
 
-[7] [8]
-
-LaTeX Warning: Citation 'Nelson and Winter' on page 9 undefined on input line 2
-11.
-
-
-LaTeX Warning: Citation '1982' on page 9 undefined on input line 211.
-
-
-LaTeX Warning: Citation 'Boyd and Richerson' on page 9 undefined on input line 
-211.
-
-
-LaTeX Warning: Citation '1985' on page 9 undefined on input line 211.
-
-[9]
+[7] [8] [9]
 Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
-
-
-LaTeX Warning: Reference `eq:5' on page 10 undefined on input line 232.
 
 [10]) [11]
 Chapter 2.
 (chapters/Chapter02.tex [12
 
 ]
-
-LaTeX Warning: Citation 'Richard' on page 13 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'David' on page 13 undefined on input line 11.
-
-
-LaTeX Warning: Citation '1982' on page 13 undefined on input line 11.
-
-
-Overfull \hbox (0.20744pt too wide) in paragraph at lines 29--30
+Overfull \hbox (0.20744pt too wide) in paragraph at lines 27--28
  [] \OT1/cmr/m/n/12 It is also im-por-tant to note that pro-bit mod-els are al-
 ways as-so-ci-ated with maximum-
  []
 
 [13
 
-] [14] [15]
-
-LaTeX Warning: Citation 'Hollander et al' on page 16 undefined on input line 57
-.
-
-
-LaTeX Warning: Citation '2006' on page 16 undefined on input line 57.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-[16]
-Overfull \hbox (36.82169pt too wide) in paragraph at lines 83--104
+] [14]
+Overfull \hbox (36.82169pt too wide) in paragraph at lines 43--64
  [] 
  []
 
-[17]) [18]
+[15] [16]) [17]
 Chapter 3.
-(chapters/Chapter03.tex [19
+(chapters/Chapter03.tex [18
 
 ]
-Overfull \hbox (21.0646pt too wide) in paragraph at lines 20--21
+Overfull \hbox (21.0646pt too wide) in paragraph at lines 18--19
 []\OT1/cmr/m/n/12 The strat-egy sets of the play-ers are $\OML/cmm/m/it/12 S[] 
 \OT1/cmr/m/n/12 = []$ and $\OML/cmm/m/it/12 S[] \OT1/cmr/m/n/12 =$(Travel
  []
 
-[20
+[19
 
-] [21] [22] [23] [24] [25]
-Overfull \hbox (16.52466pt too wide) in paragraph at lines 162--172
+] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[21] [22] [23]
+Overfull \hbox (16.52466pt too wide) in paragraph at lines 164--174
  [][] 
  []
 
-) [26
-
-] (chapters/Conclusion.tex) [27
+) [24] (chapters/Conclusion.tex) [25
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 169--170
 []\OT1/cmr/m/n/12 Jackson, Leyton-Brown and Shoham, 2013 . Game The-ory,
  []
 
-[28
+[26
 
-] [29] (Main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Main
-(biblatex)                and rerun LaTeX afterwards.
-
+] [27] (Main.aux)
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24387 strings out of 480930
- 457196 string characters out of 2909556
- 1086584 words of memory out of 3000000
- 39835 multiletter control sequences out of 15000+200000
+ 24209 strings out of 480930
+ 453740 string characters out of 2909556
+ 1080307 words of memory out of 3000000
+ 39657 multiletter control sequences out of 15000+200000
  543914 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,64p,878b,2375s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1341,9 +1293,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 /type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on Main.pdf (39 pages, 285679 bytes).
+Output written on Main.pdf (37 pages, 281968 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
