@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  30 SEP 2020 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  11 OCT 2020 21:11
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1250,20 +1250,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
  []
 
 [21] [22] [23]
-Overfull \hbox (16.52466pt too wide) in paragraph at lines 164--174
+Overfull \hbox (16.52466pt too wide) in paragraph at lines 162--172
  [][] 
  []
 
-) [24] (chapters/Conclusion.tex) [25
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24]) [25] (chapters/Conclusion.tex) [26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 169--170
 []\OT1/cmr/m/n/12 Jackson, Leyton-Brown and Shoham, 2013 . Game The-ory,
  []
 
-[26
+[27
 
-] [27] (Main.aux)
+] [28] (Main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
@@ -1293,9 +1299,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 /type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on Main.pdf (37 pages, 281968 bytes).
+Output written on Main.pdf (38 pages, 283238 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
+ 204 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -89,7 +89,7 @@ Using backward induction properties as explained in Chapter 1 to solve the subga
 \end{figure}
 The products of the travel mode's payoffs and its probabilities are equal, and the sum of their probabilities is 1, resulting in: 
 \begin{equation}\label{eq:10}
-\mu_2 r^n_{t} = \mu_3 r^n_{b} = \mu_4 r^n_{rail}
+\mu_2 r^n_{t} = \mu_3 r^n_{b} = \mu_4 r^n_{r}
 \end{equation}
 \begin{equation}\label{11}
 \mu_2 r^n_{t} + \mu_3 r^n_{b} + \mu_4 r^n_{r} = 1
@@ -119,7 +119,7 @@ p_c = \frac{\mu_2 r^n_{t} + \mu_3 r^n_{b} + \mu_4 r^n_{r}}{\mu_2 r^n_{t} + \mu_3
 \begin{equation}
 p_n = \frac{\mu_1 r^c_{c} +  \mu_2 r^{c}_{t} + \mu_3 r^c_{b} + \mu_4 r^c_{r}}{\mu_1 r^c_{c} +  \mu_2 r^{c}_{t} + \mu_3 r^c_{b} + \mu_4 r^c_{r} + \mu_2 r^n_{t} + \mu_3 r^n_{b} + \mu_4 r^n_{r}}
 \end{equation}
-\paragraph{}The proportion of travel by car for the traveler is the product of its probability and the probability of car owners traveling by car:  
+\paragraph{}The proportion of travel by car for the traveler is the product of its probability and the probability of car owners traveling by car, and the same goes through other modes:  
 \begin{equation}\label{eq:14}
 \gamma_{car} = p_c r^c_c
 \end{equation}
@@ -139,8 +139,10 @@ p_{c} = \frac{\frac{3}{(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu_1)+(1/\mu
 \begin{equation}
 p_n{} = \frac{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}+\frac{3}{(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}
 \end{equation}
-\paragraph{}The equations above represent the Nash Equilibrium of the travel mode choice game. Looking through equations \ref{eq:14} to \ref{eq:15} we can see that there is a relationship between the individual's payoff and his proportion. That is, as its payoff is increasing, the proportion is decreasing. However, in the last four equations there is a relationship between the proportion and the payoffs of all the travel modes.
+\paragraph{}The equations above represent the Nash Equilibrium of the travel mode choice game. Looking through equations \ref{eq:14} to \ref{eq:15} we can see that there is a relationship between the individual's payoff and their proportion. That is, as its payoff is increasing, the proportion is decreasing. However, in the last four equations there is a relationship between the proportion and the payoffs of all the travel modes.
 The essence of evolutionary analysis is to discuss how the probability changes when one side of the game changes. The learning ability of travelers, which is usually reflected by the tendency dynamic characteristics, in order to determine the change rate.
+\section{Constructing the model}
+This model is an agent based model of artificial agents playing the travel mode choice game. Each agent occupies a single place in the game and could interact with other neighbor agents. Agents in this game will update their state based on their game choices. An agent's state can be either a car owner or a non car owner which makes him a public transport user. If a non car owner switches their state to a car owner, they have to go through "purchasing a car" according to the probability function. This probability to buy a car function is adopted from an agent based computational approach (Epstein, 2002).
 \section{Model Analysis}
 \subsection{Travel Cost}
 The cost of traveling is an important factor in TMC, although, travel time can be an affecting factor. Measures like public transport fares, car utility, fuel and parking costs have been implemented to estimate travel cost.
@@ -149,16 +151,12 @@ Travel time is the time consumed when a traveler moves between two places in a n
 For bus, taxi, and rail travel time is divided into walking time, waiting time, in vehicle time, and transfer time. For car owners, travel time is transfer time. 
 \subsection{Payoff}
 Travelers optimize between the time and cost of travel. The payoff of travel can be analyzed through the product of average travel cost and travel time in each mode, as shown in equations 3.1 to 3.4.
+
 \section{Experiments and results}
 For this experiment we are using Netlog\footnote{Netlog is a multi-agent programmable modeling environment}, the artificial environment is adequate for modeling complex systems which evolve over time. We are going to run the simulation during 200 tick.
 
 In this experiment, we want to test all components available for modifying the passenger's behavior. As we want to remain the characteristics of each mode.
 Using Behavior Space tool in Netlogo that allows to make multiple simulations. It runs the model several times, with the ability to change the parameters of the model and record the results after each run.
-
-To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in figure \ref{table:2}.
-
-When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
-
 \begin{table}[h!]
 \centering
 \begin{tabular}{lllll}
@@ -174,6 +172,11 @@ Rail                            & 59.8                                    & 4.5 
 \caption{Nash Equilibrium of TCM}
 \label{table:2}
 \end{table}
+To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in figure \ref{table:2}.
+
+When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
+
+
 It is important to note that traffic and weather conditions affect the payoff of travel by increasing the time of travel. Travelers tend to choose rail mode because of its relatively stable travel time in weather conditions.
 %\subsection{Model Validation}
 %An important step in developing agent based models is to evaluate and validate the model carefully. Most models have several types of behaviors going at the same time, and it is important to understand what drives what and what affects what. Although our model is simple, it still needs to be validated and evaluated.

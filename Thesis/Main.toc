@@ -192,22 +192,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Model Analysis}{23}%
+\contentsline {section}{\numberline {3.2}Constructing the model}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Travel Cost}{23}%
+\contentsline {section}{\numberline {3.3}Model Analysis}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Travel Time}{23}%
+\contentsline {subsection}{\numberline {3.3.1}Travel Cost}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Payoff}{24}%
+\contentsline {subsection}{\numberline {3.3.2}Travel Time}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Experiments and results}{24}%
+\contentsline {subsection}{\numberline {3.3.3}Payoff}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{25}%
+\contentsline {section}{\numberline {3.4}Experiments and results}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{25}%
+\contentsline {paragraph}{}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{25}%
+\contentsline {paragraph}{}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{25}%
+\contentsline {paragraph}{}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Works Cited}{26}%
+\contentsline {paragraph}{}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Works Cited}{27}%
