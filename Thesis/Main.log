@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  11 OCT 2020 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  14 OCT 2020 21:10
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -963,7 +963,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 39.
+less on input line 40.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -987,20 +987,20 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
  ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count438
@@ -1092,8 +1092,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' not found.
 
 No file Main.bbl.
-Package biblatex Info: Reference section=0 on input line 50.
-Package biblatex Info: Reference segment=0 on input line 50.
+Package biblatex Info: Reference section=0 on input line 51.
+Package biblatex Info: Reference segment=0 on input line 51.
 [1
 
 {C:/Users/gg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [0
@@ -1139,17 +1139,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
@@ -1250,35 +1250,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
  []
 
 [21] [22] [23]
-Overfull \hbox (16.52466pt too wide) in paragraph at lines 162--172
+<./Plots/Simulation 1 mode shift.png, id=127, 239.39438pt x 220.57407pt>
+File: ./Plots/Simulation 1 mode shift.png Graphic file (type png)
+<use ./Plots/Simulation 1 mode shift.png>
+Package pdftex.def Info: ./Plots/Simulation 1 mode shift.png  used on input lin
+e 163.
+(pdftex.def)             Requested size: 227.62204pt x 209.72928pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Plots/Simulation 1 mode profile.png, id=129, 230.36063pt x 222.8325pt>
+File: ./Plots/Simulation 1 mode profile.png Graphic file (type png)
+<use ./Plots/Simulation 1 mode profile.png>
+Package pdftex.def Info: ./Plots/Simulation 1 mode profile.png  used on input l
+ine 169.
+(pdftex.def)             Requested size: 227.62204pt x 220.18323pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./Plots/Simulation 2 Nocp.png, id=130, 362.3136pt x 217.7736pt>
+File: ./Plots/Simulation 2 Nocp.png Graphic file (type png)
+<use ./Plots/Simulation 2 Nocp.png>
+Package pdftex.def Info: ./Plots/Simulation 2 Nocp.png  used on input line 175.
+
+(pdftex.def)             Requested size: 341.43306pt x 205.22226pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (16.52466pt too wide) in paragraph at lines 182--192
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24]) [25] (chapters/Conclusion.tex) [26
+[24]) [25 <./Plots/Simulation 1 mode shift.png> <./Plots/Simulation 1 mode prof
+ile.png>] [26 <./Plots/Simulation 2 Nocp.png>] (chapters/Conclusion.tex)
+[27
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 []\OT1/cmr/m/n/12 Jackson, Leyton-Brown and Shoham, 2013 . Game The-ory,
  []
 
-[27
+[28
 
-] [28] (Main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+] [29] (Main.aux)
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24209 strings out of 480930
- 453740 string characters out of 2909556
- 1080307 words of memory out of 3000000
- 39657 multiletter control sequences out of 15000+200000
+ 24236 strings out of 480930
+ 454533 string characters out of 2909556
+ 1080325 words of memory out of 3000000
+ 39679 multiletter control sequences out of 15000+200000
  543914 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,64p,878b,2375s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1299,9 +1327,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 /type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on Main.pdf (38 pages, 283238 bytes).
+Output written on Main.pdf (39 pages, 318538 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
+ 214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -204,12 +204,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Experiments and results}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{26}%
+\contentsline {paragraph}{}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{26}%
+\contentsline {paragraph}{}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{26}%
+\contentsline {paragraph}{}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{26}%
+\contentsline {paragraph}{}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Works Cited}{27}%
+\contentsline {chapter}{Works Cited}{28}%

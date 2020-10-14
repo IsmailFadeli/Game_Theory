@@ -153,10 +153,30 @@ For bus, taxi, and rail travel time is divided into walking time, waiting time, 
 Travelers optimize between the time and cost of travel. The payoff of travel can be analyzed through the product of average travel cost and travel time in each mode, as shown in equations 3.1 to 3.4.
 
 \section{Experiments and results}
-For this experiment we are using Netlog\footnote{Netlog is a multi-agent programmable modeling environment}, the artificial environment is adequate for modeling complex systems which evolve over time. We are going to run the simulation during 200 tick.
+For this experiment we are using Netlogo\footnote{Netlog is a multi-agent programmable modeling environment}, the artificial environment is adequate for modeling complex systems which evolve over time. We are going to run the simulation during 100 tick.
 
 In this experiment, we want to test all components available for modifying the passenger's behavior. As we want to remain the characteristics of each mode.
 Using Behavior Space tool in Netlogo that allows to make multiple simulations. It runs the model several times, with the ability to change the parameters of the model and record the results after each run.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=8cm]{Simulation 1 mode shift}
+\end{center}
+\caption{Mode Shift}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=8cm]{Simulation 1 mode profile}
+\end{center}
+\caption{Mode Profile}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=12cm]{Simulation 2 Nocp}
+\end{center}
+\caption{Mode Profile}
+\end{figure}
+
 \begin{table}[h!]
 \centering
 \begin{tabular}{lllll}
@@ -172,12 +192,13 @@ Rail                            & 59.8                                    & 4.5 
 \caption{Nash Equilibrium of TCM}
 \label{table:2}
 \end{table}
+
 To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in figure \ref{table:2}.
 
 When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
 
 
-It is important to note that traffic and weather conditions affect the payoff of travel by increasing the time of travel. Travelers tend to choose rail mode because of its relatively stable travel time in weather conditions.
+It is important to note that in reality, traffic and weather conditions affect the payoff of travel by increasing the time of travel. Travelers tend to choose rail mode because of its relatively stable travel time in weather conditions.
 %\subsection{Model Validation}
 %An important step in developing agent based models is to evaluate and validate the model carefully. Most models have several types of behaviors going at the same time, and it is important to understand what drives what and what affects what. Although our model is simple, it still needs to be validated and evaluated.
 
