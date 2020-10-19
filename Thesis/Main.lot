@@ -1,13 +1,24 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {USenglish}{}
+\babel@toc {french}{}
+\babel@toc {USenglish}{}
+\babel@toc {arabic}{}
+\babel@toc {USenglish}{}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.1}{\ignorespaces Prisoner's Dilemma}}{8}%
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }{\ignorespaces \bgroup \beginL \latintext Prisoner's Dilemma\endL \egroup }}{\if@rlmain \I {9}\else \textLR {9}\fi }%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of charateristics of selected studies on travel mode choice}}{15}%
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }{\ignorespaces \bgroup \beginL \latintext Summary of charateristics of selected studies on travel mode choice\endL \egroup }}{\if@rlmain \I {16}\else \textLR {16}\fi }%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Nash Equilibrium of TCM}}{26}%
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces \bgroup \beginL \latintext Nash Equilibrium of Travel mode choice game\endL \egroup }}{\if@rlmain \I {27}\else \textLR {27}\fi }%

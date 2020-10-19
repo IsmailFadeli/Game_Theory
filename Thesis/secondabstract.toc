@@ -1,0 +1,8 @@
+\babel@toc {arabic}{}
+\select@language {arabic}
+\select@language {arabic}
+\contentsline {chapter}{\numberline {1}\@arabic@R {علوم الحاسوب}}{\if@rlmain \I {2}\else \textLR {2}\fi }%
+\select@language {arabic}
+\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }\@arabic@R {تاريخ}}{\if@rlmain \I {2}\else \textLR {2}\fi }%
+\babel@toc {arabic}{}
+\babel@toc {arabic}{}

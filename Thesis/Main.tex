@@ -11,7 +11,8 @@
 \graphicspath{ {./Plots/} }
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
-\pagestyle{headings}
+
+\usepackage[french,arabic,USenglish]{babel}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{fancyhdr}
@@ -22,7 +23,7 @@
 \usepackage[style=mla,babel=hyphen,backend=biber]{biblatex}
 \usepackage {fancybox}
 \newtheorem{mydef}{Definition}
-\fancyhf{}
+
 \newenvironment{dedication}
   {\clearpage           % we want a new page
    \thispagestyle{empty}% no header and footer
@@ -35,11 +36,7 @@
    \clearpage           % finish off the page
   }
 
-\rhead{\thesection}
-\lhead{\leftmark}
-\fancyfoot[LE,RO]{\thepage}
-\renewcommand{\headrulewidth}{2pt}
-\renewcommand{\footrulewidth}{1pt}
+
 \pagenumbering{roman}
 \usepackage[nottoc]{tocbibind}
 \def\blankpage{%
@@ -90,40 +87,73 @@ Supervisor : KACI Abdellah\\
 
 \end{titlepage}
 \blankpage
-\begin{dedication}\thispagestyle{empty}
-Dedicated to 
-\end{dedication}
-\clearpage
 \thispagestyle{empty}
-\thispagestyle{plain}
+\pagenumbering{roman}
+\begin{dedication}
+Dedicated to my parents.
+
+\end{dedication}
+
+
+
+\clearpage
 \begin{center}
-    \Large
-    \textbf{Travel Mode Choice Modeling using Game theory}
-        
-    \vspace{0.4cm}
-    \large
-   
-        
-    \vspace{0.4cm}
-    
-       
-    \vspace{0.9cm}
-    \textbf{Abstract}
+
+
+\section*{Acknowledgment}
+\end{center}
+\addcontentsline{toc}{chapter}{Acknowledgment}
+\paragraph{}
+Foremost, I would like to express my sincere gratitude to my supervisor Mr. Kaci Abdellah for the continuous support of my master study and research, for his patience, motivation, and enthusiasm. His guidance helped me in all the time of research and writing of this work.
+Besides my supervisor, I would like to thank the rest of my thesis committee for accepting to review this work.
+\paragraph{}
+My sincere thanks also goes to Mr. Abdellah Bradat, Mr. Arrouf Nasreddine, and Ms. Imene Merdaci for offering me the internship opportunity in their group.
+\paragraph{}
+Last but not the least, I would like to thank my family: my parents for supporting me through this work. 
+\clearpage
+\begin{center}
+
+
+\section*{Abstract}
+
+
+\addcontentsline{toc}{chapter}{Abstract}
+Decision making in travel mode choice is a well-known dynamic process that characterize complex transportation systems. Existing models of travel mode choice, including the logit and probit ones, often do not consider all the factors that can contribute to this process. The main objective of this study is to develop an agent-based evolutionary game model with use of game theory to simulate the decision-making process of the travel mode choice. Particularly, this study aims to simulate and analyze the dynamics of this phenomena. The model was implemented in NetLogo software, using artificial agents. The obtained simulation results indicate realistic patterns. The proposed model has the potential to be used as part of a city's transportation planning purposes.
+\\
+\vspace{0.2cm}
+   \begin{otherlanguage}{french}
+   \textbf{Résumé}\\
+   \vspace{0.2cm}
+Le choix du mode de déplacement est un processus dynamique bien connu qui caractérise les systèmes de transport complexes. Les modèles existants de choix du mode de déplacement, y compris les modèles probabilistes et les modèles logit, ne tiennent souvent pas compte de tous les facteurs pouvant contribuer à ce processus. L'objectif principal de cette étude est de développer un modèle de jeu évolutif à base d'agents avec l'utilisation de la théorie des jeux pour simuler le processus de prise de décision du choix du mode de déplacement. En particulier, cette étude vise à simuler et analyser la dynamique de ce phénomène. Le modèle a été implémenté dans le logiciel NetLogo, à l'aide des agents artificiels. Les résultats de simulation obtenus indiquent des modèles réalistes. Le modèle proposé a le potentiel d'être utilisé dans le cadre de la planification des transports urbain.
+\vspace{0.2cm}
+\end{otherlanguage}
+  \\
+  
+   \begin{otherlanguage}{arabic}
+   \textbf{ملخص}\\
+ \vspace{0.2cm}
+يعد اختيار وسيلة السفر عملية ديناميكية معروفة تميز أنظمة النقل المعقدة. غالبًا ما لا تأخذ النماذج الحالية لاختيار وضع السفر ، بما في ذلك النماذج الاحتمالية ، في الاعتبار جميع العوامل التي يمكن أن تساهم في هذه العملية. الهدف الرئيسي من هذه الدراسة هو تطوير نموذج لعبة تطوري قائم على الوكيل باستخدام نظرية الالعاب لمحاكاة عملية اتخاذ القرار لاختيار وضع السفر. تهدف هذه الدراسة على وجه الخصوص إلى محاكاة وتحليل ديناميكيات هذه الظاهرة. تم تنفيذ النموذج في برنامج  \textLR{NetLogo} باستخدام عوامل اصطناعية. تشير نتائج المحاكاة التي تم الحصول عليها إلى أنماط واقعية. النموذج المقترح لديه القدرة على استخدامه كجزء من تخطيط النقل في المدينة. 
+\end{otherlanguage}
+\\
+\vspace{0.2cm}
+\textbf{Keywords}\\
+\vspace{0.2cm}
+Game theory, transport modes, evolution, mode choice, agent based model.
+
 \end{center}
 
-\clearpage
-\section*{Acknowledgment}\thispagestyle{empty}
-\clearpage
-\tableofcontents \thispagestyle{empty}
+\tableofcontents
 \listoffigures
 \listoftables
-\addcontentsline{toc}{chapter}{Introduction}
+
+
 \clearpage
 
-\thispagestyle{empty}
+
 \pagenumbering{arabic}
-\thispagestyle{empty}
 \chapter*{Introduction}
+\setcounter{page}{1}
+\addcontentsline{toc}{chapter}{Introduction}
 The grow of private vehicle use causes congestion that eventually  increases travel time, this increase pushes governments to motivate people towards public transport. However, more usage of public transport should be followed by an improvement of public transport services.\\
 
 With the intention of making a transport demand analysis, it is essential to understand the traveler's mode choice behavior, where a demand is the accumulation of individuals decisions. The most important element in modeling a transport system is the mode split model, which provides a mathematical framework of the choices a traveler can have of which mode of transport is more suitable.\\
@@ -132,8 +162,14 @@ The different objectives in travel mode choice leads to the urge of applying gam
 
 The purpose of this study is to describe how travelers adjust their mode of transport choice behaviors using an evolutionary game model. In evolutionary game theory, a dynamic process is set to describe how players adjust their choices overtime as they learn from the game and also from other players. The present document is organized into three chapters. Chapter 1 describes the basic theories applied in this work, including traditional game theory concepts and evolutionary dynamics. In Chapter 2, key studies from the literature regarding travel choice behavior are briefly examined. The third chapter describes the model used in this study. Limitations of the proposed modeling method and further research directions are discussed at the end. 
 
+\fancyhf{}
+\rhead{\thesection}
+\lhead{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
 
-\chapter{Game Theory and Evolutionary Dynamics}\setcounter{page}{1}\thispagestyle{empty}
+\chapter{Game Theory and Evolutionary Dynamics}
 \input{chapters/Chapter01}
 
 \chapter{Literature Survey and Methodology} 
@@ -171,6 +207,10 @@ Jackson, Leyton-Brown and Shoham, 2013 . Game Theory, https://www.coursera.org/l
 
 \bibitem{Von Neumann, and Morgenstern, 1944}
 Von Neumann, J. Morgenstern ,O, (1944). Theory of games and economic behavior. Princeton University Press.
+
+\bibitem{Chaoqun Wu, Yulong Pei and Jingpeng Gao , 2015}
+Chaoqun Wu, Yulong Pei, Jingpeng Gao, "Evolution Game Model of Travel Mode Choice in Metropolitan", Discrete Dynamics in Nature and Society, vol. 2015, Article ID 638972, 11 pages, 2015. 
+
 
 \bibitem{Zhu Bai, M. Huang, S. Bian, and Huandong Wu}
 Zhu Bai, M. Huang, S. Bian, and Huandong Wu, (2018). A study of taxi service mode choice based on evolutionary game theory. School of Transportation Engineering, Shenyang Jianzhu University.

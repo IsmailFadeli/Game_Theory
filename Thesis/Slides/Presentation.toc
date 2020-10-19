@@ -1,0 +1,11 @@
+\beamer@sectionintoc {2}{Game Theory}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Defining Games}{4}{0}{1}
+\beamer@subsectionintoc {2}{2}{Game Forms}{8}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{1}{Normal form games}{8}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{2}{Extensive form}{9}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{3}{Extensive form}{10}{0}{1}
+\beamer@subsectionintoc {2}{3}{Nash Equilibrium}{11}{0}{1}
+\beamer@sectionintoc {3}{Evolutionary Game Theory}{18}{0}{2}
+\beamer@sectionintoc {4}{Methodology}{19}{0}{3}
+\beamer@subsectionintoc {4}{1}{Utility theory}{20}{0}{3}
+\beamer@sectionintoc {5}{Agent Based Model}{21}{0}{4}

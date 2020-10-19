@@ -1,15 +1,17 @@
 
-The contribution of this study on travel mode choice is the research on modeling choice behaviors in travel mode selection using game theory concepts, and using an evolutionary analysis to determine the behavior of the travelers.
+The contribution of this study on travel mode choice is the research on modeling choice behaviors in travel mode selection using game theory concepts. In this chapter, we discuss the mathematical frame work of travel mode choice game, then we construct an agent based evolutionary model to understand the behaviors of the travelers.
 \clearpage
 
 \section{Evolutionary Game Theory and Travel Mode Choice}
 Evolutionary game theory is used as a vehicle for discussing travel mode choice based on the following apparent similarities: 
-\paragraph{}A group can be a substitute for an individual as a participant in evolutionary game theory, and the proportions of the individuals choosing different pure strategies in the group can substitute for mixed strategy. The results of travel mode choice are group behavior within the travel mode subsystems, and the only proportions of individuals choosing each travel mode are meaningful for management and study.
+\paragraph{}
+In evolutionary game theory, we can substitute an individual by a group, meaning, the proportion of the individuals choosing a pure strategy can be called mixed strategy. In this case, The consequences of travel mode choice are group behavior, and the proportions of travelers choosing each travel mode is the mixed strategy.
+
 \paragraph{}Nash equilibrium means that the frequency of the adopted strategies makes the strategy payoffs exactly equal with no one desiring a change in strategy, then the percentage of individuals choosing each different strategy remains stable and reaches equilibrium. In the stable travel context, a travel mode choice will tend to be stable, the Nash equilibrium of the evolutionary game will be changed by the means of traffic control, the construction, and the structure of the transportation system.
 
-\subsection{Evolutionary Game Model}
+\subsection{Mode Choice Evolutionary Game}
 
-Inspired by the nested binary logit model used to define mode choice and Zhu et al (2018) study, the multi-agent based mode choice game is represented in extensive form in Figure \ref{fig:555}.
+Inspired by the nested binary logit model used to define mode choice and Zhu et al (2018) study and a study by Choaqun (2015), the multi-agent based mode choice game used in this work is represented in extensive form in Figure \ref{fig:555}.
 Players in the travel mode choice game are be divided into two main categories: car owners and noncar owners. First, every player chooses whether they own a car or not; then, the car owners will select from one of four modes: car, taxi, bus, or rail, and the noncar owners will only select from taxi, bus, or rail. Furthermore, two sub-games are apparent, a car owners sub-game and non car owners sub-game.
 
 \paragraph{} As mentioned in Chapter 1, the extensive form is defined by the set of players, the strategy sets , and the payoff function.
@@ -142,7 +144,27 @@ p_n{} = \frac{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu
 \paragraph{}The equations above represent the Nash Equilibrium of the travel mode choice game. Looking through equations \ref{eq:14} to \ref{eq:15} we can see that there is a relationship between the individual's payoff and their proportion. That is, as its payoff is increasing, the proportion is decreasing. However, in the last four equations there is a relationship between the proportion and the payoffs of all the travel modes.
 The essence of evolutionary analysis is to discuss how the probability changes when one side of the game changes. The learning ability of travelers, which is usually reflected by the tendency dynamic characteristics, in order to determine the change rate.
 \section{Constructing the model}
-This model is an agent based model of artificial agents playing the travel mode choice game. Each agent occupies a single place in the game and could interact with other neighbor agents. Agents in this game will update their state based on their game choices. An agent's state can be either a car owner or a non car owner which makes him a public transport user. If a non car owner switches their state to a car owner, they have to go through "purchasing a car" according to the probability function. This probability to buy a car function is adopted from an agent based computational approach (Epstein, 2002).
+This model is an agent based model\footnote{Agent based modeling is a methodology used to build formal models of real-world systems that are made up bu individual units (such as e.g. atoms, cells, animal, people or institutions) which repeatedly interact among themselves and their environment.} of artificial agents playing the travel mode choice game. Each agent occupies a single place in the game and could interact with other neighbor agents. Agents in this game will update their state based on their game choices. An agent's state can be either a car owner or a non car owner which makes him a public transport user. If a non car owner switches their state to a car owner, they have to go through "purchasing a car" according to the probability function. This probability to buy a car function is adopted from an agent based computational approach (Epstein, 2002).
+
+\subsection{Agents}
+In this study, we will use the term agent to refer to a part of our model that is meant to represent a decision-maker. In this case agents represent human beings (travelers) that will always play a game, but in general agents could represent non-human beings, institutions or firms.
+\paragraph{}
+Agents have their individual variables and their instructions, the individual variables are the following:
+\begin{itemize}
+\item strategy: a number describing the strategy being used by the agent (car or public transport)
+\item payoff;
+\item coplayers: the set of agents that plays the game;
+\item color: the color of an agent;
+\end{itemize}
+The instructions that an agent can run are the following: 
+\begin{itemize}
+\item to play;
+\item to update-strategy: revise the strategy being used according to a certain protocol;
+\item to update-color: set color according to the strategy being used;
+\end{itemize}
+\subsection{Description of the model}
+In this model, there is a population of n-of-players agents who repeatedly play the travel mode choice game defined earlier. In this model, we only have two strategies: travel by car and travel by public transport. 
+With probability prob-revision, individual agents are given the opportunity to revise their strategies. With the only revision rule : look at a random agent and adopt their strategy if and only if their payoff was greater than the agents payoff.
 \section{Model Analysis}
 \subsection{Travel Cost}
 The cost of traveling is an important factor in TMC, although, travel time can be an affecting factor. Measures like public transport fares, car utility, fuel and parking costs have been implemented to estimate travel cost.
@@ -153,28 +175,28 @@ For bus, taxi, and rail travel time is divided into walking time, waiting time, 
 Travelers optimize between the time and cost of travel. The payoff of travel can be analyzed through the product of average travel cost and travel time in each mode, as shown in equations 3.1 to 3.4.
 
 \section{Experiments and results}
-For this experiment we are using Netlogo\footnote{Netlog is a multi-agent programmable modeling environment}, the artificial environment is adequate for modeling complex systems which evolve over time. We are going to run the simulation during 100 tick.
+For this experiment we are using Netlogo\footnote{Netlogo is an open source modeling environment designed for coding and running agent-based simulations.}, the artificial environment is adequate for modeling complex systems which evolve over time. We are going to run the simulation during 100 tick.
 
-In this experiment, we want to test all components available for modifying the passenger's behavior. As we want to remain the characteristics of each mode.
+In this experiment, we want to test all components available for modifying the passenger's behavior, as we want to remain the characteristics of each mode.
 Using Behavior Space tool in Netlogo that allows to make multiple simulations. It runs the model several times, with the ability to change the parameters of the model and record the results after each run.
 
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:144}
 \begin{center}
 \includegraphics[width=8cm]{Simulation 1 mode shift}
 \end{center}
-\caption{Mode Shift}
+\caption{Mode change proportions}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:155}
 \begin{center}
 \includegraphics[width=8cm]{Simulation 1 mode profile}
 \end{center}
-\caption{Mode Profile}
+\caption{Mode Profiles}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:166}
 \begin{center}
 \includegraphics[width=12cm]{Simulation 2 Nocp}
 \end{center}
-\caption{Mode Profile}
+\caption{Number of cars / public transport users}
 \end{figure}
 
 \begin{table}[h!]
@@ -189,16 +211,17 @@ Bus                             & 46                                      & 3   
 Rail                            & 59.8                                    & 4.5                           & 269.1                      
 & 0.36                   
 \end{tabular}
-\caption{Nash Equilibrium of TCM}
+\caption{Nash Equilibrium of Travel mode choice game}
 \label{table:2}
 \end{table}
 
 To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in figure \ref{table:2}.
 
 When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
+\paragraph{}
+Figure \ref{fig:144} represents the mode change proportions between car and public transportation over time observed after the first simulation of a 100 repetitions. While mode profiles are represented in Figure \ref{fig:155}. The last figure \ref{fig:166} shows the changes in the number of car users versus the public transport users over time, after changing some of the characteristics of both modes.
 
-
-It is important to note that in reality, traffic and weather conditions affect the payoff of travel by increasing the time of travel. Travelers tend to choose rail mode because of its relatively stable travel time in weather conditions.
+It is important to note that in reality, traffic and weather conditions affect the payoff of travel by increasing the time of travel. Travelers tend to choose some modes because of its relatively stable travel time in weather conditions.
 %\subsection{Model Validation}
 %An important step in developing agent based models is to evaluate and validate the model carefully. Most models have several types of behaviors going at the same time, and it is important to understand what drives what and what affects what. Although our model is simple, it still needs to be validated and evaluated.
 

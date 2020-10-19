@@ -59,6 +59,10 @@
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
       <file>english-mla.lbx</file>
+      <file>american.lbx</file>
+      <file>american-mla.lbx</file>
+      <file>USenglish.lbx</file>
+      <file>french.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">
