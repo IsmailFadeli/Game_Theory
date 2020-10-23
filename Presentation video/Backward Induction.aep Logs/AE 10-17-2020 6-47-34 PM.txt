@@ -1,0 +1,12 @@
+Adobe After Effects v14.0.1 Windows 64 render log for project “Backward Induction.aep”
+
+Rendering started on 10/17/2020 at 6:47:34 PM
+
+  10/17/2020 6:47:34 PM: Starting composition “Comp 1”.
+
+  Output To: D:\Presentation video\Comp 1.avi    10/17/2020 6:47:34 PM: Finished composition “Comp 1”.
+
+
+  Total Time Elapsed: 0 Seconds
+Log closed on 10/17/2020 at 6:47:34 PM
+
