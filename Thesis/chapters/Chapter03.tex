@@ -44,7 +44,7 @@ f_{rail} = T_{rail} C_{rail}
   \caption{Travel mode choice game\label{fig:555}}
 \end{figure}
 \subsection{Nash Equilibrium of Travel Mode Choice Game}
-According to the Folk Theorem mentioned in Chapter 1, any payoff vector satisfying individual rationality can be obtained through a set of specific subgame perfect equilibriums in an infinitely repeated game. In Figure \ref{fig:555} there are two subgame: Car owner subgame and noncar owner subgame, as shown in figures \ref{fig:3} and \ref{fig:4}.The Nash equilibrium of the game is a subgame perfect Nash equilibrium of each sub-game. As mentioned in Chapter 1, backward induction is the method for solving extensive form games and obtaining the Nash equilibrium.
+According to the Folk Theorem mentioned in Chapter 1, any payoff vector satisfying individual rationality can be obtained through a set of specific subgame perfect equilibriums in an infinitely repeated game. In Figure \ref{fig:555} there are two subgame: Car owner subgame and others subgame, as shown in figures \ref{fig:3} and \ref{fig:4}. The Nash equilibrium of the game is a subgame perfect Nash equilibrium of each sub-game. As mentioned in Chapter 1, backward induction is the method for solving extensive form games and obtaining the Nash equilibrium.
 
 \subsubsection{Nash Equilibrium of Car Owner Subgame}The key feature of mixed strategy Nash equilibrium is that the expectations of the pure strategies are equal, that is, in car owner subgame of figure \ref{fig:3}. \\
 
@@ -142,7 +142,7 @@ p_n{} = \frac{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu
 \paragraph{}The equations above represent the Nash Equilibrium of the travel mode choice game. Looking through equations \ref{eq:14} to \ref{eq:15} we can see that there is a relationship between the individual's payoff and their proportion. That is, as its payoff is increasing, the proportion is decreasing. However, in the last four equations there is a relationship between the proportion and the payoffs of all the travel modes.
 The essence of evolutionary analysis is to discuss how the probability changes when one side of the game changes. The learning ability of travelers, which is usually reflected by the tendency dynamic characteristics, in order to determine the change rate.
 \section{Constructing the model}
-This proposed model is an agent based model\footnote{Agent based modeling is a methodology used to build formal models of real-world systems that are made up bu individual units (such as e.g. atoms, cells, animal, people or institutions) which repeatedly interact among themselves and their environment.} of artificial agents playing the travel mode choice game. Each agent occupies a single place in the game and could interact with other neighbor agents. Agents in this game will update their state based on their game choices. An agent's state can be either a car owner or a non car owner which makes him a public transport user. If a non car owner switches their state to a car owner, they have to go through "purchasing a car" according to the probability function. This probability to buy a car function is adopted from an agent based computational approach (Epstein, 2002).
+This proposed model is an evolutionary agent based model\footnote{Agent based modeling is a methodology used to build formal models of real-world systems that are made up bu individual units (such as e.g. atoms, cells, animal, people or institutions) which repeatedly interact among themselves and their environment.} of artificial agents playing the travel mode choice game. Each agent occupies a single place in the game and could interact with other neighbor agents. Agents in this game will update their state based on their game choices. An agent's state can be either a car owner or a non car owner which makes him a public transport user. If a non car owner switches their state to a car owner, they have to go through "purchasing a car" according to the probability function. This probability to buy a car function is adopted from an agent based computational approach (Epstein, 2002).
 
 \subsection{Agents}
 In this study, we will use the term agent to refer to a part of our model that is meant to represent a decision-maker. In this case agents represent human beings (travelers) that will always play a game, but in general agents could represent non-human beings, institutions or firms.
@@ -161,8 +161,8 @@ The instructions that an agent can run are the following:
 \item to update-color: set color according to the strategy being used;
 \end{itemize}
 \subsection{Description of the model}
-In this model, there is a population of n-of-players agents who repeatedly play the travel mode choice game defined earlier. However, we only have two strategies: travel by car and travel by public transport. 
-With probability prob-revision, individual agents are given the opportunity to revise their strategies. With the only revision rule : look at a random agent and adopt their strategy if and only if their payoff was greater than the agents payoff.
+In this model, there is a population of n-of-players (agents) who repeatedly play the travel mode choice game defined earlier. However, we only have two strategies: travel by car and travel by public transport. 
+With probability prob-revision, individual agents are given the opportunity to revise their strategies. With the only revision rule : look at a random agent and adopt their strategy if and only if their payoff was greater than the agent's payoff.
 \section{Model Analysis}
 \subsection{Travel Cost}
 The cost of traveling is an important factor in travel mode choice, although, travel time can be an affecting factor. Measures like public transport fares, car utility, fuel and parking costs have been implemented to estimate travel cost.
@@ -215,7 +215,7 @@ Rail                            & 59.8                                    & 4.5 
 \label{table:2}
 \end{table}
 
-To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in table
+To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in table \ref{table:2}
 
 When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
 \paragraph{}

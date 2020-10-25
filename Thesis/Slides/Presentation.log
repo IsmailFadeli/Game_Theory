@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  17 OCT 2020 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  24 OCT 2020 15:10
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1083,87 +1083,275 @@ Dictionary: translator-numbers-dictionary, Language: English
 y-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (Presentation.nav)
-<Enst_logo.jpg, id=62, 289.08pt x 289.08pt>
+Overfull \vbox (1.1335pt too high) detected at line 32
+ []
+
+<Enst_logo.jpg, id=88, 289.08pt x 289.08pt>
 File: Enst_logo.jpg Graphic file (type jpg)
 <use Enst_logo.jpg>
 Package pdftex.def Info: Enst_logo.jpg  used on input line 38.
 (pdftex.def)             Requested size: 56.9055pt x 56.90189pt.
 
-Overfull \vbox (8.33464pt too high) detected at line 38
+Overfull \vbox (21.33458pt too high) detected at line 38
  []
 
 [1
 
 {C:/Users/gg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Enst_logo.jp
-g>] (Presentation.toc) [2
+g>] (Presentation.toc)
+Overfull \vbox (27.68333pt too high) detected at line 49
+ []
 
-] [3
+
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
 
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+[3
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[4
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[5
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[6
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[7
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[8
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 117
+.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 117
+.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 82.
+ut line 117.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[4
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
 
-] [5
 
-] [6
+[9
 
-] [7
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
 
-] [8
 
-] [9
+[10
 
-] [10
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[11
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{table:7}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \end{frame}
-                  [11
+l.160 \end{frame}
+                 
+Overfull \vbox (6.69604pt too high) detected at line 160
+ []
 
-] [12
 
-] [13
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
 
-] [14
 
-] [15
-
-] [16
-
-] [17
-
-] [18
-
-] [19
-
-] [20
-
-] [21
+[12
 
 ]
+Overfull \vbox (6.69604pt too high) detected at line 160
+ []
+
+
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[13
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[14
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[15
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[16
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[17
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[18
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[19
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[20
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[21
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
 [22
 
-] [23
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[23
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[24
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[25
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[26
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[27
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[28
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[29
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[30
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[31
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[32
+
+]
+<Simulation 1 mode shift.png, id=1279, 239.39438pt x 220.57407pt>
+File: Simulation 1 mode shift.png Graphic file (type png)
+<use Simulation 1 mode shift.png>
+Package pdftex.def Info: Simulation 1 mode shift.png  used on input line 319.
+(pdftex.def)             Requested size: 142.26378pt x 131.07996pt.
+<Simulation 1 mode profile.png, id=1281, 230.36063pt x 222.8325pt>
+File: Simulation 1 mode profile.png Graphic file (type png)
+<use Simulation 1 mode profile.png>
+Package pdftex.def Info: Simulation 1 mode profile.png  used on input line 319.
+
+(pdftex.def)             Requested size: 142.26378pt x 137.61409pt.
+
+Overfull \vbox (11.05438pt too high) detected at line 319
+ []
+
+
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[33
+
+ <./Simulation 1 mode shift.png> <./Simulation 1 mode profile.png>]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[34
+
+]
+Overfull \vbox (1.1335pt too high) has occurred while \output is active []
+
+
+[35
 
 ]
 \tf@nav=\write6
@@ -1175,26 +1363,26 @@ l.155 \end{frame}
 \tf@snm=\write8
 \openout8 = `Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
  (Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 333.
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 17C6BC637B286F838392CE7E5370132B;497.
+(rerunfilecheck)             Checksum: 40F0D8A803DADFBF24C4D020AF210F21;870.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 22896 strings out of 480930
- 454208 string characters out of 2909556
- 709662 words of memory out of 3000000
- 38133 multiletter control sequences out of 15000+200000
+ 22982 strings out of 480930
+ 455378 string characters out of 2909556
+ 709665 words of memory out of 3000000
+ 38187 multiletter control sequences out of 15000+200000
  545232 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,19n,72p,812b,673s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 81i,19n,72p,812b,683s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
@@ -1204,9 +1392,9 @@ ublic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Presentation.pdf (23 pages, 291082 bytes).
+Output written on Presentation.pdf (35 pages, 422178 bytes).
 PDF statistics:
- 904 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1441 PDF objects out of 1728 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

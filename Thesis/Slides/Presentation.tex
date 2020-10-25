@@ -47,7 +47,11 @@
 \begin{frame}
   \tableofcontents
 \end{frame}
-
+\section{Introduction}
+\begin{frame}
+ \frametitle{Introduction}
+ The different objectives in travel mode choice leads to the urge of applying game theory for making decisions based on finding the equilibrium of the traveler's choices. But is it possible to predict such phenomena? and what could game theory predict exactly? 
+\end{frame}
 \section{Game Theory}
 
 \begin{frame}
@@ -77,7 +81,7 @@ A game consists of four parts:
   \item<1-> Players % Use Next Page to go to Point 2
   \item<2-> Actions  % Use Next Page to go to Point 3
   \item<3-> Strategies
-  \item<4-> Payoffs  $s^\prime_{i}$ 
+  \item<4-> Payoffs  
   \end{itemize}
 \end{frame}
 \note[enumerate]       % Add notes to yourself that will be displayed when
@@ -94,6 +98,7 @@ A game consists of four parts:
 \subsubsection{Normal form games}
   \frametitle{Normal form}   % Insert frame title between curly braces
 A normal form represents a list of what players get on function of their actions. Example: Prisoner's Dilemma
+\begin{exampleblock}{Example (Prisoner's Dilemma)}
 \begin{table}[h!]
 \centering
 \begin{tabular}{lllll}
@@ -108,7 +113,7 @@ Refuse                          &3,0                                    & 1,1
 \caption{Prisoner's Dilemma}
 \label{table:7}
 \end{table}
-  
+  \end{exampleblock}
 \end{frame}
 \note[enumerate]       % Add notes to yourself that will be displayed when
 {                      % typeset with the notes or notesonly class options
@@ -177,7 +182,7 @@ constitute a Nash equilibrium in each subgame of the game. It may be found by \a
 Backward induction is an iterative process for solving finite extensive form games.
 First, one determines the optimal strategy of the player who makes the last move of
 the game. Then, the optimal action of the next to last moving player is determined
-taking the last player’s action as given. The process continues in this way backwards
+taking the last player's action as given. The process continues in this way backwards
 in time until the actions have been determined.
 \end{frame}
 \begin{frame}
@@ -222,25 +227,107 @@ U_i = V_i + \epsilon_i
 \end{frame}
 \note{Speak clearly}  % Add notes to yourself that will be displayed when
                       % typeset with the notes or notesonly class options
-
-
-\section{Agent Based Model}
-
+\section{Model and Analysis}
 \begin{frame}
-  \frametitle{Agent Based Model}   % Insert frame title between curly braces
-  \begin{columns}[c]
+	\frametitle{Model and Analysis}
+	this section is divided into two main sections:
+	\begin{itemize}
+  \item<1-> Travel mode choice game
+  \item<2-> Agent based model of the game
+ 
+  \end{itemize}
+\end{frame}
+\subsection{Travel mode choice game}
+\begin{frame}
+  \frametitle{Mode Choice Evolutionary Game}   % Insert frame title between curly braces
+ % \begin{columns}[c]
+  %\column{2in}  % slides are 3in high by 5in wide
+  
+  %\column{2in}
+  %\framebox{Insert graphic here % e.g. \includegraphics[height=2.65in]{graphic}
+  %}
+ % \end{columns}
+\end{frame}
+
+\subsection{Agent Based Model}
+\begin{frame}
+	\frametitle{Travel choice mode model}
+	Our proposed model is an evolutionary \alert{agent based model} of artificial agents playing the travel mode game.
+\end{frame}
+\begin{frame}
+	\frametitle{Agent Based Modeling}
+	Agent based modeling is a methodology used to build models of real world systems that are made up of individual units that repeatedly interact among themselves and their environment.
+\end{frame}
+\begin{frame}
+	\frametitle{Travel choice mode model}
+	Evolutionary agent based models are defined by their agents. An agent represents the decision maker or a traveler, and they have individual variables and instructions.\\
+
+	    \begin{columns}[c]
   \column{2in}  % slides are 3in high by 5in wide
-  \begin{itemize}
-  \item<1-> First item
-  \item<2-> Second item
-  \item<3-> ...
+ \\
+   Agent Variables:
+	\begin{itemize}
+	
+	
+	\item<1-> Strategy (car/public)
+  \item<2-> Payoff
+  \item<3-> Co-players
+  \item<4-> color
   \end{itemize}
   \column{2in}
-  \framebox{Insert graphic here % e.g. \includegraphics[height=2.65in]{graphic}
-  }
-  \end{columns}
+  Agent Instructions:
+  \begin{itemize}
+  
+  
+  \item<1-> To play
+  \item<2-> To update strategy
+  \item<3-> To update color
+  \end{itemize}
+ \end{columns}
+ \end{frame}
+ 
+\begin{frame}
+\frametitle{Model Description}
+A population n-of-players (agents) that repeatedly play the travel mode choice game. However, having only two strategies instead: private cars and public transport.
+The revision rule in this model is: An agent looks at other random agents and adopt their strategy if their payoff is greater than the agent's.
 \end{frame}
-\note{The end}       % Add notes to yourself that will be displayed when
-		     % typeset with the notes or notesonly class options
+  
+\subsection{Experiments and Results}
+\begin{frame}
+\frametitle{Experiment}
+We are using NetLogo software to simulate our model using an artificial environment. After simulating the model for 300 repetitions using NetLogo's \alert{Behavioral Space} tool, we got the following results:
+\end{frame}
 
+\begin{frame}
+\frametitle{Results}
+\begin{columns}[c]
+  \column{2in}  % slides are 3in high by 5in wide
+  \begin{figure}
+  \includegraphics[width=5cm]{Simulation 1 mode shift}
+  \caption{Mode change proportions}
+  \end{figure}
+ 
+  \column{2in}
+   \begin{figure}
+
+	\includegraphics[width=5cm]{Simulation 1 mode profile}
+
+\caption{Mode Profiles}
+\end{figure}
+
+ \end{columns}
+\end{frame}
+\subsection{Future Work}
+\begin{frame}
+\frametitle{Future Work}
+We can use concepts from machine learning models and artificial intelligence studies, as well as neural networks and genetic algorithms to represent the decision making process of travelers.
+\end{frame}
+\section{Conclusion}
+\begin{frame}
+
+
+\frametitle{Conclusion}
+Finally, the goal of this study was to build a model of travel mode choice that is capable of embedding evolutionary game theory to understand the behavior of travelers and the various characteristics included.
+Game theory seems to be useful in modeling the relationship between travel modes and Nash equilibrium.
+\end{frame}
 \end{document}

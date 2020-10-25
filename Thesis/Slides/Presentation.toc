@@ -1,11 +1,17 @@
-\beamer@sectionintoc {2}{Game Theory}{3}{0}{1}
-\beamer@subsectionintoc {2}{1}{Defining Games}{4}{0}{1}
-\beamer@subsectionintoc {2}{2}{Game Forms}{8}{0}{1}
-\beamer@subsubsectionintoc {2}{2}{1}{Normal form games}{8}{0}{1}
-\beamer@subsubsectionintoc {2}{2}{2}{Extensive form}{9}{0}{1}
-\beamer@subsubsectionintoc {2}{2}{3}{Extensive form}{10}{0}{1}
-\beamer@subsectionintoc {2}{3}{Nash Equilibrium}{11}{0}{1}
-\beamer@sectionintoc {3}{Evolutionary Game Theory}{18}{0}{2}
-\beamer@sectionintoc {4}{Methodology}{19}{0}{3}
-\beamer@subsectionintoc {4}{1}{Utility theory}{20}{0}{3}
-\beamer@sectionintoc {5}{Agent Based Model}{21}{0}{4}
+\beamer@sectionintoc {2}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {3}{Game Theory}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Defining Games}{5}{0}{2}
+\beamer@subsectionintoc {3}{2}{Game Forms}{9}{0}{2}
+\beamer@subsubsectionintoc {3}{2}{1}{Normal form games}{9}{0}{2}
+\beamer@subsubsectionintoc {3}{2}{2}{Extensive form}{10}{0}{2}
+\beamer@subsubsectionintoc {3}{2}{3}{Extensive form}{11}{0}{2}
+\beamer@subsectionintoc {3}{3}{Nash Equilibrium}{12}{0}{2}
+\beamer@sectionintoc {4}{Evolutionary Game Theory}{19}{0}{3}
+\beamer@sectionintoc {5}{Methodology}{20}{0}{4}
+\beamer@subsectionintoc {5}{1}{Utility theory}{21}{0}{4}
+\beamer@sectionintoc {6}{Model and Analysis}{22}{0}{5}
+\beamer@subsectionintoc {6}{1}{Travel mode choice game}{24}{0}{5}
+\beamer@subsectionintoc {6}{2}{Agent Based Model}{25}{0}{5}
+\beamer@subsectionintoc {6}{3}{Experiments and Results}{32}{0}{5}
+\beamer@subsectionintoc {6}{4}{Future Work}{34}{0}{5}
+\beamer@sectionintoc {7}{Conclusion}{35}{0}{6}
