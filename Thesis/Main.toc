@@ -145,10 +145,6 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {9}\else \textLR {9}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {\if@rl \I {5.1.1}\else \textLR {1.1.5}\fi }\bgroup \beginL \latintext The lack of dynamics in traditional game theory\endL \egroup }{\if@rlmain \I {10}\else \textLR {10}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
@@ -169,7 +165,7 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {10}\else \textLR {10}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -185,7 +181,15 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {12}\else \textLR {12}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext Literature Survey and Methodology\endL \egroup }{\if@rlmain \I {12}\else \textLR {12}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -193,15 +197,7 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {12}\else \textLR {12}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {12}\else \textLR {12}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext Literature Survey and Methodology\endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }%
+\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }\bgroup \beginL \latintext Travel Choice Models\endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -209,7 +205,23 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }\bgroup \beginL \latintext Travel Choice Models\endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {1.1.2}\else \textLR {2.1.1}\fi }\bgroup \beginL \latintext Simple Choice Models\endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -217,7 +229,11 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {1.1.2}\else \textLR {2.1.1}\fi }\bgroup \beginL \latintext Simple Choice Models\endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\if@rl \I {2.1.2}\else \textLR {2.1.2}\fi }\bgroup \beginL \latintext Mode Use Models\endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -229,7 +245,7 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {3.1.2}\else \textLR {2.1.3}\fi }\bgroup \beginL \latintext Scaling Models\endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -237,7 +253,11 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\if@rl \I {4.1.2}\else \textLR {2.1.4}\fi }\bgroup \beginL \latintext Reliability and Validity\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -245,31 +265,15 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {2.1.2}\else \textLR {2.1.2}\fi }\bgroup \beginL \latintext Mode Use Models\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
+\contentsline {section}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }\bgroup \beginL \latintext Choice Decision Elements\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi }\bgroup \beginL \latintext Mode Characteristics\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {3.1.2}\else \textLR {2.1.3}\fi }\bgroup \beginL \latintext Scaling Models\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {4.1.2}\else \textLR {2.1.4}\fi }\bgroup \beginL \latintext Reliability and Validity\endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
+\contentsline {subsubsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi .1}\bgroup \beginL \latintext Time and Cost\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -277,23 +281,19 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }\bgroup \beginL \latintext Choice Decision Elements\endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi }\bgroup \beginL \latintext Mode Characteristics\endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi .1}\bgroup \beginL \latintext Time and Cost\endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.2}\else \textLR {2.2.2}\fi }\bgroup \beginL \latintext Consumer Characteristics\endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -305,55 +305,51 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {2.2.2}\else \textLR {2.2.2}\fi }\bgroup \beginL \latintext Consumer Characteristics\endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {section}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }\bgroup \beginL \latintext Evolutionary Game Theory and Engineering\endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }\bgroup \beginL \latintext Evolutionary Game Theory and Engineering\endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {section}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }\bgroup \beginL \latintext Game Theory applications in Transportation\endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {17}\else \textLR {17}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {4.2}\else \textLR {2.4}\fi }\bgroup \beginL \latintext Game Theory applications in Transportation\endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext Model and Analysis\endL \egroup }{\if@rlmain \I {19}\else \textLR {19}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {18}\else \textLR {18}\fi }%
+\contentsline {section}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }\bgroup \beginL \latintext Evolutionary Game Theory and Travel Mode Choice\endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {19}\else \textLR {19}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext Model and Analysis\endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {1.1.3}\else \textLR {3.1.1}\fi }\bgroup \beginL \latintext Mode Choice Evolutionary Game\endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }\bgroup \beginL \latintext Evolutionary Game Theory and Travel Mode Choice\endL \egroup }{\if@rlmain \I {21}\else \textLR {21}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {21}\else \textLR {21}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {1.1.3}\else \textLR {3.1.1}\fi }\bgroup \beginL \latintext Mode Choice Evolutionary Game\endL \egroup }{\if@rlmain \I {21}\else \textLR {21}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -365,35 +361,43 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {21}\else \textLR {21}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {21}\else \textLR {21}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi }\bgroup \beginL \latintext Nash Equilibrium of Travel Mode Choice Game\endL \egroup }{\if@rlmain \I {21}\else \textLR {21}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }%
+\contentsline {subsubsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi .1}\bgroup \beginL \latintext Nash Equilibrium of Car Owner Subgame\endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi }\bgroup \beginL \latintext Nash Equilibrium of Travel Mode Choice Game\endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }%
+\contentsline {subsubsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi .2}\bgroup \beginL \latintext Nash Equilibrium for the others Subgame\endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi .1}\bgroup \beginL \latintext Nash Equilibrium of Car Owner Subgame\endL \egroup }{\if@rlmain \I {23}\else \textLR {23}\fi }%
+\contentsline {subsubsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi .3}\bgroup \beginL \latintext Nash Equilibrium of Travel Mode Choice Game\endL \egroup }{\if@rlmain \I {23}\else \textLR {23}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi .2}\bgroup \beginL \latintext Nash Equilibrium for the others Subgame\endL \egroup }{\if@rlmain \I {23}\else \textLR {23}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {23}\else \textLR {23}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {\if@rl \I {2.1.3}\else \textLR {3.1.2}\fi .3}\bgroup \beginL \latintext Nash Equilibrium of Travel Mode Choice Game\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }\bgroup \beginL \latintext Constructing the model\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }%
+\defcounter {refsection}{0}\relax 
+\select@language {USenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.3}\else \textLR {3.2.1}\fi }\bgroup \beginL \latintext Agents\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -401,43 +405,39 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.3}\else \textLR {3.2.2}\fi }\bgroup \beginL \latintext Description of the model\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {2.3}\else \textLR {3.2}\fi }\bgroup \beginL \latintext Constructing the model\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }%
+\contentsline {section}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }\bgroup \beginL \latintext Model Analysis\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {1.2.3}\else \textLR {3.2.1}\fi }\bgroup \beginL \latintext Agents\endL \egroup }{\if@rlmain \I {26}\else \textLR {26}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.3}\else \textLR {3.3.1}\fi }\bgroup \beginL \latintext Travel Cost\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {26}\else \textLR {26}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {2.3.3}\else \textLR {3.3.2}\fi }\bgroup \beginL \latintext Travel Time\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {2.2.3}\else \textLR {3.2.2}\fi }\bgroup \beginL \latintext Description of the model\endL \egroup }{\if@rlmain \I {26}\else \textLR {26}\fi }%
+\contentsline {subsection}{\numberline {\if@rl \I {3.3.3}\else \textLR {3.3.3}\fi }\bgroup \beginL \latintext Payoff\endL \egroup }{\if@rlmain \I {26}\else \textLR {26}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {3.3}\else \textLR {3.3}\fi }\bgroup \beginL \latintext Model Analysis\endL \egroup }{\if@rlmain \I {26}\else \textLR {26}\fi }%
+\contentsline {section}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }\bgroup \beginL \latintext Experiments and results\endL \egroup }{\if@rlmain \I {26}\else \textLR {26}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {1.3.3}\else \textLR {3.3.1}\fi }\bgroup \beginL \latintext Travel Cost\endL \egroup }{\if@rlmain \I {26}\else \textLR {26}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {28}\else \textLR {28}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {2.3.3}\else \textLR {3.3.2}\fi }\bgroup \beginL \latintext Travel Time\endL \egroup }{\if@rlmain \I {27}\else \textLR {27}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {28}\else \textLR {28}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {\if@rl \I {3.3.3}\else \textLR {3.3.3}\fi }\bgroup \beginL \latintext Payoff\endL \egroup }{\if@rlmain \I {27}\else \textLR {27}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {\if@rl \I {4.3}\else \textLR {3.4}\fi }\bgroup \beginL \latintext Experiments and results\endL \egroup }{\if@rlmain \I {27}\else \textLR {27}\fi }%
+\contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {29}\else \textLR {29}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 

@@ -140,7 +140,7 @@ p_{c} = \frac{\frac{3}{(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu_1)+(1/\mu
 p_n{} = \frac{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}{\frac{4}{(1/\mu_1)+(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}+\frac{3}{(1/\mu_2)+(1/\mu_3)+(1/\mu_4)}}
 \end{equation}
 \paragraph{}The equations above represent the Nash Equilibrium of the travel mode choice game. Looking through equations \ref{eq:14} to \ref{eq:15} we can see that there is a relationship between the individual's payoff and their proportion. That is, as its payoff is increasing, the proportion is decreasing. However, in the last four equations there is a relationship between the proportion and the payoffs of all the travel modes.
-The essence of evolutionary analysis is to discuss how the probability changes when one side of the game changes. The learning ability of travelers, which is usually reflected by the tendency dynamic characteristics, in order to determine the change rate.
+The essence of evolutionary analysis is to discuss how the probability changes when one side of the game changes. The learning ability of travelers, which is usually reflected by the tendency dynamic characteristics, in order to determine the change rate that is discussed in the next section.
 \section{Constructing the model}
 This proposed model is an evolutionary agent based model\footnote{Agent based modeling is a methodology used to build formal models of real-world systems that are made up bu individual units (such as e.g. atoms, cells, animal, people or institutions) which repeatedly interact among themselves and their environment.} of artificial agents playing the travel mode choice game. Each agent occupies a single place in the game and could interact with other neighbor agents. Agents in this game will update their state based on their game choices. An agent's state can be either a car owner or a non car owner which makes him a public transport user. If a non car owner switches their state to a car owner, they have to go through "purchasing a car" according to the probability function. This probability to buy a car function is adopted from an agent based computational approach (Epstein, 2002).
 
@@ -151,7 +151,7 @@ Agents have their individual variables and their instructions, the individual va
 \begin{itemize}
 \item strategy: a number describing the strategy being used by the agent (car or public transport)
 \item payoff;
-\item coplayers: the set of agents that plays the game;
+\item co-players: the set of agents that plays the game;
 \item color: the color of an agent;
 \end{itemize}
 The instructions that an agent can run are the following: 
@@ -162,7 +162,7 @@ The instructions that an agent can run are the following:
 \end{itemize}
 \subsection{Description of the model}
 In this model, there is a population of n-of-players (agents) who repeatedly play the travel mode choice game defined earlier. However, we only have two strategies: travel by car and travel by public transport. 
-With probability prob-revision, individual agents are given the opportunity to revise their strategies. With the only revision rule : look at a random agent and adopt their strategy if and only if their payoff was greater than the agent's payoff.
+With probability prob-revision, individual agents are given the opportunity to revise their strategies. With the only revision rule: look at a random agent and adopt their strategy if and only if their payoff was greater than the agent's payoff.
 \section{Model Analysis}
 \subsection{Travel Cost}
 The cost of traveling is an important factor in travel mode choice, although, travel time can be an affecting factor. Measures like public transport fares, car utility, fuel and parking costs have been implemented to estimate travel cost.
@@ -173,7 +173,7 @@ For bus, taxi, and rail travel time is divided into walking time, waiting time, 
 Travelers optimize between the time and cost of travel. The payoff of travel can be analyzed through the product of average travel cost and travel time in each mode, as shown in equations 3.1 to 3.4.
 
 \section{Experiments and results}
-For this experiment we are using Netlogo\footnote{Netlogo is an open source modeling environment designed for coding and running agent-based simulations.}, the artificial environment is adequate for modeling complex systems which evolve over time. We are going to run the simulation during 300 repetitions.
+For this experiment we are using Netlogo\footnote{Netlogo is an open source modeling environment designed for coding and running agent-based simulations.}, the artificial environment is adequate for modeling complex systems which evolve over time. We are going to run the simulation during 100 repetitions.
 
 In this experiment, we want to test all components available for modifying the passenger's behavior, as we want to remain the characteristics of each mode.
 Using Behavior Space tool in Netlogo that allows to make multiple simulations. It runs the model several times, with the ability to change the parameters of the model and record the results after each run.
@@ -185,43 +185,46 @@ Using Behavior Space tool in Netlogo that allows to make multiple simulations. I
 \caption{Mode change proportions}
 \end{figure}
 
-\begin{figure}[h!]\label{f:32}
+\begin{figure}[!h]\label{f:32}
 \begin{center}
 \includegraphics[width=8cm]{Simulation 1 mode profile}
 \end{center}
 \caption{Mode Profiles}
 \end{figure}
 
-\begin{figure}[h!]\label{f:33}
+\begin{figure}[!h]\label{f:33}
 \begin{center}
 \includegraphics[width=12cm]{Simulation 2 Nocp}
 \end{center}
 \caption{Number of cars / public transport users}
 \end{figure}
 
-\begin{table}[h!]
-\centering
-\begin{tabular}{lllll}
-\hline
-\multicolumn{1}{l}{Travel mode} & \multicolumn{1}{l}{Average travel time} & \multicolumn{1}{l}{Average travel cost} & \multicolumn{1}{l}{Payoff} & Nash~ Equilibrium  \\ 
-\hline
-Car                             & 29.3                                    & 10                                      & 293                        & 0.23               \\
-Taxi                            & 50                                      & 25                                      & 1250                       & 0.10               \\
-Bus                             & 46                                      & 3                                       & 138                        & 0.31               \\
-Rail                            & 59.8                                    & 4.5                           & 269.1                      
-& 0.36                   
-\end{tabular}
-\caption{Nash Equilibrium of Travel mode choice game}
-\label{table:2}
-\end{table}
 
-To find the Nash equilibrium, we can get it by averaging the travel time and cost then use the Nash equilibrium equations from 3.20 to 3.23 and calculate the payoff in equations from 3.1 to 3.4. The results are shown in table \ref{table:2}
 
-When the structure of travel mode choice reaches Nash equilibrium values in Table \ref{table:2}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
+When the structure of travel mode choice reaches Nash equilibrium values in Figure \ref{f:32}, travel mode will remain stationary unless the payoffs of one or more mode parameters are changed. If a mode changes condition, a small perturbation appears. Then Nash equilibrium will be reached again after self adjusting.
 \paragraph{}
 Figure \ref{fig:31} represents the mode change proportions between car and public transportation over time observed after the first simulation of a 100 repetitions. While mode profiles are represented in Figure 3.5. The last figure 3.6 shows the changes in the number of car users versus the public transport users over time, after changing some of the characteristics of both modes such as public transport fares, car utility, and travel time.
 
-It is important to note that in reality, traffic and weather conditions affect the payoff of travel by increasing the time of travel. Travelers tend to choose some modes because of its relatively stable travel time in weather conditions.
+
+\paragraph{}In the end, we ran several simulations (100 repetitions) and plot the average of car users and maximum values observed at every tick as shown in Figure 3.7, after increasing the travel cost by car.
+\begin{figure}[!h]\label{f:aa}
+\begin{center}
+\includegraphics[width=12cm]{average cars avgmin}
+\end{center}
+\caption{Simulation 2: Average proportion of Car strategists}
+\end{figure}
+\clearpage
+\paragraph{}The average proportions of public transport strategy are represented together with their minimum values in Figure 3.8.
+\begin{figure}[h!]\label{f:bb}
+\begin{center}
+\includegraphics[width=12cm]{average prop avgmin}
+\end{center}
+\caption{Simulation 2: Average proportion of public transport strategists}
+\end{figure}
+
+\paragraph{}
+
+In reality, traffic and weather conditions could affect the payoff of travel by increasing the time of travel. Travelers tend to choose some of the modes over other modes because of their relatively stable travel time in weather conditions.
 %\subsection{Model Validation}
 %An important step in developing agent based models is to evaluate and validate the model carefully. Most models have several types of behaviors going at the same time, and it is important to understand what drives what and what affects what. Although our model is simple, it still needs to be validated and evaluated.
 
