@@ -48,46 +48,93 @@
 \begin{document}
 \begin{titlepage}
 
-   \begin{center}
-   \thisfancypage{%}
-\setlength{\fboxsep}{10pt}\doublebox}{}
-       \vspace*{1cm}
- 	   \Huge
-       \textbf{A Travel Mode Choice Model Using Game Theory}
-		\LARGE
+  
+\begin{center}
+	
+\begin{flushleft}	
+	\begin{tabular}{ccc}
+	 \includegraphics[width=1.5cm]{Enst_logo} & 
+		\begin{tabular}{c}
+	{\small {République Algérienne Démocratique et Populaire}} \\
+	{\small {Ministère de l'Enseignement Supérieur et de la Recherche Scientifique}} \\
+	{\small {Ecole Nationale Supérieure de Technologie} } \\   
+		\end{tabular} &
+	 \includegraphics[width=1.5cm]{Enst_logo}
+	\end{tabular}
+\end{flushleft}
 		
-       \vspace{0.5cm}
-        
-            
-       \vspace{1.5cm}
-
-       \textit{FADELI Ismail}
-\vfill
-\normalsize
-Supervisor : KACI Abdellah\\
-
-       \vfill
-       
-            	\normalsize
-       A thesis presented for the degree of\\
+	\vskip 5mm
+	
+		 {Department of Transport and Logistics Engineering} 
+	
+	\vskip 1cm
+	
+	
+	 A thesis presented for the degree of\\
+	 
        Masters in Logistics and Transport Engineering
-            
-       \vspace{0.8cm}
-     \begin{center}
-      \includegraphics[width=4cm]{Enst_logo}
-     \end{center}
-     
-            \Large
-       Department of Transport and Logistics Engineering\\
-       National High School of Technology \\
-       ENST\\
-       Algiers, October 2020\\
-     
-            
-   \end{center}
+	
+		\vskip 4mm
+		
+	{\large {\bf MASTER}}
+	
+
+	
+	\vskip 10mm
+	
+	Field : {\bf Science and Technology} \\
+	Branch : {\bf Transport Engineering}\\
+	Specialty : {\bf Logistics and Transport Engineering }
+	\vskip 5mm
+	
+	
+	
+	\vskip 2mm
+	
+	\begin{center}
+
+                       - Theme -
+		\rule{\linewidth}{.5pt}
+		{\Large\bf\strut A Travel Mode Choice Model Using Game Theory\\}
+			
+		\rule{\linewidth}{.5pt}
+		
+	\end{center}
+	
+	\emph{Written by:}
+	
+	\vskip 4mm
+	
+	{\bf FADELI Ismail}
+\end{center}
+	%
+	\vskip 4mm
+	\emph{Jury members:}
+	 \vskip 4mm
+	
+
+
+\begin{flushleft}
+	
+	\begin{tabular}{lp{4cm}lp{4cm}l}
+		{\small {\bf 
+Mr. BENDJEDOU Boudissa \hspace{0.5cm}--}}      & {\small ENST, Assistant lecturer}  \hspace{5cm}                  & {\small {\bf President}} \\[3mm]
+        {\small {\bf Mr. BOUZID Mouaouia Cherif \hspace{0.5cm}--}}      & {\small ENST, Lecturer}  \hspace{5cm}                  & {\small {\bf Examiner }}  \\[3mm]
+		{\small {\bf Mr. KACI Abdellah \hspace{0.5cm}--}}      & {\small ENST, Lecturer}  \hspace{5cm}                  & {\small {\bf Supervisor}}   \\[3mm]
+		{\small {\bf Ms. MOULAI Ratiba \hspace{0.5cm}--}}      & {\small ENST, Lecturer}  \hspace{5cm}                  & {\small {\bf Examiner}}   
+	\end{tabular}
+\end{flushleft}
+
+
+\vskip 1.5mm
+\begin{center}
+	\emph{Algiers, 2019 / 2020 }\\
+	
+\end{center}
    
 
 \end{titlepage}
+
 \blankpage
 \thispagestyle{empty}
 \pagenumbering{roman}
@@ -112,37 +159,6 @@ Besides my supervisor, I would like to thank the rest of my thesis committee for
 My sincere thanks also goes to Mr. BRADAT Abdellah, Mr. ARROUF Nasreddine, and Mr.  ZEROUAL Yacine for offering me the internship opportunity at their group.
 \paragraph{}
 Last but not the least, I would like to thank my family; my parents for supporting me through this work. 
-\clearpage
-\begin{center}
-
-
-\section*{Abstract}
-
-
-\addcontentsline{toc}{chapter}{Abstract}
-Decision making in travel mode choice is a well-known dynamic process that characterize complex transportation systems. Existing models of travel mode choice, including the logit and probit ones, often do not consider all the factors that can contribute to this process. The main objective of this study is to develop an agent-based evolutionary game model with use of game theory to simulate the decision-making process of the travel mode choice. Particularly, this study aims to simulate and analyze the dynamics of this phenomena. The model was implemented in NetLogo software, using artificial agents. The obtained simulation results indicate realistic patterns. The proposed model has the potential to be used as part of a city's transportation planning purposes.
-\\
-\vspace{0.2cm}
-   \begin{otherlanguage}{french}
-   \textbf{Résumé}\\
-   \vspace{0.2cm}
-Le choix du mode de déplacement est un processus dynamique bien connu qui caractérise les systèmes de transport complexes. Les modèles existants de choix du mode de déplacement, y compris les modèles probabilistes et les modèles logit, ne tiennent souvent pas compte de tous les facteurs pouvant contribuer à ce processus. L'objectif principal de cette étude est de développer un modèle de jeu évolutif à base d'agents avec l'utilisation de la théorie des jeux pour simuler le processus de prise de décision du choix du mode de déplacement. En particulier, cette étude vise à simuler et analyser la dynamique de ce phénomène. Le modèle a été implémenté dans le logiciel NetLogo, à l'aide des agents artificiels. Les résultats de simulation obtenus indiquent des modèles réalistes. Le modèle proposé a le potentiel d'être utilisé dans le cadre de la planification des transports urbain.
-\vspace{0.2cm}
-\end{otherlanguage}
-  \\
-  
-   \begin{otherlanguage}{arabic}
-   \textbf{ملخص}\\
- \vspace{0.2cm}
-يعد اختيار وسيلة السفر عملية ديناميكية معروفة تميز أنظمة النقل المعقدة. غالبًا ما لا تأخذ النماذج الحالية لاختيار وضع السفر ، بما في ذلك النماذج الاحتمالية ، في الاعتبار جميع العوامل التي يمكن أن تساهم في هذه العملية. الهدف الرئيسي من هذه الدراسة هو تطوير نموذج لعبة تطوري قائم على الوكيل باستخدام نظرية الالعاب لمحاكاة عملية اتخاذ القرار لاختيار وضع السفر. تهدف هذه الدراسة على وجه الخصوص إلى محاكاة وتحليل ديناميكيات هذه الظاهرة. تم تنفيذ النموذج في برنامج  \textLR{NetLogo} باستخدام عوامل اصطناعية. تشير نتائج المحاكاة التي تم الحصول عليها إلى أنماط واقعية. النموذج المقترح لديه القدرة على استخدامه كجزء من تخطيط النقل في المدينة. 
-\end{otherlanguage}
-\\
-\vspace{0.2cm}
-\textbf{Keywords}\\
-\vspace{0.2cm}
-Game theory, transport modes, evolution, mode choice, agent based model.
-
-\end{center}
 
 
 \tableofcontents
@@ -161,7 +177,7 @@ The grow of private vehicle use causes congestion that eventually  increases tra
 
 With the intention of making a transport demand analysis, it is essential to understand the traveler's mode choice behavior, where a demand is the accumulation of individuals decisions. The most important element in modeling a transport system is the mode split model, which provides a mathematical framework of the choices a traveler can have of which mode of transport is more suitable.\\
 
-The different objectives in travel mode choice leads to the urge of applying game theory for making decisions based on finding the equilibrium of the passenger choices. However, game theory is rarely used in the transport field with several obstacles appearing in the transport characteristics. But, it is possible to predict the behaviors of travelers? this question has been asked over time, but we still do not have clear answers. Despite the common knowledge that human actions are random and unpredictable, human mobility follows certain patterns.\\
+The different objectives in travel mode choice leads to the urge of applying game theory for making decisions based on finding the equilibrium of the passenger choices. However, game theory is rarely used in the transport field with several obstacles appearing in the transport characteristics. But, is it possible to predict the behaviors of travelers? this question has been asked over time, but we still do not have clear answers. Despite the common knowledge that human actions are random and unpredictable, human mobility follows certain patterns.\\
 
 The purpose of this study is to describe how travelers adjust their mode of transport choice behaviors using an evolutionary game model. In evolutionary game theory, a dynamic process is set to describe how players adjust their choices overtime as they learn from the game and also from other players. The present document is organized into three chapters. Chapter 1 describes the basic theories applied in this work, including traditional game theory concepts and evolutionary dynamics. In Chapter 2, key studies from the literature regarding travel choice behavior are briefly examined. The third chapter describes the model used in this study. Limitations of the proposed modeling method and further research directions are discussed at the end. 
 
@@ -220,5 +236,40 @@ Zhu Bai, M. Huang, S. Bian, and Huandong Wu, (2018). A study of taxi service mod
 \bibitem{Joshua M.Epstein}
 Epstein, J. (2002). Modeling Civil Violence: An Agent-Based Computational Approach. Proceedings of the National Academy of Sciences of the United States of America, 99(10), 7243-7250. Retrieved October 10, 2020, from http://www.jstor.org/stable/3057848
 \end{thebibliography}
+\clearpage
+\begin{center}
+
+\section*{Abstract}
+\thispagestyle{empty}
+
+\addcontentsline{toc}{chapter}{Abstract}
+Decision making in travel mode choice is a well-known dynamic process that characterize complex transportation systems. Existing models of travel mode choice, including the logit and probit ones, often do not consider all the factors that can contribute to this process. The main objective of this study is to develop an agent-based evolutionary game model with use of game theory to simulate the decision-making process of the travel mode choice. Particularly, this study aims to simulate and analyze the dynamics of this phenomena. The model was implemented in NetLogo software, using artificial agents. The obtained simulation results indicate realistic patterns. The proposed model has the potential to be used as part of a city's transportation planning purposes.\\
+\textbf{Keywords: }
+\vspace{0.2cm}
+Evolutionary game theory, transport mode, mode choice, agent-based model.
+\\
+\vspace{0.2cm}
+   \begin{otherlanguage}{french}
+   \textbf{Résumé}\\
+   \vspace{0.2cm}
+Le choix du mode de déplacement est un processus dynamique bien connu qui caractérise les systèmes de transport complexes. Les modèles existants de choix du mode de déplacement, y compris les modèles probabilistes et les modèles logit, ne tiennent souvent pas compte de tous les facteurs pouvant contribuer à ce processus. L'objectif principal de cette étude est de développer un modèle de jeu évolutif à base d'agents avec l'utilisation de la théorie des jeux pour simuler le processus de prise de décision du choix du mode de déplacement. En particulier, cette étude vise à simuler et analyser la dynamique de ce phénomène. Le modèle a été implémenté dans le logiciel NetLogo, à l'aide des agents artificiels. Les résultats de simulation obtenus indiquent des modèles réalistes. Le modèle proposé a le potentiel d'être utilisé dans le cadre de la planification des transports urbain.\\
+\textbf{Mots clés:} théorie des jeux évolutive, les modes de transport, le choix de mode, modèle basé sur des agents.
+\vspace{0.2cm}
+\end{otherlanguage}
+  \\
+  
+   \begin{otherlanguage}{arabic}
+   \textbf{ملخص}\\
+ \vspace{0.2cm}
+يعد اختيار وسيلة السفر عملية ديناميكية معروفة تميز أنظمة النقل المعقدة. غالبًا ما لا تأخذ النماذج الحالية لاختيار وضع السفر ، بما في ذلك النماذج الاحتمالية ، في الاعتبار جميع العوامل التي يمكن أن تساهم في هذه العملية. الهدف الرئيسي من هذه الدراسة هو تطوير نموذج لعبة تطوري قائم على الوكيل باستخدام نظرية الالعاب لمحاكاة عملية اتخاذ القرار لاختيار وضع السفر. تهدف هذه الدراسة على وجه الخصوص إلى محاكاة وتحليل ديناميكيات هذه الظاهرة. تم تنفيذ النموذج في برنامج  \textLR{NetLogo} باستخدام عوامل اصطناعية. تشير نتائج المحاكاة التي تم الحصول عليها إلى أنماط واقعية. النموذج المقترح لديه القدرة على استخدامه كجزء من تخطيط النقل في المدينة. 
+\\
+\vspace{0.2cm}
+الكلمات المفتاحية: نظرية اللعبة التطورية, وسيلة النقل, اختيار الوضع, نموذج قائم على الوكيل.
+\end{otherlanguage}
+\\
+\vspace{0.2cm}
+
+
+\end{center}
 
 \end{document}

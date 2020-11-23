@@ -1,9 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {USenglish}{}
-\babel@toc {french}{}
-\babel@toc {USenglish}{}
-\babel@toc {arabic}{}
-\babel@toc {USenglish}{}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -46,3 +42,7 @@
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\if@rl \I {8.3}\else \textLR {3.8}\fi }{\ignorespaces \bgroup \beginL \latintext Simulation 2: Average proportion of public transport strategists\endL \egroup }}{\if@rlmain \I {29}\else \textLR {29}\fi }%
+\babel@toc {french}{}
+\babel@toc {USenglish}{}
+\babel@toc {arabic}{}
+\babel@toc {USenglish}{}

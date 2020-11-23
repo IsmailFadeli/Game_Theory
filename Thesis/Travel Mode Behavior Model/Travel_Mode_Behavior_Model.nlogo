@@ -130,18 +130,18 @@ to display-agent
   set size 1
 
   ifelse (own-car = 1)
-  [ set color 94]
+  [ set color 20]
   [ ifelse (current-asset < fare)
-    [set color 98]
-    [set color 96]
+    [set color 50]
+    [set color 55]
   ]
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-975
-10
-1263
-299
+0
+0
+288
+289
 -1
 -1
 4.6
@@ -158,6 +158,8 @@ GRAPHICS-WINDOW
 30
 -30
 30
+0
+0
 1
 1
 1
@@ -165,9 +167,9 @@ ticks
 30.0
 
 BUTTON
-15
+495
 20
-152
+632
 53
 Setup
 setup
@@ -182,10 +184,10 @@ NIL
 1
 
 BUTTON
-15
-55
-150
-88
+645
+20
+780
+53
 Go Once
 go
 NIL
@@ -199,10 +201,10 @@ NIL
 1
 
 BUTTON
-15
-90
-150
-123
+350
+20
+485
+53
 Go
 go
 T
@@ -239,7 +241,7 @@ buy-price
 buy-price
 0
 5
-3.0
+2.3
 0.1
 1
 NIL
@@ -256,13 +258,13 @@ Number of Agents
 0.0
 300.0
 0.0
-100.0
+4000.0
 true
 true
 "" ""
 PENS
-"Car" 1.0 0 -14454117 true "" "plot count turtles with [own-car = 1]"
-"Public" 1.0 0 -11033397 true "" "plot count turtles with [own-car = 0 and wealth > fare]"
+"Car" 1.0 0 -2139308 true "" "plot count turtles with [own-car = 1]"
+"Public" 1.0 0 -13210332 true "" "plot count turtles with [own-car = 0 and wealth > fare]"
 
 MONITOR
 5
@@ -302,14 +304,14 @@ true
 true
 "" ""
 PENS
-"Car" 1.0 0 -4699768 true "" "ifelse (count turtles with [own-car = 1] = 0)\n[plot 0]\n[plot mean [wealth] of turtles with [own-car = 1]]"
-"Public" 1.0 0 -612749 true "" "plot mean [wealth] of turtles with [own-car = 0 and wealth > fare]"
+"Car" 1.0 1 -5298144 true "" "ifelse (count turtles with [own-car = 1] = 0)\n[plot 0]\n[plot mean [wealth] of turtles with [own-car = 1]]"
+"Public" 1.0 0 -15973838 true "" "plot mean [wealth] of turtles with [own-car = 0 and wealth > fare]"
 
 MONITOR
 250
-450
+590
 354
-503
+643
 Car Profile
 mean [wealth] of turtles with [own-car = 1]
 3
@@ -317,10 +319,10 @@ mean [wealth] of turtles with [own-car = 1]
 13
 
 MONITOR
-370
-449
-467
-502
+365
+625
+462
+678
 Public Profile
 mean [wealth] of turtles with [own-car = 0 and wealth > fare]
 3
@@ -328,10 +330,10 @@ mean [wealth] of turtles with [own-car = 0 and wealth > fare]
 13
 
 SLIDER
-160
-90
-332
-123
+475
+615
+647
+648
 threshold
 threshold
 0
@@ -343,10 +345,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-380
-15
-552
-48
+160
+130
+332
+163
 bus_fare
 bus_fare
 0
@@ -358,10 +360,10 @@ NIL
 HORIZONTAL
 
 MONITOR
-380
-75
-462
-120
+160
+170
+242
+215
 Total agents
 count turtles with [own-car = 0 and wealth > fare] + count turtles with [own-car = 1]
 17
@@ -381,10 +383,10 @@ NIL
 0.0
 1.0
 true
-false
+true
 "" ""
 PENS
-"default" 1.0 0 -16777216 true "" "plot (count turtles with [own-car = 0 and wealth > fare])/((count turtles with [own-car = 0 and wealth > fare])+(count turtles with [own-car = 1]))"
+"Public T" 1.0 1 -14333415 true "" "plot (count turtles with [own-car = 0 and wealth > fare])/((count turtles with [own-car = 0 and wealth > fare])+(count turtles with [own-car = 1]))"
 
 PLOT
 700
@@ -399,250 +401,12 @@ NIL
 0.0
 1.0
 true
-false
+true
 "" ""
 PENS
-"default" 1.0 0 -16777216 true "" "plot (count turtles with [own-car = 1])/((count turtles with [own-car = 0 and wealth > fare])+(count turtles with [own-car = 1]))"
+"Car" 1.0 0 -5298144 true "" "plot (count turtles with [own-car = 1])/((count turtles with [own-car = 0 and wealth > fare])+(count turtles with [own-car = 1]))"
 
 @#$#@#$#@
-## ABOUT THE MODEL
-
-This is a transport mode choice behavior. The idea is simple. It is evident that public transportations are developed to reduce transport cost, which in result generates additional income for the user (agents). The interesting part of this phenomenon is what do agents do with the additional income? 
-
-Common mode-choice models developed under the assumption that one will behave rationally to maximize her utility. We argued that this model failed to address two key factors: additional income and local interaction. It is evident that most, if not all, public transportation aims to reduce transport cost, which in result generates additional income. Moreover, the use of additional income is highly affected by agent’s social interaction and, obviously, people interacts with each other within their social networks. Therefore, the possible existence of a phase in which people purchase automobile because of the additional income and social prestige is an attractive proposition. In simpler words, there is a long-term effect that public transportation could actually become the cause of traffic congestion.
-
-This model is an agent-based model of artificial agents who lives in an artificial world of patches. Each agent occupies a single patch and interact with theier neighbors. They will then update their state, either purchasing a car or using public transportation, according to a probability function. The higher the difference between an agent’s wealth to her neighbors’, the higher the probability of the agent to purchase a car. 
-
-
-## MODEL OUTPUT
-
-Our model suggests that transportation system is an ever-moving system of three states: transit-oriented, automobile-oriented, and equilibrium. Moreover, the model also shows inverse relation between the state of the system and its social implications. Transit-oriented system is widely known to favor the poor over the rich. However, our model shows that by favoring the poor, it encourages people to view automobile much more prestigious than public transport. Therefore, prestige-driven behavior emerged, hence automobile-oriented system arises. Additionally, the model could also be viewed as a generalized form of the conventional model. The model shows that rational behavior and utility maximization only occurs when purchasing automobiles is considered costly, thus, functionality and degree of necessity becomes critical.
-
-**NOTE:**
-To produce this output, you need to use the _Behavior Space_ from the _Tools_ option. 
-
-> What needs to be done:
->
->  - set FARE = 0
->  - set THRESHOLD = 0
->  - vary BUY-PRICE from 0.0 to 5.0 (actually, there is nothing interesting happening from BUY-PRICE >= 3.5)
->  - set REPETITION = 100
->  - compute average value for each output:
->     - number of turtles who buy a car
->     - number of turtles who use public transportation
->     - car profile
->     - public transportation profile
->  - plot in a graph (I suggest you to make two graphs)
->     - BUY-PRICE (x-axis) vs number of turtles who buy a car (y-axis-1) and number of turtles who use public transportation (y-axis-2)
->     - BUY-PRICE (x-axis) vs car profile (y-axis-1) and public transportation profile (y-axis-2)
-
-
-## MODEL PROPERTIES
-
-Each agent has these properties
-
-> **FARE**    				= the cost of using public transport mode
-> **DEPRECIATION**			= the decline of the value of a car over time
-> **THRESHOLD**				= perceived utility of using public transport mode
-> **AGE-REMAINING**			= agent's remaining life
-> **RISK-BUY**				= agent's risk aversion of buying a car
-> **RISK-SELL**				= agent's tolerance toward selling her car
-> **CURRENT-ASSET**			= agent's asset at time t (excluding car ownership)
-> **LIVING-COST**			= agent's average cost of living
-> **INCOME**				= agent's average income
-> **WEALTH**				= agent's total economic asset (including car ownership)
-> **OWN-CAR**				= agent's car ownership
-> **ABILITY-TO-BUY**			= agent's ability to purchase a new car
-> **PROBABILITY-TO-BUY**		= agent's probability to buy a new car
-> **AVERAGE-ASSET**			= average asset value of agent's neighbors (including the agent itself). Imagine the agent ask herself "What kind of pattern emerged if I live in this neighborhood?"
-> **UTILITY-OF-BUYING-A-CAR**		= perceived benefit of buying and/or having a car
-
-
-
-## THE BASIC IDEA OF THE MODEL
-
-The basic rule is agents will have to choose between using public transportation or buying an automobile which is as follows:
->**if** expected utility of purchasing a car is less than the perceived utility of using public transportation **then** use public transportation, **otherwise** purchase a car
-
-
-## MODEL INITIALIZATION (SETUP PROCEDURE)
-
-First, in the initialization (Setup), we create the environment (world), the agents, and its properties:
-
-**Step 1** set world wraps vertically and horizontally
-**Step 2** set global variables
-
-> ```
-> set depreciation 0.9
-> ```
-
-**Step 3** set patches pcolor to grey
-
-> ```
-> ask patches [ set pcolor grey]
-> ```
-
-**Step 4** sprout one agent in every patch
-
-> ```
-> ask patches [ sprout 1]
-> ```
-
-**Step 5** set agents' properties
-
-> ```
-> ask turtles [ 
->   set age-remaining (10 + random 60)
->   set risk-buy 1.5                          
->   set risk-sell precision random-float 1.0 2 
->   set current-asset precision random-float 1.0 2       
->   set living-cost precision random-float 1.0 2
->   set wealth current-asset
->   set income precision (random-float 1.0) 2            
->   set own-car 0]]
-> ```
-
-**Step 6** display agent
-
-> ```
-> ask turtles [
->   set shape "circle"
->   set size 1
->
->   ifelse (own-car = 1)
->   [ set color 94]
->   [ ifelse (current-asset < fare)
->     [set color 98]
->     [set color 96]]
-> ```
-
-## INTERACTION RULES AND ITERATION PROCESS (GO PROCEDURE)
-
-After we initialize all the components of the model, then we setup the interaction rules (Go):
-
-**Step 1** set maximum iteration at TICKS = 300
-
-> ```
-> if ticks >= 300 [ stop]  
-> ```
-
-**Step 2** if the Agent already have a car (depends randomly on the initialization), she will have to decide if she wants to keep the car or sell the car
-
-> ```
-> ifelse (CURRENT-CAR-VALUE < RISK-SELL * BUY-PRICE)[
->   [ sell-car]
->   [ keep-car]]
-> ```
-
-**Step 2.a** if she decided to sell her car (sell-car)
-
-> ```
-> set OWN-CAR OWN-CAR - 1
->   let SELL-PRICE (0.1 + random-float 0.61) * BUY-PRICE
->   set WEALTH (CURRENT-ASSET + SELL-PRICE - CURRENT-CAR-VALUE)
->   set CURRENT-ASSET (CURRENT-ASSET + INCOME + SELL-PRICE - LIVING-COST)
->   set CURRENT-CAR-VALUE ""
-> ```
-
-**Step 2.B** if she decided to keep her car (keep-car)
-
-> ```
-> set OWN-CAR OWN-CAR
->   set CURRENT-CAR-VALUE (DEPRECIATION * CURRENT-CAR-VALUE)
->   set WEALTH CURRENT-ASSET + CURRENT-CAR-VALUE
->   set CURRENT-ASSET (CURRENT-ASSET + INCOME - CAR-COST - LIVING-COST)
-> ```
-
-
-**Step 3** if the agent does not have a car (depends randomly on the initialization) then she will have to decide whether she wants to use the public transportation or buy a car
-
-> ```
-> set ABILITY-TO-BUY CURRENT-ASSET RISK-BUY * BUY-PRICE
-> ```
-
-
-**Step 3.a** compute her ability to buy a car
-
-> ```
-> set ABILITY-TO-BUY CURRENT-ASSET RISK-BUY * BUY-PRICE
-> ```
-
-**Step 3.b** compute her probability to buy a car
-
-> ```
-> set PROBABILITY-TO-BUY 1 - exp (- (CURRENT-ASSET - AVERAGE-ASSET))
-> ```
-
-**Step 3.c** compute her expected utility of purchasing a car
-
-> ```
-> set UTILITY-OF-BUYING-A-CAR ABILITY-TO-BUY * PROBABILITY-TO-BUY
-> ```
-
-**Step 3.d** compare her expected utility of purchasing a car with the perceived utility of using public transportation and update her state
-
-> ```
-> ifelse (UTILITY-OF-BUYING-A-CAR < THRESHOLD) [
->   [ use-public-transport]
->   [ buy-car]]
-> ```
-
-**Step 3.d.1** if she decided to use public transportation (use-public-transport)
-
-> ```
-> set OWN-CAR OWN-CAR
->   set WEALTH CURRENT-ASSET
->   set CURRENT-ASSET (CURRENT-ASSET + INCOME - PUBLIC-TRANSPORT-FARE - LIVING-COST)
-> ```
-
-**Step 3.d.2** if she decided to buy a car (buy-car)
-
-> ```  
-> set OWN-CAR OWN-CAR + 1
->   set CURRENT-CAR-VALUE (DEPRECIATION * BUY-PRICE)
->   set WEALTH (CURRENT-ASSET + CURRENT-CAR-VALUE)
->   set CAR-COST 0.3 * BUY-PRICE
->   set CURRENT-ASSET (CURRENT-ASSET + INCOME - BUY-PRICE - LIVING-COST)
-> ```
-
-**Step 4** display agents
-
-**Step 5** update agent's life
-
-> ```
-> set AGE-REMAINING AGE-REMAINING - 1
->   if (WEALTH <= FARE) or (AGE-REMAINING <= 0) [
->   [ reset agent properties]
-> ```
-
-
-## HOW TO USE IT
-
-The FARE slider controls how much an agent should pay to use a public transportation mode
-The BUY-PRICE slider controls how much an agent should pay to purchase a new car
-The THRESHOLD slider controls the critical point of agent's decision making by comparing agent's UTILITY-OF-BUYING-A-CAR to the THRESHOLD value. A value of UTILITY-OF-BUYING-A-CAR less than THRESHOLD will result in agent buying a car and a value of UTILITY-OF-BUYING-A-CAR greater than or equal to THRESHOLD will result in agent using public transportation.
-The # OF CAR monitor shows how many of agents buy a car
-The # OF PUBLIC monitor shows how many of agents use public transportation
-CAR PROFILE monitor shows the prestige value of buying a car
-PUBLIC PROFILE monitor shows the prestige value of using public transportation
-
-
-## THINGS TO NOTICE
-
-With parameters FARE and THRESHOLD fixed at 0, there is two critical value of BUY-PRICE that switches the state of the system.
-
-  - BUY-PRICE approximately at 0.4 marks the system changing from public transport dominant to car user dominant
-  - BUY-PRICE approximately at 2.5 marks the system changing from car user dominant to public transport dominant
-
-
-## THINGS TO TRY
-
-Try to vary the parameters (FARE, BUY-PRICE, THRESHOLD) using the sliders to see different simulation results
-
-
-## CREDITS AND REFERENCES
-
-The PROBABILITY-TO-BUY function is adopted from Modeling Civil Violence: An Agent-based computational approach (Epstein, 2002) which also accesible in Rebellion.nlogo in the _Models Library_ 
 @#$#@#$#@
 default
 true
@@ -949,7 +713,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.1.1
+NetLogo 3D 6.1.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@

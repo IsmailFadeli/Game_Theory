@@ -15,21 +15,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{ii}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abstract}{iii}%
-\babel@toc {french}{}
-\babel@toc {USenglish}{}
-\babel@toc {arabic}{}
-\babel@toc {USenglish}{}
-\defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Figures}{\if@rlmain \I {6}\else \textLR {6}\fi }%
+\contentsline {chapter}{List of Figures}{\if@rlmain \I {5}\else \textLR {5}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Tables}{\if@rlmain \I {7}\else \textLR {7}\fi }%
+\contentsline {chapter}{List of Tables}{\if@rlmain \I {6}\else \textLR {6}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
@@ -273,10 +267,6 @@
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi .1}\bgroup \beginL \latintext Time and Cost\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }%
-\defcounter {refsection}{0}\relax 
-\select@language {USenglish}
-\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\bgroup \beginL \latintext \endL \egroup }{\if@rlmain \I {16}\else \textLR {16}\fi }%
 \defcounter {refsection}{0}\relax 
 \select@language {USenglish}
@@ -464,3 +454,9 @@
 \select@language {USenglish}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Works Cited}{\if@rlmain \I {31}\else \textLR {31}\fi }%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abstract}{\if@rlmain \I {33}\else \textLR {33}\fi }%
+\babel@toc {french}{}
+\babel@toc {USenglish}{}
+\babel@toc {arabic}{}
+\babel@toc {USenglish}{}

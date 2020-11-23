@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  30 OCT 2020 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.12)  23 NOV 2020 12:10
 entering extended mode
 **./Main.tex
 (Main.tex
@@ -1222,8 +1222,8 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__pdf_internal_box=\box94
 )
 (Main.aux
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-3.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+23.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ))
@@ -1390,11 +1390,64 @@ Package biblatex Info: ... file 'Main.bbl' not found.
 No file Main.bbl.
 Package biblatex Info: Reference section=0 on input line 48.
 Package biblatex Info: Reference segment=0 on input line 48.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 55.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ztmcm.fd"
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 55.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlztmcm.fd"
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 55.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omsztmcm.fd"
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 55.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omxztmcm.fd"
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
 <Enst_logo.jpg, id=4, 289.08pt x 289.08pt>
 File: Enst_logo.jpg Graphic file (type jpg)
 <use Enst_logo.jpg>
-Package pdftex.def Info: Enst_logo.jpg  used on input line 77.
-(pdftex.def)             Requested size: 113.81102pt x 113.8082pt.
+Package pdftex.def Info: Enst_logo.jpg  used on input line 56.
+(pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
+File: Enst_logo.jpg Graphic file (type jpg)
+<use Enst_logo.jpg>
+Package pdftex.def Info: Enst_logo.jpg  used on input line 62.
+(pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
+
+Overfull \hbox (9.92587pt too wide) in paragraph at lines 55--64
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]\OT1/ptm/m/n/10.95 ENST, Lec-turer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\OT1/ptm/m/n/10.95 ENST, Lec-turer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
+[]\OT1/ptm/m/n/10.95 ENST, Lec-turer
+ []
+
 [1
 
 {C:/Users/gg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Enst_logo.jp
@@ -1413,96 +1466,61 @@ This may cause the page layout to be inconsistent, however.
 [2
 
 
+] (Main.toc [3
+
 ]
 Package biblatex Info: Trying to load language 'arabic'...
 Package biblatex Info: ... file 'arabic.lbx' not found.
 
 
 Package biblatex Warning: Language 'arabic' not supported.
-(biblatex)                Using fallback language 'USenglish' on input line 134
+(biblatex)                Using fallback language 'USenglish' on input line 461
 .
 
-LaTeX Font Info:    Trying to load font information for LAE+ptm on input line 1
-34.
-LaTeX Font Info:    No file LAEptm.fd. on input line 134.
+LaTeX Font Info:    Trying to load font information for LAE+ptm on input line 4
+61.
+LaTeX Font Info:    No file LAEptm.fd. on input line 461.
 
 LaTeX Font Warning: Font shape `LAE/ptm/m/n' undefined
-(Font)              using `LAE/cmr/m/n' instead on input line 134.
+(Font)              using `LAE/cmr/m/n' instead on input line 461.
 
-
-LaTeX Font Warning: Font shape `LAE/ptm/b/n' undefined
-(Font)              using `LAE/ptm/m/n' instead on input line 135.
-
-LaTeX Font Info:    Font shape `LAE/ptm/m/n' will be
-(Font)              scaled to size 15.0pt on input line 135.
-[3
-
-] (Main.toc
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 26.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ztmcm.fd"
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 26.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlztmcm.fd"
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 26.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omsztmcm.fd"
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 26.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omxztmcm.fd"
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
- [4
-
-])
 \tf@toc=\write6
 \openout6 = `Main.toc'.
 
- [5] (Main.lof)
+ [4] (Main.lof
+LaTeX Font Info:    Font shape `LAE/ptm/m/n' will be
+(Font)              scaled to size 15.0pt on input line 47.
+)
 \tf@lof=\write7
 \openout7 = `Main.lof'.
 
- [6
+ [5
 
 ] (Main.lot)
 \tf@lot=\write8
 \openout8 = `Main.lot'.
 
- [7
+ [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 171.
+less on input line 187.
 
 [1
 
@@ -1530,14 +1548,14 @@ Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
 
 [3
 
-] [4]
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
- [5]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+ [4] [5]
 LaTeX Font Info:    Trying to load font information for OT1+artimes on input li
 ne 105.
 LaTeX Font Info:    No file OT1artimes.fd. on input line 105.
@@ -1578,7 +1596,13 @@ Chapter 2.
 
 ] [13
 
-] [14]
+]
+Overfull \hbox (0.283pt too wide) in paragraph at lines 27--28
+\OT1/ptm/m/n/12 maximum-likelihood pro-ce-dures, and dis-crim-i-nant mod-els ar
+e al-ways as-so-ci-ated with least-
+ []
+
+[14]
 Overfull \hbox (10.7848pt too wide) in paragraph at lines 43--64
  [] 
  []
@@ -1603,13 +1627,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [22] [23] [24] [25]
-<./Plots/Simulation 1 mode shift.png, id=127, 239.39438pt x 220.57407pt>
+<./Plots/Simulation 1 mode shift.png, id=123, 239.39438pt x 220.57407pt>
 File: ./Plots/Simulation 1 mode shift.png Graphic file (type png)
 <use ./Plots/Simulation 1 mode shift.png>
 Package pdftex.def Info: ./Plots/Simulation 1 mode shift.png  used on input lin
 e 183.
 (pdftex.def)             Requested size: 227.62204pt x 209.72928pt.
-<./Plots/Simulation 1 mode profile.png, id=129, 230.36063pt x 222.8325pt>
+<./Plots/Simulation 1 mode profile.png, id=125, 230.36063pt x 222.8325pt>
 File: ./Plots/Simulation 1 mode profile.png Graphic file (type png)
 <use ./Plots/Simulation 1 mode profile.png>
 Package pdftex.def Info: ./Plots/Simulation 1 mode profile.png  used on input l
@@ -1619,7 +1643,7 @@ ine 190.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Plots/Simulation 2 Nocp.png, id=130, 362.3136pt x 217.7736pt>
+<./Plots/Simulation 2 Nocp.png, id=126, 362.3136pt x 217.7736pt>
 File: ./Plots/Simulation 2 Nocp.png Graphic file (type png)
 <use ./Plots/Simulation 2 Nocp.png>
 Package pdftex.def Info: ./Plots/Simulation 2 Nocp.png  used on input line 197.
@@ -1630,14 +1654,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26 <./Plots/Simulation 1 mode shift.png>] [27 <./Plots/Simulation 1 mode profi
 le.png> <./Plots/Simulation 2 Nocp.png>]
-<./Plots/average cars avgmin.png, id=140, 361.35pt x 209.78375pt>
+<./Plots/average cars avgmin.png, id=136, 361.35pt x 209.78375pt>
 File: ./Plots/average cars avgmin.png Graphic file (type png)
 <use ./Plots/average cars avgmin.png>
 Package pdftex.def Info: ./Plots/average cars avgmin.png  used on input line 21
 2.
 (pdftex.def)             Requested size: 341.43306pt x 198.22107pt.
  [28 <./Plots/average cars avgmin.png (PNG copy)>]
-<./Plots/average prop avgmin.png, id=145, 361.35pt x 224.84pt>
+<./Plots/average prop avgmin.png, id=140, 361.35pt x 224.84pt>
 File: ./Plots/average prop avgmin.png Graphic file (type png)
 <use ./Plots/average prop avgmin.png>
 Package pdftex.def Info: ./Plots/average prop avgmin.png  used on input line 22
@@ -1654,31 +1678,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 ) [30
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 []\OT1/ptm/m/n/12 Jackson, Leyton-Brown and Shoham, 2013 . Game The-ory,
  []
 
 [31
 
 ]
-Underfull \hbox (badness 1043) in paragraph at lines 221--222
+Underfull \hbox (badness 1043) in paragraph at lines 237--238
 []\OT1/ptm/m/n/12 Epstein, J. (2002). Mod-el-ing Civil Vi-o-lence: An Agent-Bas
 ed Com-pu-ta-tional
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 221--222
+Underfull \hbox (badness 2617) in paragraph at lines 237--238
 \OT1/ptm/m/n/12 Ap-proach. Pro-ceed-ings of the Na-tional Academy of Sci-ences 
 of the United
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 221--222
+Underfull \hbox (badness 4403) in paragraph at lines 237--238
 \OT1/ptm/m/n/12 States of Amer-ica, 99(10), 7243-7250. Re-trieved Oc-to-ber 10,
  2020, from
  []
 
-[32] (Main.aux)
+[32]
+
+LaTeX Font Warning: Font shape `LAE/ptm/b/n' undefined
+(Font)              using `LAE/ptm/m/n' instead on input line 262.
+
+[33
+
+] (Main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1687,16 +1718,16 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26604 strings out of 480930
- 487621 string characters out of 2909556
+ 26606 strings out of 480930
+ 487642 string characters out of 2909556
  1154899 words of memory out of 3000000
- 41930 multiletter control sequences out of 15000+200000
- 588395 words of font info for 129 fonts, out of 3000000 for 9000
+ 41932 multiletter control sequences out of 15000+200000
+ 588337 words of font info for 129 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,64p,1167b,4026s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\gg\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk>{C:/Program F
-iles/MiKTeX 2.9/fonts/enc/dvips/arabi/ararabeyes.enc}<C:/Program Files/MiKTeX 2
+ 68i,13n,64p,1167b,4023s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/arabi/ararabeyes.enc}{C:/Program
+ Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\gg\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2
 .9/fonts/type1/arabi/arabeyes/ae_almohanad_bold.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
@@ -1708,7 +1739,7 @@ KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/ut
 mr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Main.pdf (41 pages, 278796 bytes).
+Output written on Main.pdf (41 pages, 280115 bytes).
 PDF statistics:
  208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
